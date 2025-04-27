@@ -7,18 +7,16 @@ const Brands = () => {
   return (
     <section className="pt-16">
       <div className="container">
-      <SectionTitle
-            title="Technologies That Power Our Solutions"
-            paragraph=""
-            center
-          />
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="wow fadeInUp bg-gray-light dark:bg-gray-dark flex flex-wrap items-center justify-center rounded-sm px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
-              data-wow-delay=".1s"
-            >
-              {brandsData.map((brand) => (
+        <SectionTitle
+          title="Technologies That Power Our Solutions"
+          paragraph="We use modern, scalable, and reliable technologies to build high-performance, future-ready solutions"
+          center
+        />
+        
+        <div className="w-full px-4">
+          <div className="flex overflow-x-hidden hide-scrollbar pb-4">
+            <div className="flex  gap-4 animate-scroll">
+              {[...brandsData,...brandsData].map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
               ))}
             </div>
@@ -32,17 +30,18 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const {image, name } = brand;
+  const { image, name ,alt} = brand;
 
   return (
-    <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
-      <a
-        target="_blank"
-        rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
-      >
-        <Image src={image} alt={name} fill className="cursor-pointer"/>
-      </a>
+    <div className="flex-shrink-0 w-32 h-32 xl:w-48 xl:h-48 2xl:w-64 2xl:h-64 flex flex-col items-center justify-center p-4  rounded-sm">
+      <div className="relative w-[70%] h-[70%]">
+        <Image 
+          src={image} 
+          alt={alt} 
+          fill
+        />
+      </div>
+      <p className="mt-5 text-sm lg:text-lg">{name}</p>
     </div>
   );
 };

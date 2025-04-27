@@ -5,29 +5,32 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Joseph Rice",
+    alt:'web application agency',
+    designation: "Accountant",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "This agency delivered a professional, modern website that perfectly fits my accounting firm’s brand. The team was responsive, skilled, and exceeded my expectations throughout the project. ",
+    image: "/images/testimonials/author-03.jpg",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Ahmed Sabri",
+    alt:'it web development company',
+    designation: "Restaurant Owner",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "Their service is incredible! The custom web and mobile app developed for our restaurant has greatly improved our operations and customer experience.",
+    image: "/images/testimonials/author-04.jpg",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Kylian Sore",
+    alt:'professional web development company',
+    designation: "E-commerce Entrepreneur",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "This agency transformed how I run my e-commerce business.They built a fast, professional website and automated my sales process.Managing orders become easy than before.",
+    image: "/images/testimonials/author-05.jpg",
     star: 5,
   },
 ];
@@ -37,8 +40,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="What Our Clients Says"
+          paragraph="Hear directly from our satisfied clients about their experiences and how our solutions have helped their businesses grow"
           center
         />
 

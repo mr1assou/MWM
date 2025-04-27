@@ -14,10 +14,10 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="About Us"
+        description="We are a mobile and website development company providing custom digital solutions to businesses in Melbourne, Sydney, and across Australia."
       />
-      <AboutSectionOne />
+      <AboutSectionOne value=""/>
       <AboutSectionTwo />
     </>
   );

@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Our Services"
-            paragraph="We craft tailored web and mobile solutions with seamless design and functionality."
+            paragraph="Custom Mobile & Website Development for Businesses – eCommerce Solutions,and Australia-Wide Support"
             center
           />
 

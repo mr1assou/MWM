@@ -8,28 +8,29 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "Mwm Agency",
+  description: "mwm agency",
+  icons: {
+    icon: '/logo/logo.png'
+  }
 };
 
 export default function Home() {
   return (
     <>
+      {/* <div className="w-screen h-screen bg-white fixed top-0 left-0 z-[9999]"></div>     */}
       <ScrollUp />
       <Hero />
       <Features />
-      {/* <Video /> */}
       <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
       <Pricing />
+      <AboutSectionOne value="true"/>
+      <AboutSectionTwo />
       <Blog />
+      <Testimonials />
       <Contact /> 
     </>
   );

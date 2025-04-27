@@ -7,13 +7,10 @@ const featuresData: Feature[] = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-10">
         <path fill-rule="evenodd" d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z" clip-rule="evenodd" />
       </svg>
-
-
-
     ),
     title: "Empowering Emerging Businesses",
     paragraph:
-      "Tools designed to grow with you—scale smarter, pivot faster, and stay ahead in competitive markets, backed by our expert programming skills and cutting-edge technology.",
+      "We’re a mobile and website development agency helping startups, individuals, and businesses grow with custom solutions including eCommerce platforms, booking systems, chat apps, management systems, and e-learning platforms.",
   },
   {
     id: 2,
@@ -23,9 +20,9 @@ const featuresData: Feature[] = [
       </svg>
 
     ),
-    title: "Built with Cutting-Edge Technology.",
+    title: "Built with Cutting-Edge Technology",
     paragraph:
-      "We utilize the latest, most robust technologies to build scalable, high-performance web and mobile applications, ensuring your solutions are both innovative and future-ready.",
+      "In our mobile and website development services, we utilize the latest, most robust technologies to build scalable, high-performance applications. We incorporate technologies like AI, cloud infrastructure, responsive design, and modern frameworks.",
   },
   {
     id: 3,
@@ -34,9 +31,9 @@ const featuresData: Feature[] = [
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
       </svg>
     ),
-    title: "Full-Stack & Mobile App Development Expertise",
+    title: "Development Expertise",
     paragraph:
-      "Our agency is driven by a team of skilled engineers committed to delivering exceptional full-stack and mobile app solutions.We work closely with you from concept to launch.",
+      "Our tech agency is driven by a team of skilled mobile and website deve committed to delivering exceptional full-stack and mobile app solutions.We work closely with you from concept to launch.",
   },
   {
     id: 4,

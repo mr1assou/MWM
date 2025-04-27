@@ -7,7 +7,7 @@ const checkIcon = (
   </svg>
 );
 
-const AboutSectionOne = () => {
+const AboutSectionOne = ({ value }) => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -20,13 +20,19 @@ const AboutSectionOne = () => {
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
+        {
+          value && <SectionTitle
+            title="About Us"
+            paragraph="We are a mobile and website development company providing custom digital solutions to businesses in Melbourne, Sydney, and across Australia. "
+            center
+          />
+        }
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startups, SaaS, Businesses, and Individuals."
-                paragraph="The core philosophy of our agency is to deliver high-quality, 
-                reliable software tailored to each client’s needs—ensuring performance, security, and scalability, all at a fair and transparent price."
+                title="Crafted for Startups, SaaS, Businesses, and Individuals in Australia."
+                paragraph="The core philosophy of our agency is to deliver high-quality, reliable mobile and website development services tailored to each client’s needs—ensuring performance, security, and scalability, all at a fair and transparent price."
                 mb="44px"
               />
 
@@ -57,13 +63,13 @@ const AboutSectionOne = () => {
               >
                 <Image
                   src="/images/about/3.png"
-                  alt="about-image"
+                  alt="website development company"
                   fill
                   className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0 object-contain"
                 />
                 <Image
                   src="/images/about/3.png"
-                  alt="about-image"
+                  alt="website development company"
                   fill
                   className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0 object-contain"
                 />

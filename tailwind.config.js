@@ -32,6 +32,15 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 17s linear infinite',
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",

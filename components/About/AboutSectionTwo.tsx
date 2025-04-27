@@ -13,13 +13,13 @@ const AboutSectionTwo = () => {
             >
               <Image
                 src="/images/about/4.png"
-                alt="about image"
+                alt="website design and development"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain"
               />
               <Image
                 src="/images/about/4.png"
-                alt="about image"
+                alt="website design and development"
                 fill
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none object-contain"
               />
@@ -37,8 +37,8 @@ const AboutSectionTwo = () => {
                   High Quality
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  We engineer digital excellence through rigorous testing, cutting-edge technologies, and pixel-perfect design execution.
-                  Our solutions are built to scale seamlessly while maintaining flawless performance and intuitive user experiences that drive measurable results.
+                We deliver digital excellence with robust mobile and website development, scalable solutions, and flawless design, 
+                ensuring high performance and user experiences that drive results.
                 </p>
               </div>
               <div className="mb-9">
@@ -55,7 +55,7 @@ const AboutSectionTwo = () => {
                   Dedicated Support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Contact us anytime for assistance. We provide quick responses and unlimited revisions to ensure your project is always exactly as you need it.
+                Contact us anytime for assistance. We provide quick responses  to ensure your project is always exactly as you need it.
                 </p>
               </div>
             </div>
