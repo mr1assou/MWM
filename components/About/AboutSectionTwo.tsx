@@ -42,7 +42,7 @@ const AboutSectionTwo = () => {
             <div 
               ref={divRef}
               className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[520px] text-center lg:m-0 mt-10 translate-x-[-200%] will-change-transform"
-              data-wow-delay=".15s"
+              data-wow-delay=".30s"
               style={{ transform: 'translateZ(0)' }}
             >
               <Image

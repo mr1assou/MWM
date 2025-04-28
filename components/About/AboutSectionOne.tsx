@@ -36,7 +36,7 @@ const AboutSectionOne = ({ value }) => {
         { x: "200%" },
         {
           x: "0%",
-          duration: 0.5,
+          duration: 1,
           ease: "power2.out",
           scrollTrigger: {
             trigger: divRef.current,
@@ -91,8 +91,8 @@ const AboutSectionOne = ({ value }) => {
             <div className="w-full px-4 lg:w-1/2 overflow-x-hidden">
               <div
                 ref={divRef}
-                className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0 translate-x-[200%] will-change-transform"
-                data-wow-delay=".15s"
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[35/24]  max-w-[500px] text-center lg:m-0 translate-x-[200%] will-change-transform"
+                data-wow-delay=".30s"
                 style={{ transform: 'translateZ(0)' }}
               >
                 <Image
