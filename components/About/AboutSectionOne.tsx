@@ -1,5 +1,14 @@
+"use client"
+
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+
+
+
+
+
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -8,6 +17,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = ({ value }) => {
+  
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -16,6 +26,35 @@ const AboutSectionOne = ({ value }) => {
       {text}
     </p>
   );
+
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const element = divRef.current;
+
+    const handleScroll = () => {
+      if (!element) return;
+      const rect = element.getBoundingClientRect();
+
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        // Animate when the div is in the viewport
+        gsap.to(element, {
+          x: "0%",
+          duration:0.5,
+          ease: "power2.out",
+        });
+        window.removeEventListener("scroll", handleScroll); // Only animate once
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check immediately in case already visible
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
@@ -56,9 +95,10 @@ const AboutSectionOne = ({ value }) => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+            <div className="w-full px-4 lg:w-1/2 overflow-x-hidden">
+            {/* i want when i reach this div while i scroll he div return to x:0% */}
+              <div ref={divRef}
+                className="wow fadeInUp relative mx-auto aspect-[25/24] w-full lg:mr-0 translate-x-[900%]"
                 data-wow-delay=".2s"
               >
                 <Image

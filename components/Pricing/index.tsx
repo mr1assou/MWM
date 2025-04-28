@@ -19,7 +19,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Lite"
             price="500"
-            duration="month"
+            duration="3"
             subtitle="Fast, static website with unlimited pages for your business."
           >
             <OfferList text="Fully developed static website" status="active" />

@@ -39,6 +39,9 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
           src={image} 
           alt={alt} 
           fill
+          className="object-contain"
+          sizes="(max-width: 768px) 50vw, 20vw"
+          priority
         />
       </div>
       <p className="mt-5 text-sm lg:text-lg">{name}</p>
