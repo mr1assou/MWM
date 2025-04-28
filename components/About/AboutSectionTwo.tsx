@@ -11,20 +11,21 @@ const AboutSectionTwo = () => {
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    ScrollTrigger.normalizeScroll(true); // Fix touch devices
+    ScrollTrigger.normalizeScroll(true);
 
     if (divRef.current) {
       gsap.fromTo(
         divRef.current,
-        { x: "-900%" }, // Reduced distance
+        { x: "-200%" }, // Reduced from -900% to -200%
         { 
           x: "0%",
-          duration: 0.5, // Faster animation
+          duration: 0.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: divRef.current,
             start: "top 80%",
             toggleActions: "play none none none",
+            markers: false, // Disable markers in production
           },
         }
       );
@@ -38,15 +39,18 @@ const AboutSectionTwo = () => {
       <div className="container">
         <div className="flex flex-wrap-reverse items-center">
           <div className="w-full px-4 lg:w-1/2 overflow-hidden">
-            <div ref={divRef}
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[520px]  text-center lg:m-0 mt-10 translate-x-[-900%]"
+            <div 
+              ref={divRef}
+              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[520px] text-center lg:m-0 mt-10 translate-x-[-200%] will-change-transform"
               data-wow-delay=".15s"
+              style={{ transform: 'translateZ(0)' }}
             >
               <Image
                 src="/images/about/4.png"
                 alt="website design and development"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain"
+                priority
               />
               <Image
                 src="/images/about/4.png"

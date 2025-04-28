@@ -2,13 +2,11 @@
 
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-
-
-
+gsap.registerPlugin(ScrollTrigger);
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -30,31 +28,26 @@ const AboutSectionOne = ({ value }) => {
   const divRef = useRef(null);
 
   useEffect(() => {
-    const element = divRef.current;
+    ScrollTrigger.normalizeScroll(true);
 
-    const handleScroll = () => {
-      if (!element) return;
-      const rect = element.getBoundingClientRect();
-
-      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        // Animate when the div is in the viewport
-        gsap.to(element, {
+    if (divRef.current) {
+      gsap.fromTo(
+        divRef.current,
+        { x: "200%" },
+        {
           x: "0%",
-          duration:0.5,
+          duration: 0.5,
           ease: "power2.out",
-        });
-        window.removeEventListener("scroll", handleScroll); // Only animate once
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check immediately in case already visible
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+          scrollTrigger: {
+            trigger: divRef.current,
+            start: "top 80%",
+            toggleActions: "play none none none",
+            markers: false,
+          },
+        }
+      );
+    }
   }, []);
-
 
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
@@ -71,7 +64,7 @@ const AboutSectionOne = ({ value }) => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Crafted for Startups, SaaS, Businesses, and Individuals in Australia."
-                paragraph="The core philosophy of our agency is to deliver high-quality, reliable mobile and website development services tailored to each client’s needs—ensuring performance, security, and scalability, all at a fair and transparent price."
+                paragraph="The core philosophy of our agency is to deliver high-quality, reliable mobile and website development services tailored to each client's needs—ensuring performance, security, and scalability, all at a fair and transparent price."
                 mb="44px"
               />
 
@@ -96,16 +89,18 @@ const AboutSectionOne = ({ value }) => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2 overflow-x-hidden">
-            {/* i want when i reach this div while i scroll he div return to x:0% */}
-              <div ref={divRef}
-                className="wow fadeInUp relative mx-auto aspect-[25/24] w-full lg:mr-0 translate-x-[900%]"
-                data-wow-delay=".2s"
+              <div
+                ref={divRef}
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0 translate-x-[200%] will-change-transform"
+                data-wow-delay=".15s"
+                style={{ transform: 'translateZ(0)' }}
               >
                 <Image
                   src="/images/about/3.png"
-                  alt="website development company"
+                  alt="about image"
                   fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0 object-contain"
+                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                  priority
                 />
                 <Image
                   src="/images/about/3.png"
