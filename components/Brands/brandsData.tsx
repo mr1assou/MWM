@@ -61,7 +61,12 @@ const brandsData: Brand[] = [
     image: "/images/brands/tailwind_css.png",
     alt:"Tailwind CSS logo - Modern styling for web developers"
   },
-
+  {
+    id: 11,
+    name: "React Native",
+    image: "/images/brands/react.png",
+    alt:"React Native logo - Mobile framework for Melbourne mobile apps"
+  }
  
  
   

@@ -15,12 +15,60 @@ const Pricing = () => {
           center
           width="665px"
         />
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Website Creation Packages</h2>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
           <PricingBox
-            packageName="Lite"
-            price="500"
+            packageName="Basic"
+            price="3500"
             duration="3"
             subtitle="Fast, static website with unlimited pages for your business."
+            center="false"
+            discount=""
+          >
+            <OfferList text="Up to 5 pages (Home,About,etc.....)" status="active" />
+            <OfferList text="Mobile responsive custom design" status="active" />
+            <OfferList text="Contact form and Google analytics setup" status="active" />
+            <OfferList text="1 round of revisions" status="active" />
+          </PricingBox>
+          <PricingBox
+            packageName="Basic"
+            price="1500"
+            duration="mo"
+            subtitle="Full Website + FREE Mobile App or vice versa to your business"
+            center="true"
+            discount=""
+          >
+            <OfferList text="Up to 10 pages (all basic features,plus)" status="active" />
+            <OfferList text="Blog or portfolio section" status="active" />
+            <OfferList text="Social media integration" status="active" />
+            <OfferList text="2 months post-launch support" status="active" />
+            <OfferList text="We make your website and mobile app live to the public." status="active" />
+          </PricingBox>
+          <PricingBox
+            packageName="Plus"
+            price="2700"
+            duration="mo"
+            subtitle="Full Website + FREE Mobile App or vice versa with free full time updates"
+            center="false"
+            discount=""
+          >
+            <OfferList text="Get free website or mobile app" status="active" />
+            <OfferList text="Fully functional dynamic website and mobile app" status="active" />
+            <OfferList text="All UI/UX components" status="active" />
+            <OfferList text="Unlimited pages" status="active" />
+            <OfferList text="We make your website and mobile app live to the public." status="active" />
+            <OfferList text="Free life time updates" status="active" />
+          </PricingBox>
+        </div>
+        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Mobile App Development Packages</h2>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
+          <PricingBox
+            packageName="Basic"
+            price="3500"
+            duration="3"
+            subtitle="Fast, static website with unlimited pages for your business."
+            center="false"
+            discount=""
           >
             <OfferList text="Fully developed static website" status="active" />
             <OfferList text="All UI/UX components" status="active" />
@@ -34,6 +82,8 @@ const Pricing = () => {
             price="1500"
             duration="mo"
             subtitle="Full Website + FREE Mobile App or vice versa to your business"
+            center="true"
+            discount=""
           >
             <OfferList text="Get free website or mobile app" status="active" />
             <OfferList text="Fully functional dynamic website and mobile app" status="active" />
@@ -47,6 +97,8 @@ const Pricing = () => {
             price="2700"
             duration="mo"
             subtitle="Full Website + FREE Mobile App or vice versa with free full time updates"
+            center="false"
+            discount=""
           >
             <OfferList text="Get free website or mobile app" status="active" />
             <OfferList text="Fully functional dynamic website and mobile app" status="active" />
