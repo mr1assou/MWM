@@ -83,11 +83,11 @@ const Hero = () => {
                   Mobile And Website development That Drive Your Business Forward
                 </h1>
                 <h2 ref={subtitleRef} className="mb-12 text-base !leading-relaxed text-body-color-dark sm:text-lg md:text-xl translate-x-[400%]">
-                  We build custom website and mobile app solutions for businesses in Melbourne, Sydney, and across Australia, designed to be smart, scalable, and results-driven.
+                  We build custom website and mobile app solutions for businesses in Melbourne, Sydney,Perth and across Australia, designed to be smart, scalable, and results-driven.
                 </h2>
                 <div ref={buttonRef} className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 translate-y-[1300%]">
                   <Link
-                    href="/contact"
+                    href="/contact/0"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     🔥 Get Started

@@ -19,93 +19,107 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
           <PricingBox
             packageName="Basic"
-            price="3500"
+            price="2500"
             duration="3"
-            subtitle="Fast, static website with unlimited pages for your business."
+            subtitle="Ideal for: Startups, small businesses, or simple websites."
             center="false"
-            discount=""
+            discount="20"
+            id="1"
           >
-            <OfferList text="Up to 5 pages (Home,About,etc.....)" status="active" />
-            <OfferList text="Mobile responsive custom design" status="active" />
-            <OfferList text="Contact form and Google analytics setup" status="active" />
-            <OfferList text="1 round of revisions" status="active" />
+            <OfferList text="5-10 pages (Home,About,Services,etc.....)" status="active" />
+            <OfferList text="Responsive design (mobile-friendly)" status="active" />
+            <OfferList text="Contact form integration" status="active" />
+            <OfferList text="1 month free technical support" status="active" />
+            <OfferList text="Delivery time 1-2 weeks" status="active" />
+            <OfferList text="Website hosting" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price="1500"
+            packageName="Standard"
+            price="4000"
             duration="mo"
-            subtitle="Full Website + FREE Mobile App or vice versa to your business"
+            subtitle="Ideal for: Growing businesses requiring custom features."
             center="true"
-            discount=""
+            discount="25"
+            id="2"
           >
-            <OfferList text="Up to 10 pages (all basic features,plus)" status="active" />
-            <OfferList text="Blog or portfolio section" status="active" />
-            <OfferList text="Social media integration" status="active" />
-            <OfferList text="2 months post-launch support" status="active" />
-            <OfferList text="We make your website and mobile app live to the public." status="active" />
+            <OfferList text="10-15 pages with custom design" status="active" />
+            <OfferList text="Responsive design (mobile-friendly)" status="active" />
+            <OfferList text="Backend features operations with database " status="active" />
+            <OfferList text="Integration with third-party tools (payment gateways)." status="active" />
+            <OfferList text="3 month free technical support" status="active" />
+            <OfferList text="Delivery time 6-8 weeks" status="active" />
+            <OfferList text="Website hosting" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price="2700"
+            packageName="Premium"
+            price="12000"
             duration="mo"
-            subtitle="Full Website + FREE Mobile App or vice versa with free full time updates"
+            subtitle="Ideal for: Enterprises or complex projects."
             center="false"
-            discount=""
+            discount="25"
+            id="3"
           >
-            <OfferList text="Get free website or mobile app" status="active" />
-            <OfferList text="Fully functional dynamic website and mobile app" status="active" />
-            <OfferList text="All UI/UX components" status="active" />
-            <OfferList text="Unlimited pages" status="active" />
-            <OfferList text="We make your website and mobile app live to the public." status="active" />
-            <OfferList text="Free life time updates" status="active" />
+            <OfferList text="Fully custom design and development" status="active" />
+            <OfferList text="Scalable architecture (Microservices)" status="active" />
+            <OfferList text="Advanced e-commerce,booking,inventory systems etc..." status="active" />
+            <OfferList text="Security audits and SSL certificates" status="active" />
+            <OfferList text="1 year free technical support" status="active" />
+            <OfferList text="Delivery time 4-8 months" status="active" />
+            <OfferList text="Website hosting" status="active" />
           </PricingBox>
         </div>
         <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Mobile App Development Packages</h2>
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
           <PricingBox
             packageName="Basic"
-            price="3500"
+            price="8000"
             duration="3"
-            subtitle="Fast, static website with unlimited pages for your business."
+            subtitle="Ideal for: MVP or simple apps (single platform)."
             center="false"
-            discount=""
+            discount="12.5"
+            id="4"
           >
-            <OfferList text="Fully developed static website" status="active" />
-            <OfferList text="All UI/UX components" status="active" />
-            <OfferList text="Unlimited pages" status="active" />
-            <OfferList text="Responsive design (works on all devices)" status="active" />
-            <OfferList text="We make your website live to the public." status="active" />
-            <OfferList text="1 month free technical support" status="active" />
+            <OfferList text="Single platform either Android or Ios" status="active" />
+            <OfferList text="5-10 pages with custom design" status="active" />
+            <OfferList text="Core features (user login,profile,basic Ui)" status="active" />
+            <OfferList text="Simple backend setup." status="active" />
+            <OfferList text="Delivery time 2-3 months" status="active" />
+            <OfferList text="3 months free technical support" status="active" />
+            <OfferList text="Deployment of the app either App store or Play store" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Basic"
-            price="1500"
+            price="15000"
             duration="mo"
-            subtitle="Full Website + FREE Mobile App or vice versa to your business"
+            subtitle="Ideal for: Cross-platform apps with advanced features."
             center="true"
-            discount=""
+            discount="20"
+            id="5"
           >
-            <OfferList text="Get free website or mobile app" status="active" />
-            <OfferList text="Fully functional dynamic website and mobile app" status="active" />
-            <OfferList text="All UI/UX components" status="active" />
+            <OfferList text="iOS + Android development." status="active" />
+            <OfferList text="10-15 pages with custom design" status="active" />
+            <OfferList text="API integration (payment gateways, etc...)." status="active" />
+            <OfferList text="Strong backend setup." status="active" />
             <OfferList text="Unlimited pages" status="active" />
-            <OfferList text="We make your website and mobile app live to the public." status="active" />
-            <OfferList text="1 year of free technical support" status="active" />
+            <OfferList text="Delivery time 4-6 months" status="active" />
+            <OfferList text="6 months free technical support" status="active" />
+            <OfferList text="Deployment of the app in App store and Play store" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Plus"
-            price="2700"
+            price="25000"
             duration="mo"
             subtitle="Full Website + FREE Mobile App or vice versa with free full time updates"
             center="false"
-            discount=""
+            discount="8"
+            id="6"
           >
-            <OfferList text="Get free website or mobile app" status="active" />
-            <OfferList text="Fully functional dynamic website and mobile app" status="active" />
-            <OfferList text="All UI/UX components" status="active" />
-            <OfferList text="Unlimited pages" status="active" />
-            <OfferList text="We make your website and mobile app live to the public." status="active" />
-            <OfferList text="Free life time updates" status="active" />
+            <OfferList text="iOS + Android development." status="active" />
+            <OfferList text="Advanced backend (Node.js, Python, microservices)." status="active" />
+            <OfferList text="AI/ML features (chatbots, recommendations)." status="active" />
+            <OfferList text="Real-time features (messaging, live tracking)." status="active" />
+            <OfferList text="12 months free technical support" status="active" />
+            <OfferList text="Deployment of the app in App store and Play store" status="active" />
           </PricingBox>
         </div>
       </div>

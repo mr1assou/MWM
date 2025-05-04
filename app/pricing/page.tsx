@@ -1,5 +1,3 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Pricing from "@/components/Pricing";
 import { Metadata } from "next";

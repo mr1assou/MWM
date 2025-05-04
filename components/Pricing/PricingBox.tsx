@@ -9,9 +9,10 @@ const PricingBox = (props: {
   subtitle: string;
   center: string;
   discount: string;
+  id:string
   children: React.ReactNode;
 }) => {
-  const { price, duration, packageName, subtitle, children, center ,discount} = props;
+  const { price, duration, packageName, subtitle, children, center ,discount,id} = props;
   const boxRef = useRef(null); // Create a ref to target the element
   const [isVisible, setIsVisible] = useState(false); // To track if the component is in view
 
@@ -62,7 +63,7 @@ const PricingBox = (props: {
 
       <div
         ref={boxRef}
-        className="wow fadeInUp shadow-three dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-lg bg-white px-8 py-10 hover:shadow-one h-[800px] "
+        className="wow fadeInUp shadow-three dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-lg bg-white px-5 py-10 hover:shadow-one h-[800px] "
         data-wow-delay=".1s"
       >
         {
@@ -78,15 +79,15 @@ const PricingBox = (props: {
             AU${price}
           </p>
           <p className="price mt-7 text-xs font-bold text-black dark:text-white bg-primary px-2 py-1 rounded-lg">
-            Save 10 %
+            Save {discount} %
           </p>
         </div>
         <p className="price mt-5 text-4xl font-bold text-black dark:text-white">
-          AU${parseInt(price) * 0.9}
+          AU${(parseFloat(price) - parseFloat(price) * parseFloat(discount)/100)-1}
         </p>
 
         <div className=" border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10 mt-10">
-          <Link href="/contact" className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+          <Link href={`/contact/${id}`} className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
             Choose Plan
           </Link>
         </div>

@@ -11,11 +11,9 @@ import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mwm Agency",
+  title: "mwm agency",
   description: "mwm agency",
-  icons: {
-    icon: '/logo/logo.png'
-  }
+ 
 };
 
 export default function Home() {

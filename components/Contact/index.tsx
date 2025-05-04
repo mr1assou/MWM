@@ -2,12 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import NewsLatterBox from "./NewsLatterBox"; // Your other component (assuming it's imported correctly)
+import { useParams } from 'next/navigation'; // Changed import
+import { useRouter } from 'next/navigation';
+
 
 const Contact = () => {
+  const params = useParams();
+  const router = useRouter();
+  const { id } = params;
   const contactRef = useRef(null); // Reference for the contact section
   const [isVisible, setIsVisible] = useState(false); // To track visibility
-
+  const [form,setForm]=useState({firstName:"",lastName:"",email:"",phone_number:"",message:"",id:id});
+  
   // Function to check if the component is in the viewport
   const checkIfInView = () => {
     if (contactRef.current) {
@@ -44,6 +50,25 @@ const Contact = () => {
     }
   }, [isVisible]);
 
+  const handleForm = async (e) => {
+    e.preventDefault();
+    const response = await fetch('/api/submitForm', {method: 'POST',headers: {'Content-Type': 'application/json',},
+      body: JSON.stringify(form),
+    });
+    await response.json();
+    if(response.ok){
+      router.push('/thanks');
+    }
+    else{
+      console.log('not good');
+    }
+  }
+
+  const changeForm = (e) => {
+    const { name, value } = e.target;
+    setForm(prev => ({ ...prev, [name]: value }));
+  };
+
   return (
     <section
       id="contact"
@@ -54,13 +79,14 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-full">
             <div className="wow fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+            <p className=" text-base font-medium text-body-color">
+              Contact Us 
+              </p>
+              <h2 className="mt-5 text-lg font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
               Boost Your Business with Our Affordable Tech Solutions
               </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-              Contact Us for Tailored Solutions
-              </p>
-              <form>
+             
+              <form className="mt-5" onSubmit={handleForm}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -68,12 +94,31 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Name
+                        First Name:
                       </label>
-                      <input
+                      <input onChange={changeForm}
                         type="text"
-                        placeholder="Enter your name"
+                        name="firstName"
+                        placeholder="Enter your first name"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        required
+                      />
+                    </div>
+                  </div>       
+                  <div className="w-full px-4 md:w-1/2">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="text"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                        Last Name:
+                      </label>
+                      <input onChange={changeForm}
+                        name="lastName"
+                        type="text"
+                        placeholder="Enter your last name"
+                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        required
                       />
                     </div>
                   </div>
@@ -83,35 +128,58 @@ const Contact = () => {
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Email
+                        Your Email:
                       </label>
-                      <input
+                      <input onChange={changeForm}
+                        name="email"
                         type="email"
                         placeholder="Enter your email"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        required
                       />
                     </div>
                   </div>
+                  <div className="w-full px-4 md:w-1/2">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="text"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                        Phone Number (+61 412 345 678):
+                      </label>
+                      <input onChange={changeForm}
+                        name="phone_number"
+                        pattern="^\+61\s?\d{1,3}\s?\d{3}\s?\d{3}$"
+                        type="text"
+                        placeholder="+61 412 345 678"
+                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        required
+                      />
+                    </div>
+                  </div>
+              
                   <div className="w-full px-4">
                     <div className="mb-8">
                       <label
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Message
+                        Your Message:
                       </label>
-                      <textarea
+                      <textarea onChange={changeForm}
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-                      ></textarea>
+                      required></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-                      Submit Ticket
-                    </button>
+                    <input
+                      value="Submit" 
+                      type="submit" 
+                      className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 disabled:opacity-50 cursor-pointer"
+                    />
                   </div>
                 </div>
               </form>
