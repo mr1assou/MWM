@@ -88,9 +88,9 @@ const Hero = () => {
                 <div ref={buttonRef} className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 translate-y-[1300%]">
                   <Link
                     href="/contact/0"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    className="rounded-sm bg-primary px-8 py-4 text-xs sm:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Started
+                     Get Started
                   </Link>
                   
                 </div>

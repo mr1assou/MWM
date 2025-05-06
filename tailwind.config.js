@@ -39,7 +39,7 @@ module.exports = {
         },
       },
       animation: {
-        scroll: 'scroll 17s linear infinite',
+        scroll: 'scroll 20s linear infinite',
       },
       colors: {
         current: "currentColor",

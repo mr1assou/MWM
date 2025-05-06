@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | MWM Tech",
-  description: "Our commitment to protecting your privacy and personal data",
+  title: "Refund Policy | MWM Tech",
+  description: "Our commitment to fair and transparent refund policies",
 };
 
-const BlogSidebarPage = () => {
+const RefundPolicyPage = () => {
   return (
     <>
       <section className="overflow-hidden pb-[120px] pt-[150px] bg-gray-50 dark:bg-gray-900">
@@ -14,126 +14,132 @@ const BlogSidebarPage = () => {
             <div className="w-full px-4 lg:w-10/12">
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm py-8 px-5">
                 <h1 className="text-2xl md:text-4xl font-bold leading-tight text-black dark:text-white mb-8">
-                  Privacy Policy
+                  Refund Policy
                 </h1>
                 <p className="text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
-                  At MWM Tech, we value your privacy and are committed to safeguarding the personal information you share with us. This Privacy Policy outlines how we collect, use, and protect your data when you interact with our website and services.
+                  At MWM Tech, we strive to ensure complete satisfaction with our services. This Refund Policy outlines the terms and conditions under which refunds may be granted for our services.
                 </p>
                 
                 <div className="space-y-8">
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      1. Information We Collect
+                      1. Service Cancellation
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      We collect various types of information from you when you use our website, including:
+                      You may cancel your service subscription at any time. The following conditions apply:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        Personal Information: Name, email address, phone number, and company details when you fill out forms or request services.
+                        Monthly subscriptions: Cancellation will take effect at the end of the current billing cycle.
                       </li>
                       <li className="text-sm md:text-base">
-                        Usage Data: Information about how you access and use our website, including browser type, pages visited, and time spent on each page.
+                        Annual subscriptions: Pro-rated refunds are available for unused months.
+                      </li>
+                      <li className="text-sm md:text-base">
+                        Custom projects: Cancellation terms are specified in individual project contracts.
                       </li>
                     </ul>
                   </div>
 
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      2. How We Use Your Information
+                      2. Refund Eligibility
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      We use the information we collect in the following ways:
+                      Refunds may be granted under the following circumstances:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        To respond to your inquiries: We use your personal information to contact you regarding your questions, quotes, or requests for services.
+                        Service non-delivery: If we fail to deliver the promised service.
                       </li>
                       <li className="text-sm md:text-base">
-                        To improve our services: We analyze user behavior on our site to improve content, user experience, and service offerings.
+                        Technical issues: If the service is not functioning as described.
                       </li>
                       <li className="text-sm md:text-base">
-                        To send promotional or service-related communications: With your consent, we may send emails about new features, services, or special offers.
+                        Quality concerns: If the delivered service does not meet agreed-upon specifications.
                       </li>
                     </ul>
                   </div>
 
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      3. Data Sharing and Third Parties
+                      3. Refund Process
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      We do not sell or rent your personal data to third parties. However, we may share your information with trusted third parties for specific purposes, such as:
+                      To request a refund, please follow these steps:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        Payment processors: If you make a payment through our site, your payment information will be processed by secure payment gateways.
+                        Contact our support team within 14 days of the issue.
                       </li>
                       <li className="text-sm md:text-base">
-                        Service providers: We may share your data with third-party services like email marketing tools or cloud storage providers for efficient communication and data storage.
+                        Provide detailed information about the reason for the refund request.
+                      </li>
+                      <li className="text-sm md:text-base">
+                        Include any relevant documentation or evidence.
+                      </li>
+                    </ul>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mt-4">
+                      We will review your request within 5 business days and notify you of our decision.
+                    </p>
+                  </div>
+
+                  <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
+                    <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
+                      4. Non-Refundable Items
+                    </h3>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
+                      The following items are generally non-refundable:
+                    </p>
+                    <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
+                      <li className="text-sm md:text-base">
+                        Custom development work that has been completed and delivered.
+                      </li>
+                      <li className="text-sm md:text-base">
+                        Services that have been used or consumed.
+                      </li>
+                      <li className="text-sm md:text-base">
+                        Third-party services or products that we cannot return.
                       </li>
                     </ul>
                   </div>
 
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      4. Cookies and Tracking Technologies
+                      5. Payment Methods
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      We use cookies and tracking technologies to improve your browsing experience, analyze site performance, and optimize our services:
+                      Refunds will be processed using the original payment method:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        Cookies: Small files stored on your device that help us remember your preferences and actions across pages.
+                        Credit/Debit Cards: Refunds will appear on your statement within 5-10 business days.
                       </li>
                       <li className="text-sm md:text-base">
-                        Google Analytics: A service that tracks website usage and helps us measure website traffic and user interactions.
+                        Bank Transfers: Processing time may vary depending on your bank.
                       </li>
                       <li className="text-sm md:text-base">
-                        Other Tracking Tools: We may use additional services to track metrics such as the effectiveness of our marketing campaigns.
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
-                    <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      5. Data Security
-                    </h3>
-                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      At MWM Tech, we prioritize the security of your personal data by employing various technical and organizational measures:
-                    </p>
-                    <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
-                      <li className="text-sm md:text-base">
-                        Encryption: We use industry-standard encryption to protect your data during transmission.
-                      </li>
-                      <li className="text-sm md:text-base">
-                        Access Controls: Strict access controls ensure only authorized personnel can access your data.
-                      </li>
-                      <li className="text-sm md:text-base">
-                        Regular Security Audits: We conduct regular security assessments to maintain the highest security standards.
+                        Digital Wallets: Refunds are typically processed within 24-48 hours.
                       </li>
                     </ul>
                   </div>
 
                   <div>
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      6. Your Rights and Choices
+                      6. Contact Information
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      As a user, you have the right to:
+                      For any questions regarding our refund policy, please contact us:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        Access: Request copies of the personal data we hold about you.
+                        Email: support@mwmtech.com
                       </li>
                       <li className="text-sm md:text-base">
-                        Rectification: Ask us to correct any inaccurate information.
+                        Phone: +1 (555) 123-4567
                       </li>
                       <li className="text-sm md:text-base">
-                        Erasure: Request that we delete your personal data under certain circumstances.
-                      </li>
-                      <li className="text-sm md:text-base">
-                        Objection: Object to certain types of processing of your data.
+                        Business Hours: Monday to Friday, 9:00 AM to 5:00 PM EST
                       </li>
                     </ul>
                   </div>
@@ -147,4 +153,4 @@ const BlogSidebarPage = () => {
   );
 };
 
-export default BlogSidebarPage;
+export default RefundPolicyPage;

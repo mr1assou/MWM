@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
-import blogData from "./BlogData";
+import SingleBlog from "./SingleService";
+import blogData from "./ServiceData";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
     >
       <div className="container">
         <SectionTitle
-          title="Our Projects"
+          title="Our Services"
           paragraph="Explore our latest projects, where innovation meets excellence to deliver impactful and cutting-edge solutions."
           center
         />

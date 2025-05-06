@@ -13,6 +13,7 @@ const Contact = () => {
   const contactRef = useRef(null); // Reference for the contact section
   const [isVisible, setIsVisible] = useState(false); // To track visibility
   const [form,setForm]=useState({firstName:"",lastName:"",email:"",phone_number:"",message:"",id:id});
+  const [loading, setLoading] = useState(false);
   
   // Function to check if the component is in the viewport
   const checkIfInView = () => {
@@ -52,10 +53,12 @@ const Contact = () => {
 
   const handleForm = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const response = await fetch('/api/submitForm', {method: 'POST',headers: {'Content-Type': 'application/json',},
       body: JSON.stringify(form),
     });
     await response.json();
+    setLoading(false);
     if(response.ok){
       router.push('/thanks');
     }
@@ -176,9 +179,10 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <input
-                      value="Submit" 
-                      type="submit" 
+                      value={loading ? "Submitting..." : "Submit"}
+                      type="submit"
                       className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 disabled:opacity-50 cursor-pointer"
+                      disabled={loading}
                     />
                   </div>
                 </div>

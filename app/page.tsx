@@ -1,10 +1,10 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/projects";
+import Blog from "@/components/Projects";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
-import Features from "@/components/Features";
+import Services from "@/components/Services";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
@@ -22,12 +22,12 @@ export default function Home() {
       {/* <div className="w-screen h-screen bg-white fixed top-0 left-0 z-[9999]"></div>     */}
       <ScrollUp />
       <Hero />
-      <Features />
+      <Services />
       <Brands />
-      <Pricing />
+      <Blog />
+      {/* <Pricing /> */}
       <AboutSectionOne value="true"/>
       <AboutSectionTwo />
-      <Blog />
       <Testimonials />
       <Contact /> 
     </>
