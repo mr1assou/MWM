@@ -7,7 +7,7 @@ import ServiceData from '../../../components/Services/ServiceData'
 const BlogSidebarPage = () => {
   const params = useParams();
   const matchedService = ServiceData.find(service => service.id === Number(params.slug));
-  const {image}=matchedService;
+  const { image } = matchedService;
   return (
     <>
       <section className="overflow-hidden pb-[120px] pt-[130px]">
@@ -15,17 +15,15 @@ const BlogSidebarPage = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-11/12">
               <div>
-                <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                  Custom Web Development
-                </h1>
+             
                 <div>
                   <div className="mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[97/66] w-full sm:aspect-[79/20]">
+                    <div className="mb-10 w-full rounded overflow-hidden relative h-48 sm:h-[500px] 2xl:h-[600px]">
                       <Image
                         src={image}
-                        alt="image"
+                        alt=""
                         fill
-                        className="h-full w-full object-contain"
+                        className="object-cover object-center rounded"
                       />
                     </div>
                   </div>
@@ -74,7 +72,7 @@ const BlogSidebarPage = () => {
                       Ligula ullamcorper malesuada proin
                     </li>
                   </ul>
-                
+
                 </div>
               </div>
             </div>

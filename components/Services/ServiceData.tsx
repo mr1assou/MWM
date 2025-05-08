@@ -13,21 +13,21 @@ const ServiceData: Blog[] = [
     title: "Mobile App Development",
     paragraph:
       "We build robust mobile apps for iOS and Android using Flutter or React Native. Our apps focus on performance, offline support, and user-friendly interfaces tailored to your industry.",
-    image: "/images/services/mobile.jpg",
+    image: "/images/services/mb.jpg",
   },
   {
     id: 3,
     title: "E-Commerce Platforms",
     paragraph:
       "Custom e-commerce solutions with support for subscriptions, bulk orders, and secure payment integrations. We help businesses scale online with GST-compliant, user-friendly platforms.",
-    image: "/images/services/ecom.jpg",
+    image: "/images/services/ecom_service.jpg",
   },
   {
     id: 4,
     title: "UI/UX Design",
     paragraph:
       "We create user-centered interfaces that are both visually striking and functional. From wireframes to prototypes, we design experiences that improve engagement and usability.",
-    image: "/images/services/ui_ux.avif",
+    image: "/images/services/ui_ux.jpg",
   },
   {
     id: 5,

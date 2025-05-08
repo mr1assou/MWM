@@ -92,7 +92,6 @@ const Hero = () => {
                   >
                      Get Started
                   </Link>
-                  
                 </div>
               </div>
             </div>

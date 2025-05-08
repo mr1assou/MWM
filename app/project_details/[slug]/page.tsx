@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image";
 import { useParams } from 'next/navigation'; // Changed import
 import BlogData from '../../../components/Projects/BlogData'
@@ -13,7 +12,7 @@ const BlogSidebarPage = () => {
       <section className=" pb-[120px] pt-[130px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 lg:w-11/12">
+            <div className="w-full px-4 lg:w-12/12">
               <div>
                 {/* <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                   Custom Web Development
@@ -24,7 +23,7 @@ const BlogSidebarPage = () => {
                       src={image}
                       alt=""
                       fill
-                      className="object-cover object-center rounded"
+                      className="object-cover object-top rounded"
                     />
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">

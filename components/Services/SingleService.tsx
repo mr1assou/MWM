@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Blog } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
+import { usePathname } from "next/navigation";
 
-const SingleBlog = ({ blog ,id}: any) => {
+
+const SingleBlog = ({ blog, id }: any) => {
   const { title, image, paragraph } = blog;
   const imageWrapperRef = useRef<HTMLDivElement>(null);
   const [animated, setAnimated] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +43,14 @@ const SingleBlog = ({ blog ,id}: any) => {
     };
   }, [animated]);
 
+  useEffect(() => {
+    // Reset on route/path change
+    setAnimated(false);
+    if (imageWrapperRef.current) {
+      gsap.set(imageWrapperRef.current, { paddingBottom: "0%" });
+    }
+  }, [pathname]);
+  
   return (
     <div className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark h-[500px]">
       <Link href={`/service_details/${id}`} className="relative block w-full">
@@ -56,7 +66,7 @@ const SingleBlog = ({ blog ,id}: any) => {
         <h3>
           <Link
             href={`/service_details/${id}`}
-            className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+            className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-xl"
           >
             {title}
           </Link>
