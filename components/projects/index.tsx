@@ -1,5 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
+import SingleBlog from "./singleBlog";
 import BlogData from "./blogData";
 
 const Projects = () => {

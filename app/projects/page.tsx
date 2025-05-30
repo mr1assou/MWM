@@ -1,4 +1,4 @@
-import SingleBlog from "@/components/Projects/SingleBlog";
+import SingleBlog from "@/components/projects/singleBlog";
 import BlogData from "@/components/projects/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
