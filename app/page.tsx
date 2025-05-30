@@ -1,14 +1,14 @@
-import AboutSectionOne from "@/components/about/AboutSectionOne";
-import AboutSectionTwo from "@/components/about/AboutSectionTwo";
-import Projects from "@/components/projects";
-import Brands from "@/components/brands";
+import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Projects from "@/components/Projects";
+import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
-import Services from "@/components/services";
-import Hero from "@/components/hero";
-import Pricing from "@/components/pricing";
-import Testimonials from "@/components/testimonials";
-import Stats from "@/components/stats/Stats";
+import Services from "@/components/Services";
+import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
+import Testimonials from "@/components/Testimonials";
+import Stats from "@/components/Stats/Stats";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
