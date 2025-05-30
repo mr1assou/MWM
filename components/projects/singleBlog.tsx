@@ -80,7 +80,7 @@ const SingleBlog = ({ blog, id }: any) => {
             {title}
           </Link>
         </h3>
-        <p className="mb-6 pb-6 text-base font-medium text-body-color">
+        <p className="mb-6 pb-6 text-base font-medium text-body-color ">
           {paragraph}
         </p>
       </div>
