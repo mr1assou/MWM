@@ -14,7 +14,7 @@ const BlogSidebarPage = () => {
   // Refs for animation elements
   const titleRef = useRef(null);
   const imageRef = useRef(null);
-  const paragraphRef = useRef(null);
+  const paragraphRef = useRef(null)
   const featuresRef = useRef(null);
 
   useEffect(() => {
