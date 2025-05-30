@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useParams } from 'next/navigation';
-import BlogData from '@/components/projects/BlogData'
+import BlogData from '@/components/projects/BlogData';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
