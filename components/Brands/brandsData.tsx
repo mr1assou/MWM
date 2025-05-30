@@ -5,71 +5,68 @@ const brandsData: Brand[] = [
     id: 1,
     name: "Aws",
     image: "/images/brands/aws.png",
-    alt:"AWS logo - Cloud infrastructure partner for Sydney web development"
+    alt: "AWS Cloud Hosting - Professional Website Development Company in Sydney and Melbourne"
   },
   {
     id: 2,
     name: "Digital Ocean",
     image: "/images/brands/digital_ocean.png",
-    alt:"Digital Ocean logo - Web hosting solutions in Melbourne"
+    alt: "Digital Ocean Hosting - Website Development Services in Australia"
   },
   {
     id: 3,
     name: "Docker",
     image: "/images/brands/docker.png",
-    alt:"Docker logo - Containerization tools for web developers"
+    alt: "Docker Containerization - Custom Website Development Melbourne"
   },
   {
     id: 4,
     name: "React js",
     image: "/images/brands/react.png",
-    alt:"React.js logo - Frontend framework for Melbourne web apps"
+    alt: "React.js Framework - Sydney Web Developers Technology Stack"
   },
   {
     id: 5,
     name: "Git",
     image: "/images/brands/git.png",
-    alt:"Git logo - Version control used by Sydney developers"
+    alt: "Git Version Control - Website Development Company Australia"
   },
   {
     id: 6,
     name: "Spring Boot",
     image: "/images/brands/spring.png",
-    alt:"Spring Boot logo - Java backend development solutions"
+    alt: "Spring Boot - Professional Website Development Services"
   },
   {
     id: 7,
     name: "Python",
     image: "/images/brands/python.png",
-    alt:"Python logo - Web development programming language"
+    alt: "Python Development - Website Development Agency Sydney"
   },
   {
     id: 8,
     name: "Laravel",
     image: "/images/brands/laravel.png",
-    alt:"Laravel logo - PHP framework for ecommerce development"
+    alt: "Laravel Framework - Ecommerce Website Development Melbourne"
   },
   {
     id: 9,
     name: "Next js",
     image: "/images/brands/next_js.png",
-    alt:"Next.js logo - React framework for agency websites"
+    alt: "Next.js Framework - Website Development Company Sydney"
   },
   {
     id: 10,
     name: "Tailwind Css",
     image: "/images/brands/tailwind_css.png",
-    alt:"Tailwind CSS logo - Modern styling for web developers"
+    alt: "Tailwind CSS - Professional Website Design and Development"
   },
   {
     id: 11,
     name: "React Native",
     image: "/images/brands/react.png",
-    alt:"React Native logo - Mobile framework for Melbourne mobile apps"
+    alt: "React Native - Website Development Services Australia"
   }
- 
- 
-  
 ];
 
 export default brandsData;

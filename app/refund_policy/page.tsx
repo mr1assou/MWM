@@ -124,25 +124,6 @@ const RefundPolicyPage = () => {
                     </ul>
                   </div>
 
-                  <div>
-                    <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      6. Contact Information
-                    </h3>
-                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      For any questions regarding our refund policy, please contact us:
-                    </p>
-                    <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
-                      <li className="text-sm md:text-base">
-                        Email: support@mwmtech.com
-                      </li>
-                      <li className="text-sm md:text-base">
-                        Phone: +1 (555) 123-4567
-                      </li>
-                      <li className="text-sm md:text-base">
-                        Business Hours: Monday to Friday, 9:00 AM to 5:00 PM EST
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>

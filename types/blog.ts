@@ -5,4 +5,6 @@ export type Blog = {
   title: string;
   paragraph: string;
   image: string;
+  todoList: any;
+  alt:string;
 };
