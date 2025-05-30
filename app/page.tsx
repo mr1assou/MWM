@@ -22,7 +22,7 @@ export default function Home() {
     <>
       {/* <div className="w-screen h-screen bg-white fixed top-0 left-0 z-[9999]"></div>     */}
       <ScrollUp />
-      {/* <Hero /> */}
+      <Hero />
       <Stats />
       <Services />
       <Brands />
