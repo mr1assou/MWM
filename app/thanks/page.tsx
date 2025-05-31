@@ -39,7 +39,7 @@ const BlogDetailsPage = () => {
 
   return (
     <section
-      className="pb-[60px] pt-[80px] md:pb-[120px] md:pt-[130px] overflow-hidden"
+      className="pb-[60px] pt-[120px] md:pb-[120px] md:pt-[130px] overflow-hidden"
       ref={sectionRef}
     >
       <div className="container px-4">
