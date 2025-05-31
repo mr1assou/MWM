@@ -39,21 +39,21 @@ const BlogDetailsPage = () => {
 
   return (
     <section
-      className="pb-[120px] pt-[130px] overflow-hidden"
+      className="pb-[60px] pt-[80px] md:pb-[120px] md:pt-[130px] overflow-hidden"
       ref={sectionRef}
     >
-      <div className="container">
+      <div className="container px-4">
         <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="w-full  lg:w-10/12">
+          <div className="w-full px-4 lg:w-10/12">
             <div>
-              <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+              <h2 className="mb-6 md:mb-8 text-2xl md:text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                 Thank You! Our Team Will Contact You Shortly.
               </h2>
               <div>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  We’ve received your information and a member of our team will reach out to you as soon as possible. In the meantime, feel free to browse our website.
+                <p className="mb-6 md:mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  We've received your information and a member of our team will reach out to you as soon as possible. In the meantime, feel free to browse our website.
                 </p>
-                <div className="mb-10 w-full overflow-hidden rounded">
+                <div className="mb-6 md:mb-10 w-full overflow-hidden rounded">
                   <div className="relative aspect-[97/60] w-full sm:aspect-[50/34]">
                     <Image
                       src="/images/blog/thanks.png"
