@@ -30,6 +30,14 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5GV9KMH3"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <Providers>
           <GoogleAnalytics />
           <Header />
