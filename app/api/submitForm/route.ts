@@ -16,7 +16,8 @@ export async function POST(request: Request) {
     });
     const mailOptions = {
       from: 'marwane.assou@gmail.com', 
-      to: 'marwane.assoupf@gmail.com,wahab.hammoud2002@gmail.com,marouaneboussalem1@gmail.com',  
+      // ,wahab.hammoud2002@gmail.com,marouaneboussalem1@gmail.com
+      to: 'marwane.assoupf@gmail.com',  
       subject: 'New Contact Form Submission',
       html: `
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
