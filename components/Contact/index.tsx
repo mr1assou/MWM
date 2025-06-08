@@ -75,7 +75,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="overflow-hidden py-16 md:py-20 lg:py-28"
+      className="overflow-hidden py-16 md:py-20 lg:py-10"
       ref={contactRef} // Add the ref here
     >
       <div className="container">
