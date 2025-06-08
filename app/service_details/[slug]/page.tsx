@@ -129,22 +129,22 @@ const BlogSidebarPage = () => {
                     {/* Service Description */}
                     <div ref={descriptionRef} className="mb-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
                       <p className="mb-4 text-lg font-medium leading-relaxed text-body-color">
-                        {title === "Custom Web Development" && 
+                        {title === "Custom Website Development " && 
                           "We specialize in creating bespoke web solutions that perfectly align with your business goals. Our team of expert developers combines cutting-edge technologies with industry best practices to deliver websites that are not just visually appealing but also high-performing, secure, and scalable. From responsive design to advanced functionality, we ensure your web presence stands out in the digital landscape."
                         }
-                        {title === "Mobile App Development" && 
+                        {title === "Mobile Development " && 
                           "Our mobile app development service focuses on creating powerful, user-friendly applications that work seamlessly across all devices. Using modern frameworks like Flutter and React Native, we build apps that offer native-like performance while maintaining cross-platform compatibility. We prioritize user experience, offline functionality, and real-time features to keep your users engaged."
                         }
-                        {title === "E-Commerce Platforms" && 
+                        {title === "Ecommerce Website Development" && 
                           "Transform your business with our comprehensive e-commerce solutions. We build secure, scalable online stores that handle everything from product management to payment processing. Our platforms are designed to provide a seamless shopping experience while giving you complete control over your online business operations."
                         }
                         {title === "UI/UX Design" && 
                           "We create intuitive and engaging user experiences through thoughtful design. Our UI/UX process combines user research, creative design, and usability testing to deliver interfaces that not only look great but also provide exceptional user experiences. We focus on accessibility, usability, and brand consistency across all touchpoints."
                         }
-                        {title === "API Development & Integration" && 
+                        {title === "Api Integration and Optimisation" && 
                           "Our API development service ensures seamless communication between different systems and services. We build secure, well-documented APIs that follow industry best practices and standards. Whether you need to connect existing systems or create new integrations, our team delivers robust solutions that scale with your business."
                         }
-                        {title === "Maintenance & Scalability" && 
+                        {title === "Maintenance and scalability" && 
                           "Keep your digital assets running smoothly with our comprehensive maintenance and scalability services. We provide 24/7 monitoring, regular updates, and proactive maintenance to ensure your systems remain secure and performant. Our team helps you plan for growth and implement scalable solutions that grow with your business."
                         }
                       </p>
@@ -178,7 +178,7 @@ const BlogSidebarPage = () => {
                             </p>
                           </div>
                           <p className="text-sm text-body-color dark:text-body-color-dark pl-9">
-                            {title === "Custom Web Development" && (
+                            {title === "Custom Website Development " && (
                               index === 0 ? "Creating unique, brand-aligned websites with modern design principles and best practices." :
                               index === 1 ? "Ensuring your website looks and functions perfectly across all devices and screen sizes." :
                               index === 2 ? "Implementing advanced caching, code optimization, and CDN integration for lightning-fast loading." :
@@ -186,7 +186,7 @@ const BlogSidebarPage = () => {
                               index === 4 ? "Optimizing site structure, meta tags, and content for better search engine visibility." :
                               "Integrating user-friendly CMS solutions for easy content management and updates."
                             )}
-                            {title === "Mobile App Development" && (
+                            {title === "Mobile Development " && (
                               index === 0 ? "Building apps that work seamlessly across iOS and Android platforms using Flutter/React Native." :
                               index === 1 ? "Developing native applications with platform-specific features and optimizations." :
                               index === 2 ? "Implementing robust offline capabilities and data synchronization." :
@@ -194,7 +194,7 @@ const BlogSidebarPage = () => {
                               index === 4 ? "Optimizing app store listings and metadata for better visibility and downloads." :
                               "Tracking app performance metrics and user behavior for continuous improvement."
                             )}
-                            {title === "E-Commerce Platforms" && (
+                            {title === "Ecommerce Website Development" && (
                               index === 0 ? "Creating a complete online store with product catalog and shopping cart functionality." :
                               index === 1 ? "Integrating secure payment gateways and multiple payment options." :
                               index === 2 ? "Setting up real-time inventory tracking and stock management." :
@@ -210,7 +210,7 @@ const BlogSidebarPage = () => {
                               index === 4 ? "Creating reusable design components and style guides for consistency." :
                               "Ensuring designs meet WCAG standards for better accessibility."
                             )}
-                            {title === "API Development & Integration" && (
+                            {title === "Api Integration and Optimisation" && (
                               index === 0 ? "Building scalable and well-documented RESTful APIs following best practices." :
                               index === 1 ? "Implementing authentication, authorization, and data encryption." :
                               index === 2 ? "Connecting your systems with third-party services and platforms." :
@@ -218,7 +218,7 @@ const BlogSidebarPage = () => {
                               index === 4 ? "Optimizing API response times and implementing caching strategies." :
                               "Setting up automated testing and monitoring for API reliability."
                             )}
-                            {title === "Maintenance & Scalability" && (
+                            {title === "Maintenance and scalability" && (
                               index === 0 ? "Implementing 24/7 monitoring systems with real-time alerts and notifications." :
                               index === 1 ? "Regularly updating security patches and implementing new security measures." :
                               index === 2 ? "Optimizing system performance and resource utilization." :

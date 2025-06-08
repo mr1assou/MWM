@@ -27,7 +27,7 @@ export default function Home() {
       <Services />
       <Brands />
       <Projects />
-      {/* <Pricing /> */}
+      <Pricing />
       <AboutSectionOne value="true"/>
       <AboutSectionTwo />
       <Testimonials />
