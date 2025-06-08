@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       }
     });
     const mailOptions = {
-      from: 'marwane.assou@gmail.com', 
+      from: 'contat@mwmofficiel.com', 
       // ,wahab.hammoud2002@gmail.com,marouaneboussalem1@gmail.com
       to: 'marwane.assoupf@gmail.com',  
       subject: 'New Contact Form Submission',
