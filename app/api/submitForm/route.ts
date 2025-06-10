@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { firstName, lastName, email, phone_number, message ,id} = body;
+  const { firstName, lastName, email, phone_number, message, id } = body;
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp-relay.brevo.com",
@@ -14,10 +14,11 @@ export async function POST(request: Request) {
         pass: "kMhwZ2DHTE4qIn6J"         
       }
     });
-    const mailOptions = {
-      from: 'contact@mwmofficiel.com', 
-      // ,wahab.hammoud2002@gmail.com,marouaneboussalem1@gmail.com
-      to: 'marwane.assoupf@gmail.com',  
+
+    // Email to your team
+    const teamMailOptions = {
+      from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
+      to: 'marwane.assoupf@gmail.com',
       subject: 'New Contact Form Submission',
       html: `
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
@@ -43,14 +44,54 @@ export async function POST(request: Request) {
           </tr>
           <tr>
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;" className="bg-blue-600">${message}</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${message}</td>
           </tr>
         </table>
-    <p style="color: #666; margin-top: 20px;">
-      This email was sent from the contact form on your website.
-    </p>
-  `};
-    const info = await transporter.sendMail(mailOptions);
+        <p style="color: #666; margin-top: 20px;">
+          This email was sent from the contact form on your website.
+        </p>
+      `
+    };
+
+    // Confirmation email to client
+    const clientMailOptions = {
+      from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
+      to: email,
+      subject: 'Thank You for Contacting Us',
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #333; margin-bottom: 20px;">Thank You for Reaching Out!</h1>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+            <p style="color: #333; font-size: 16px; line-height: 1.6;">
+              Dear ${firstName} ${lastName},
+            </p>
+            <p style="color: #333; font-size: 16px; line-height: 1.6;">
+              Thank you for contacting us. We have received your message and a member of our team will review it shortly.
+            </p>
+            <p style="color: #333; font-size: 16px; line-height: 1.6;">
+              We typically respond within 24-48 hours during business days. Please keep your inquiry until one of our team members contacts you.
+            </p>
+          </div>
+
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #666; font-size: 14px;">
+              Best regards,<br>
+              The MWM Team
+            </p>
+          </div>
+        </div>
+      `
+    };
+
+    // Send both emails
+    await Promise.all([
+      transporter.sendMail(teamMailOptions),
+      transporter.sendMail(clientMailOptions)
+    ]);
+
     return NextResponse.json(
       { message: 'Form submitted successfully' },
       { status: 200 }
