@@ -233,8 +233,103 @@ const BlogSidebarPage = () => {
                   </div>
 
                   <p ref={paragraphRef} className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    {paragraph}
+                     {paragraph}
                   </p>
+
+                  {/* here rather than what we do i want you to give another title and write a paragraph for each service */}
+                  <h2 className="mb-6 text-2xl font-bold text-black dark:text-white">
+                      Our Expertise
+                    </h2>
+                    
+                    {/* Service Description */}
+                    <div ref={descriptionRef} className="mb-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
+                      <p className="mb-4 text-lg font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
+                        {title === "Custom Website Development " && 
+                          "- Elevate your digital presence with our comprehensive custom website development solutions\n\n" +
+                          "- Craft unique, purpose-built websites that perfectly reflect your brand identity\n\n" +
+                          "- Combine creative design with technical excellence for stunning, high-performing websites\n\n" +
+                          "- Leverage cutting-edge technologies and frameworks for scalable, secure solutions\n\n" +
+                          "- Implement SEO best practices to improve search engine visibility\n\n" +
+                          "- Build accessible websites that can be used by everyone\n\n" +
+                          "- Integrate analytics and tracking tools for data-driven decisions\n\n" +
+                          "- Conduct thorough testing and quality assurance for bug-free deployment\n\n" +
+                          "- Provide comprehensive documentation and training\n\n" +
+                          "- Design scalable solutions that grow with your business\n\n" +
+                          "- Offer ongoing support and maintenance\n\n" +
+                          "- Stay up-to-date with latest web development trends"
+                        }
+                        {title === "Mobile Development " && 
+                          "- Experience the future of mobile technology with comprehensive app development\n\n" +
+                          "- Create powerful, intuitive mobile applications for iOS and Android\n\n" +
+                          "- Develop both native and cross-platform applications using modern frameworks\n\n" +
+                          "- Implement advanced features like offline functionality and push notifications\n\n" +
+                          "- Build secure apps with data protection and privacy best practices\n\n" +
+                          "- Optimize app performance for fast loading and smooth operation\n\n" +
+                          "- Conduct thorough testing across various devices and screen sizes\n\n" +
+                          "- Implement analytics to understand user behavior and performance\n\n" +
+                          "- Provide regular updates and maintenance\n\n" +
+                          "- Offer comprehensive documentation and support\n\n" +
+                          "- Design scalable solutions for growing user bases\n\n" +
+                          "- Ensure compliance with platform guidelines"
+                        }
+                        {title === "Ecommerce Website Development" && 
+                          "- Launch your digital storefront with comprehensive e-commerce solutions\n\n" +
+                          "- Build secure, scalable online stores for business transformation\n\n" +
+                          "- Create custom e-commerce platforms tailored to your needs\n\n" +
+                          "- Implement real-time inventory management and order processing\n\n" +
+                          "- Ensure secure payment processing and data protection\n\n" +
+                          "- Optimize for performance and search engine visibility\n\n" +
+                          "- Test compatibility across all devices and platforms\n\n" +
+                          "- Track customer behavior and sales performance\n\n" +
+                          "- Provide regular updates and maintenance\n\n" +
+                          "- Offer comprehensive documentation and training\n\n" +
+                          "- Integrate with various payment gateways and shipping providers\n\n" +
+                          "- Ensure compliance with security standards"
+                        }
+                        {title === "UI/UX Design" && 
+                          "- Transform user interactions with innovative design services\n\n" +
+                          "- Blend creativity with user-centered design principles\n\n" +
+                          "- Conduct thorough user research and analysis\n\n" +
+                          "- Create detailed user personas and journey maps\n\n" +
+                          "- Develop wireframes and interactive prototypes\n\n" +
+                          "- Implement regular user testing and feedback collection\n\n" +
+                          "- Design accessible interfaces for all users\n\n" +
+                          "- Ensure responsive design across all devices\n\n" +
+                          "- Maintain design consistency and usability\n\n" +
+                          "- Provide comprehensive design documentation\n\n" +
+                          "- Create scalable and adaptable solutions\n\n" +
+                          "- Stay current with design trends and technologies"
+                        }
+                        {title === "Api Integration and Optimisation" && 
+                          "- Power your digital ecosystem with expert API development\n\n" +
+                          "- Build robust, secure APIs for seamless communication\n\n" +
+                          "- Create custom APIs tailored to your business needs\n\n" +
+                          "- Implement authentication and authorization features\n\n" +
+                          "- Ensure data protection and security best practices\n\n" +
+                          "- Optimize for fast response times and efficiency\n\n" +
+                          "- Conduct thorough testing for reliability\n\n" +
+                          "- Implement monitoring and logging systems\n\n" +
+                          "- Provide regular updates and maintenance\n\n" +
+                          "- Offer comprehensive documentation and support\n\n" +
+                          "- Integrate with third-party services\n\n" +
+                          "- Ensure compliance with security standards"
+                        }
+                        {title === "Maintenance and scalability" && 
+                          "- Ensure secure, performant, and scalable digital assets\n\n" +
+                          "- Provide proactive monitoring and regular updates\n\n" +
+                          "- Conduct system audits and performance assessments\n\n" +
+                          "- Implement security patches and updates\n\n" +
+                          "- Optimize system performance and resources\n\n" +
+                          "- Offer 24/7 monitoring and support\n\n" +
+                          "- Implement automated backup systems\n\n" +
+                          "- Conduct regular database optimization\n\n" +
+                          "- Provide comprehensive documentation\n\n" +
+                          "- Track system performance and usage\n\n" +
+                          "- Design scalable solutions for growth\n\n" +
+                          "- Ensure compliance with security standards"
+                        }
+                      </p>
+                    </div>
                 </div>
               </div>
             </div>

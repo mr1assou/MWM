@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useParams } from 'next/navigation';
-import BlogData from "@/components/projects/blogData";
+import BlogData from "@/components/Projects/BlogData";
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -14,7 +14,7 @@ const BlogSidebarPage = () => {
   // Refs for animation elements
   const titleRef = useRef(null);
   const imageRef = useRef(null);
-  const paragraphRef = useRef(null)
+  const paragraphRef = useRef(null);
   const featuresRef = useRef(null);
 
   useEffect(() => {
@@ -101,7 +101,8 @@ const BlogSidebarPage = () => {
                       className="object-cover object-top rounded"
                     />
                   </div>
-                  <p ref={paragraphRef} className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+
+                  <p ref={paragraphRef} className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed whitespace-pre-line space-y-4">
                     {paragraph}
                   </p>
 
@@ -137,8 +138,55 @@ const BlogSidebarPage = () => {
                               {item.title}
                             </p>
                           </div>
-                          <p className="text-sm text-body-color dark:text-body-color-dark pl-9">
-                            {item.description}
+                          <p className="text-sm text-body-color dark:text-body-color-dark pl-9 whitespace-pre-line space-y-4">
+                            {title === "Comprehensive Gym Management System" && (
+                              index === 0 ? "Automated member registration, renewal, and access control systems\n\n" :
+                              index === 1 ? "Intelligent class booking and instructor management platform\n\n" :
+                              index === 2 ? "Secure payment gateway with automated billing and invoicing\n\n" :
+                              index === 3 ? "Real-time monitoring of gym equipment usage and maintenance\n\n" :
+                              index === 4 ? "Comprehensive reporting and member engagement metrics\n\n" :
+                              "Seamless mobile experience for members and staff"
+                            )}
+                            {title === "Intelligent Hotel Booking Mobile Application" && (
+                              index === 0 ? "Instant room availability and reservation management\n\n" :
+                              index === 1 ? "Secure payment gateway with multiple currency support\n\n" :
+                              index === 2 ? "Comprehensive guest profile and preference tracking\n\n" :
+                              index === 3 ? "Automated room allocation and housekeeping coordination\n\n" :
+                              index === 4 ? "Real-time occupancy and revenue analytics\n\n" :
+                              "Streamlined digital check-in and key management"
+                            )}
+                            {title === "Enterprise-Grade E-Commerce Platform" && (
+                              index === 0 ? "Real-time stock tracking and automated reordering\n\n" :
+                              index === 1 ? "Streamlined order fulfillment and shipping integration\n\n" :
+                              index === 2 ? "Comprehensive customer profiles and purchase history\n\n" :
+                              index === 3 ? "Secure multi-currency payment processing\n\n" :
+                              index === 4 ? "Detailed sales and customer behavior analytics\n\n" :
+                              "Responsive design for seamless mobile shopping"
+                            )}
+                            {title === "Integrated Healthcare Management System" && (
+                              index === 0 ? "Comprehensive patient records and history tracking\n\n" :
+                              index === 1 ? "Automated appointment booking and reminders\n\n" :
+                              index === 2 ? "Secure and compliant electronic health records\n\n" :
+                              index === 3 ? "Automated insurance processing and billing\n\n" :
+                              index === 4 ? "Digital prescription and medication tracking\n\n" :
+                              "Secure video consultations and remote care"
+                            )}
+                            {title === "Advanced Learning Management System" && (
+                              index === 0 ? "Comprehensive course creation and content delivery\n\n" :
+                              index === 1 ? "Detailed progress monitoring and assessment tools\n\n" :
+                              index === 2 ? "Organized learning resources and materials\n\n" :
+                              index === 3 ? "Automated grading and performance analytics\n\n" :
+                              index === 4 ? "Integrated messaging and collaboration tools\n\n" :
+                              "Seamless learning experience across devices"
+                            )}
+                            {title === "Comprehensive Real Estate Management Platform" && (
+                              index === 0 ? "Comprehensive property listing and tracking\n\n" :
+                              index === 1 ? "Detailed client profiles and interaction history\n\n" :
+                              index === 2 ? "Secure storage and processing of legal documents\n\n" :
+                              index === 3 ? "End-to-end property transaction management\n\n" :
+                              index === 4 ? "Real-time market trends and property valuation\n\n" :
+                              "On-the-go property and client management"
+                            )}
                           </p>
                         </div>
                       ))}
