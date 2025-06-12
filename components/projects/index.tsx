@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./singleBlog";
-import BlogData from "./blogData";
+import BlogData from "./BlogData";
 
 const Projects = () => {
   return (
