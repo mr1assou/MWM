@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useParams } from 'next/navigation';
-import BlogData from "@/components/Projects/blogData";
+import BlogData from "@/components/Projects/BlogData";
 
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
