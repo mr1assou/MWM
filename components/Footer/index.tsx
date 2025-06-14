@@ -46,14 +46,14 @@ const Footer = () => {
                       Our Projects
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/pricing"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Pricing
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/about"
