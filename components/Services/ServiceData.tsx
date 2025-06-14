@@ -8,9 +8,9 @@ const ServiceData: Blog[] = [
       "Build high-performance websites tailored to your brand. We focus on speed, security, and scalability to deliver seamless digital experiences that grow with your business.",
     image: "/images/services/web_dev.jpg",
     todoList: [
-      "Custom website development in Sydney, Melbourne & Perth",
-      "Professional website design and development",
-      "Website development company services",
+      "Custom website development",
+      "Professional website design ",
+      "Website development services",
       "Responsive design for all devices",
       "SEO-optimized website structure",
       "Content management system integration"
@@ -24,10 +24,10 @@ const ServiceData: Blog[] = [
       "We build robust mobile apps for iOS and Android using Flutter or React Native. Our apps focus on performance, offline support, and user-friendly interfaces tailored to your industry.",
     image: "/images/services/mb.jpg",
     todoList: [
-      "Website development agency services",
-      "Custom website and mobile development",
-      "Professional web development",
-      "Website design and development",
+      "Mobile development services",
+      "Custom mobile development",
+      "Professional mobile development",
+      "mobile design and development",
       "App store optimization",
       "Performance monitoring"
     ],
@@ -45,7 +45,7 @@ const ServiceData: Blog[] = [
       "Payment gateway integration",
       "Inventory management system",
       "Order processing automation",
-      "Ecommerce website developer services"
+      "Ecommerce website services"
     ],
     alt: "Ecommerce Website Development Services in Sydney, Melbourne and Perth - Professional Online Store Development"
   },
@@ -56,11 +56,9 @@ const ServiceData: Blog[] = [
       "We create user-centered interfaces that are both visually striking and functional. From wireframes to prototypes, we design experiences that improve engagement and usability.",
     image: "/images/services/ui_ux.jpg",
     todoList: [
-      "Website design and development",
-      "Custom website development",
+      "Website design",
       "Professional web design",
       "User experience optimization",
-      "Design system development",
       "Accessibility implementation"
     ],
     alt: "Website Design and Development Services in Sydney, Melbourne and Perth - Professional Web Design Agency"
@@ -72,7 +70,7 @@ const ServiceData: Blog[] = [
       "We build secure, scalable APIs and ensure seamless integration with your systems. Our team prioritizes performance, documentation, and long-term maintainability.",
     image: "/images/services/api.jpg",
     todoList: [
-      "Website development company services",
+      "Website development  services",
       "Custom website development",
       "API development and integration",
       "Third-party integrations",
@@ -88,10 +86,9 @@ const ServiceData: Blog[] = [
       "Ensure your systems run smoothly with our 24/7 monitoring, updates, and optimization services. We help you stay compliant and ready for future growth.",
     image: "/images/services/maintenance.jpg",
     todoList: [
-      "Website development services Australia",
-      "Sydney website development",
+      "monitoring",
+      "security measures",
       "Melbourne website development",
-      "Perth website development",
       "Performance optimization",
       "Scalability planning"
     ],

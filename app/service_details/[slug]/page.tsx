@@ -243,7 +243,7 @@ const BlogSidebarPage = () => {
                     
                     {/* Service Description */}
                     <div ref={descriptionRef} className="mb-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
-                      <p className="mb-4 text-lg font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
+                      <p className="mb-4 text-md font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
                         {title === "Custom Website Development " && 
                           "- Elevate your digital presence with our comprehensive custom website development solutions\n\n" +
                           "- Craft unique, purpose-built websites that perfectly reflect your brand identity\n\n" +

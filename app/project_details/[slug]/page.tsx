@@ -198,7 +198,7 @@ const BlogSidebarPage = () => {
 
                     {/* Service Description */}
                     <div className="mt-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
-                      <p className="mb-4 text-lg font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
+                      <p className="mb-4 text-md font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
                         {title === 'Comprehensive Gym Management System' &&
                           "- Centralized member database for easy management and tracking\n\n" +
                           "- Automated class scheduling, booking, and attendance tracking\n\n" +
