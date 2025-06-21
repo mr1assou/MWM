@@ -6,7 +6,7 @@ import Image from "next/image";
 
 declare global {
   interface Window {
-    gtag: (param1: string, param2: string, param3: object) => void;
+    dataLayer: any[];
   }
 }
 
@@ -16,13 +16,13 @@ const ThanksPage = () => {
 
   // Event snippet for form submission to get a lead conversion page
   useEffect(() => {
-    if (typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-16983946654/eUUuCO2C798aEJ7ryaI_",
-        value: 1.0,
-        currency: "MAD",
-      });
-    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "conversion",
+      send_to: "AW-16983946654/eUUuCO2C798aEJ7ryaI_",
+      value: 1.0,
+      currency: "MAD",
+    });
   }, []);
 
   // Check if the section is in the viewport
