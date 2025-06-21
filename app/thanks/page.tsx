@@ -37,7 +37,7 @@ const ThanksPage = () => {
     conversionSent.current = true;
 
     // Pixel fallback method
-    const img = new Image();
+    const img = new window.Image();
     img.src = `https://www.googleadservices.com/pagead/conversion/16983946654/?label=eUUuCO2C798aEJ7ryaI_&value=1.0&currency_code=MAD&guid=ON&script=0`;
     img.style.display = 'none';
     document.body.appendChild(img);
