@@ -91,7 +91,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center xl:mt-3 3xl:mt-20"
+                className="wow fadeInUp mx-auto max-w-[800px] text-center xl:mt-3 2xl:mt-20"
                 data-wow-delay=".2s"
               >
                 <h1 ref={titleRef} className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight -translate-x-[400%]">
