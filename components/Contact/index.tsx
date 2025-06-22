@@ -152,9 +152,8 @@ const Contact = () => {
                       </label>
                       <input onChange={changeForm}
                         name="phone_number"
-                  
                         type="text"
-                        placeholder="+61 412 345 678"
+                        placeholder="0412345678"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                         required
                       />
