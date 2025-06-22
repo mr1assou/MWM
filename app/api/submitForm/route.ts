@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     // Email to your team
     const teamMailOptions = {
       from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
-      to: 'marwane.assoupf@gmail.com',
+      to: 'marwane.assoupf@gmail.com,marouaneboussalem1@gmail.com',
       subject: 'New Contact Form Submission',
       html: `
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
