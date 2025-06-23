@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Projects from "@/components/projects";
@@ -12,9 +12,11 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Stats from "@/components/Stats/Stats";
 import Image from "next/image";
+
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [showLoader, setShowLoader] = useState(true);
+  const loaderShownRef = useRef(false);
 
   useEffect(() => {
     // Check if loader has been shown before in this session
@@ -23,19 +25,39 @@ export default function HomePage() {
     if (loaderShown) {
       setIsLoading(false);
       setShowLoader(false);
-    } else {
-      // Set timeout to hide loader after 2 seconds
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-        // Fade out effect before removing from DOM
-        setTimeout(() => setShowLoader(false), 500);
-      }, 2000);
-
-      // Mark loader as shown in session storage
-      sessionStorage.setItem('loaderShown', 'true');
-      
-      return () => clearTimeout(timer);
+      return;
     }
+
+    // Set a maximum timeout (5 seconds) as fallback
+    const maxTimer = setTimeout(() => {
+      if (loaderShownRef.current) return;
+      finishLoading();
+    }, 5000);
+
+    // Function to complete loading
+    const finishLoading = () => {
+      loaderShownRef.current = true;
+      setIsLoading(false);
+      setTimeout(() => {
+        setShowLoader(false);
+        sessionStorage.setItem('loaderShown', 'true');
+      }, 500);
+      clearTimeout(maxTimer);
+    };
+
+    // Check if page is already loaded
+    if (document.readyState === 'complete') {
+      finishLoading();
+      return;
+    }
+
+    // Wait for all page resources to load
+    window.addEventListener('load', finishLoading);
+    
+    return () => {
+      window.removeEventListener('load', finishLoading);
+      clearTimeout(maxTimer);
+    };
   }, []);
 
   return (
@@ -62,8 +84,8 @@ export default function HomePage() {
               <Image 
                 src="/images/logo/logo_light.png" 
                 alt="Website Logo" 
-                className="w-16 h-16 animate-soft-bounce"
                 fill
+                className="w-16 h-16 animate-soft-bounce"
               />
             </div>
           </div>
@@ -87,16 +109,18 @@ export default function HomePage() {
       )}
 
       {/* Main page content */}
-      <ScrollUp />
-      <Hero />
-      <Stats />
-      <Services />
-      <Brands />
-      <Projects />
-      <AboutSectionOne value="true"/>
-      <AboutSectionTwo />
-      <Testimonials />
-      <Contact />
+      <div className={showLoader ? 'opacity-0' : 'opacity-100 transition-opacity duration-300'}>
+        <ScrollUp />
+        <Hero />
+        <Stats />
+        <Services />
+        <Brands />
+        <Projects />
+        <AboutSectionOne value="true"/>
+        <AboutSectionTwo />
+        <Testimonials />
+        <Contact />
+      </div>
       
       {/* Global styles for animations */}
       <style jsx global>{`
