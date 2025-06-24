@@ -11,7 +11,7 @@ const Services = () => {
       <div className="container">
         <SectionTitle
           title="Our Services"
-          paragraph="Explore our latest projects, where innovation meets excellence to deliver impactful and cutting-edge solutions."
+          paragraph="We provide professional website design and development services across AUS to help grow your business."
           center
         />
 

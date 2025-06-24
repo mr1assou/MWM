@@ -35,40 +35,40 @@ const BlogData: Blog[] = [
     ],
     alt: "Gym Management System Development by Website Development Company in Sydney, Melbourne and Perth"
   },
-  {
-    id: 2,
-    title: "Intelligent Hotel Booking Mobile Application",
-    paragraph:
-      "Enhance your hospitality business with our real-time booking system featuring secure payments and personalized guest recommendations.",
-    image: "/images/blog/mobile_hotel.jpg",
-    todoList: [
-      {
-        title: "Real-time Booking",
-        description: "Instant room availability and reservation management"
-      },
-      {
-        title: "Payment Processing",
-        description: "Secure payment gateway with multiple currency support"
-      },
-      {
-        title: "Guest Management",
-        description: "Comprehensive guest profile and preference tracking"
-      },
-      {
-        title: "Room Management",
-        description: "Automated room allocation and housekeeping coordination"
-      },
-      {
-        title: "Analytics Dashboard",
-        description: "Real-time occupancy and revenue analytics"
-      },
-      {
-        title: "Mobile Check-in",
-        description: "Streamlined digital check-in and key management"
-      }
-    ],
-    alt: "Hotel Booking App Development by Website Development Agency in Sydney, Melbourne and Perth"
-  },
+  // {
+  //   id: 2,
+  //   title: "Intelligent Hotel Booking Mobile Application",
+  //   paragraph:
+  //     "Enhance your hospitality business with our real-time booking system featuring secure payments and personalized guest recommendations.",
+  //   image: "/images/blog/mobile_hotel.jpg",
+  //   todoList: [
+  //     {
+  //       title: "Real-time Booking",
+  //       description: "Instant room availability and reservation management"
+  //     },
+  //     {
+  //       title: "Payment Processing",
+  //       description: "Secure payment gateway with multiple currency support"
+  //     },
+  //     {
+  //       title: "Guest Management",
+  //       description: "Comprehensive guest profile and preference tracking"
+  //     },
+  //     {
+  //       title: "Room Management",
+  //       description: "Automated room allocation and housekeeping coordination"
+  //     },
+  //     {
+  //       title: "Analytics Dashboard",
+  //       description: "Real-time occupancy and revenue analytics"
+  //     },
+  //     {
+  //       title: "Mobile Check-in",
+  //       description: "Streamlined digital check-in and key management"
+  //     }
+  //   ],
+  //   alt: "Hotel Booking App Development by Website Development Agency in Sydney, Melbourne and Perth"
+  // },
   {
     id: 3,
     title: "Enterprise-Grade E-Commerce Platform",

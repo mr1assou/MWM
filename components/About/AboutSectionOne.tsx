@@ -55,7 +55,7 @@ const AboutSectionOne = ({ value }) => {
         {
           value && <SectionTitle
             title="About Us"
-            paragraph="We are a mobile and website development company providing custom digital solutions to businesses in Melbourne, Sydney, and across Australia. "
+            paragraph="We are a  website development company providing custom digital solutions to businesses in Melbourne, Sydney,Perth and across Australia. "
             center
           />
         }
@@ -64,7 +64,7 @@ const AboutSectionOne = ({ value }) => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Crafted for Startups, SaaS, Businesses, and Individuals in Australia."
-                paragraph="The core philosophy of our agency is to deliver high-quality, reliable mobile and website development services tailored to each client's needs—ensuring performance, security, and scalability, all at a fair and transparent price."
+                paragraph="As a premier website development company, we specialize in high-quality website development services—delivering tailored solutions with uncompromising performance, ironclad security, and scalable architecture at transparent, competitive pricing."
                 mb="44px"
               />
 
@@ -73,6 +73,7 @@ const AboutSectionOne = ({ value }) => {
                 data-wow-delay=".15s"
               >
                 <div className="mx-[-12px] flex flex-wrap">
+                  
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="high-quality" />
                     <List text="Affordable Pricing" />

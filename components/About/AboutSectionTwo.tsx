@@ -72,8 +72,7 @@ const AboutSectionTwo = () => {
                   High Quality
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  We deliver digital excellence with robust mobile and website development, scalable solutions, and flawless design,
-                  ensuring high performance and user experiences that drive results.
+                  We deliver digital excellence across Sydney, Melbourne, Perth, and throughout Australia with robust website development services. Our scalable solutions and flawless design ensure high-performance user experiences that drive measurable results for local businesses
                 </p>
               </div>
               <div className="mb-9">
@@ -81,8 +80,7 @@ const AboutSectionTwo = () => {
                   Affordable Pricing
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Whether you're just starting or scaling your business,
-                  our flexible plans ensure you get the best value for your investment. contact us to get the perfect plan tailored to your needs and budget.
+                  Whether starting or scaling your business in Sydney, Melbourne, Perth or across Australia, our flexible website development plans ensure premium value. Contact us today for  web solutions tailored to your specific needs, timeline, and budget.
                 </p>
               </div>
               <div className="mb-1">
@@ -90,7 +88,7 @@ const AboutSectionTwo = () => {
                   Dedicated Support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Contact us anytime for assistance. We provide quick responses  to ensure your project is always exactly as you need it.
+                  Contact us anytime if you are in Sydney, Melbourne, Perth or across Australia for immediate assistance. Our local teams provide rapid responses to ensure your website development project is delivered exactly to your specifications, timeline, and budget.
                 </p>
               </div>
             </div>
