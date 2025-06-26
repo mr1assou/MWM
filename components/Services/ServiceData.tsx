@@ -5,7 +5,7 @@ const ServiceData: Blog[] = [
     id: 1,
     title: "Website Design & Development ",
     paragraph:
-      "Professional website development company offering complete website development services. Our specialists build high-performance sites with custom design, smooth functionality, and scalable solutions to enhance your digital presence and drive business growth.",
+      "Professional website development company offering complete website development services. Our specialists build high-performance sites with custom design, smooth functionality, and scalable solutions to enhance and improve digital presence .",
     image: "/images/services/web_dev.jpg",
     todoList: [
       "Custom website development",
