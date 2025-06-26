@@ -1,4 +1,4 @@
-// app/page.tsx (Server Component - maintains metadata)
+// app/page.tsx
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Projects from "@/components/projects";
@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Stats from "@/components/Stats/Stats";
 import { Metadata } from "next";
 import Loader from "@/components/Common/Loader";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Website Development Company Sydney & Melbourne | Ecommerce Web Development",
@@ -18,20 +19,29 @@ export const metadata: Metadata = {
   keywords: "web development sydney, sydney web developers, website development company melbourne, custom website development melbourne, website development services, ecommerce website developer, website development agency",
 };
 
+// Content component to wrap all page content
+const PageContent = () => (
+  <div className="content-area">
+    <ScrollUp />
+    <Hero />
+    <Stats />
+    <Services />
+    <Brands />
+    <Projects />
+    <AboutSectionOne value="true"/>
+    <AboutSectionTwo />
+    <Testimonials />
+    <Contact />
+  </div>
+);
+
 export default function Home() {
   return (
     <>
       <Loader />
-      <ScrollUp />
-      <Hero />
-      <Stats />
-      <Services />
-      <Brands />
-      <Projects />
-      <AboutSectionOne value="true"/>
-      <AboutSectionTwo />
-      <Testimonials />
-      <Contact /> 
+      <Suspense fallback={null}>
+        <PageContent />
+      </Suspense>
     </>
   );
 }

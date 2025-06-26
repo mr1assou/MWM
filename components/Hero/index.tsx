@@ -11,7 +11,7 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] md:h-[100vh] h-screen"
       >
         <div
-          className="hero-image-container absolute inset-0 z-[-10] overflow-hidden"
+          className="hero-image-container absolute inset-0 z-[-10] overflow-hidden h-0"
         >
           <Image 
             src="/images/hero/5.png" 
