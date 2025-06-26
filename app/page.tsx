@@ -1,6 +1,16 @@
 // app/page.tsx (Server Component - maintains metadata)
-import HomePage from "@/components/Home";
+import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Projects from "@/components/projects";
+import Brands from "@/components/Brands";
+import ScrollUp from "@/components/Common/ScrollUp";
+import Contact from "@/components/Contact";
+import Services from "@/components/Services";
+import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
+import Stats from "@/components/Stats/Stats";
 import { Metadata } from "next";
+import Loader from "@/components/Common/Loader";
 
 export const metadata: Metadata = {
   title: "Website Development Company Sydney & Melbourne | Ecommerce Web Development",
@@ -9,5 +19,19 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <HomePage />;
+  return (
+    <>
+      <Loader />
+      <ScrollUp />
+      <Hero />
+      <Stats />
+      <Services />
+      <Brands />
+      <Projects />
+      <AboutSectionOne value="true"/>
+      <AboutSectionTwo />
+      <Testimonials />
+      <Contact /> 
+    </>
+  );
 }
