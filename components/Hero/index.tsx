@@ -98,7 +98,7 @@ const Hero = () => {
                   Professional Website Design & Development Services in Australia
                 </h1>
                 <h2 ref={subtitleRef} className="mb-12 text-base !leading-relaxed text-body-color-dark sm:text-lg md:text-xl translate-x-[400%]">
-                  Leading website development company in Australia, specializing in custom website design, and professional web solutions for businesses in Sydney, Melbourne, Perth, and across Australia.
+                  Leading website development company in Australia, specializing in custom website design, and professional web solutions for businesses in Sydney, Perth, and across Australia.
                 </h2>
                 <div ref={buttonRef} className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 translate-y-[1300%]">
                   <Link
