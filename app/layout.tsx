@@ -8,6 +8,7 @@ import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import Script from "next/script";
+import CookieConsent from "@/components/Common/CookieConsent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,6 +74,7 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
         </Providers>
+        <CookieConsent />
       </body>
     </html>
   );
