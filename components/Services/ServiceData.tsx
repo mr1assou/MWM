@@ -88,7 +88,7 @@ const ServiceData: Blog[] = [
     todoList: [
       "monitoring",
       "security measures",
-      "Melbourne website development",
+      "website development optimized",
       "Performance optimization",
       "Scalability planning"
     ],

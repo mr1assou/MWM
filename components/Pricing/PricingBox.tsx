@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import Link from 'next/link';
+import { FaRocket } from "react-icons/fa";
 
 const PricingBox = (props: {
   price: string;
@@ -74,7 +75,7 @@ const PricingBox = (props: {
         }
 
         <p className="mt-2 mtext-base text-body-color text-sm">{subtitle}</p>
-        <div className='flex gap-2 items-center'>
+        {/* <div className='flex gap-2 items-center'>
           <p className="price mt-7 text-xs font-bold text-black dark:text-white line-through">
             AU${price}
           </p>
@@ -84,12 +85,14 @@ const PricingBox = (props: {
         </div>
         <p className="price mt-5 text-4xl font-bold text-black dark:text-white">
           AU${(parseFloat(price) - parseFloat(price) * parseFloat(discount)/100)-1}
-        </p>
+        </p> */}
 
         <div className=" border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10 mt-10">
-          <Link href={`/contact/${id}`} className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Choose Plan
+          <Link href={`/contact/${id}`} className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp gap-2">
+            Order Now
+            <FaRocket />
           </Link>
+
         </div>
         <div className='mt-7'>{children}</div>
         <div className="absolute bottom-0 right-0 z-[-1]">

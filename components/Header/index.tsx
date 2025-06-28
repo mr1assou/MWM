@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { FaRocket } from "react-icons/fa";
 
 const Header = () => {
   // Navbar toggle
@@ -71,8 +72,8 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
-              <div>
+            <div className=" flex w-full items-center justify-between pr-4">
+              <div >
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -151,13 +152,13 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="flex items-center justify-end pr-16 lg:pr-0 ">
                     <Link
                                     href="/contact/0"
-                                    className="rounded-full bg-primary px-2 py-2 sm:px-8 sm:py-4 text-xs sm:text-md font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2"
+                                    className=" rounded-full bg-primary px-2 py-2 sm:px-8 sm:py-4 text-[9px] sm:text-md font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2"
                                   >
                                     Order Now
-                              
+                                    <FaRocket />
                                   </Link>
                 <div>
                   <ThemeToggler />

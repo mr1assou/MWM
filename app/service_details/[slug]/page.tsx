@@ -129,7 +129,7 @@ const BlogSidebarPage = () => {
                     {/* Service Description */}
                     <div ref={descriptionRef} className="mb-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
                       <p className="mb-4 text-lg font-medium leading-relaxed text-body-color">
-                        {title === "Custom Website Development " && 
+                        {title === "Website Design & Development " && 
                           "We specialize in creating bespoke web solutions that perfectly align with your business goals. Our team of expert developers combines cutting-edge technologies with industry best practices to deliver websites that are not just visually appealing but also high-performing, secure, and scalable. From responsive design to advanced functionality, we ensure your web presence stands out in the digital landscape."
                         }
                         {title === "Mobile Development " && 
@@ -178,7 +178,7 @@ const BlogSidebarPage = () => {
                             </p>
                           </div>
                           <p className="text-sm text-body-color dark:text-body-color-dark pl-9">
-                            {title === "Custom Website Development " && (
+                            {title === "Website Design & Development" && (
                               index === 0 ? "Creating unique, brand-aligned websites with modern design principles and best practices." :
                               index === 1 ? "Ensuring your website looks and functions perfectly across all devices and screen sizes." :
                               index === 2 ? "Implementing advanced caching, code optimization, and CDN integration for lightning-fast loading." :
@@ -244,7 +244,7 @@ const BlogSidebarPage = () => {
                     {/* Service Description */}
                     <div ref={descriptionRef} className="mb-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
                       <p className="mb-4 text-md font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
-                        {title === "Custom Website Development " && 
+                        {title === "Website Design & Development " && 
                           "- Elevate your digital presence with our comprehensive custom website development solutions\n\n" +
                           "- Craft unique, purpose-built websites that perfectly reflect your brand identity\n\n" +
                           "- Combine creative design with technical excellence for stunning, high-performing websites\n\n" +

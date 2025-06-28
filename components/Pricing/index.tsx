@@ -4,14 +4,15 @@ import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
+
 const Pricing = () => {
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="Clear, budget-friendly pricing with no hidden fees  get the best value for your investment."
+          title="Our Affordable Packages"
+          paragraph="Our Website design & development agency affordable packages with transparent pricing,providing high-quality website development at great value."
           center
           width="665px"
         />
@@ -68,7 +69,7 @@ const Pricing = () => {
             <OfferList text="Website hosting" status="active" />
           </PricingBox>
         </div>
-        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Mobile App Development Packages</h2>
+        {/* <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Mobile App Development Packages</h2>
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
           <PricingBox
             packageName="Basic"
@@ -121,7 +122,7 @@ const Pricing = () => {
             <OfferList text="12 months free technical support" status="active" />
             <OfferList text="Deployment of the app in App store and Play store" status="active" />
           </PricingBox>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import { FaRocket } from "react-icons/fa";
 import gsap from 'gsap';
 
 const ContactForm = () => {
@@ -150,7 +151,7 @@ const ContactForm = () => {
         </div>
         <div className="w-full px-4">
           <input
-            value={loading ? "Submitting..." : "Submit"}
+            value={loading ? "Ordering..." : "Order Now"}
             type="submit"
             className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 disabled:opacity-50 cursor-pointer"
             disabled={loading}

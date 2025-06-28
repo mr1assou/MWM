@@ -12,7 +12,7 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Pricing"
+        pageName="Packages"
         description="Our competitive pricing designed to be affordable for anyone looking to start their journey. Whether you're a small business or an enterprise, we offer flexible plans to suit your needs and budget."
       />
       <Pricing />

@@ -54,7 +54,7 @@ const SingleBlog = ({ blog, id }: any) => {
   }, [animated, imageLoaded]);
   
   return (
-    <div className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark h-[500px]">
+    <div className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark h-[600px]">
       <Link href={`/service_details/${id}`} className="relative block w-full">
         <div
           ref={imageWrapperRef}

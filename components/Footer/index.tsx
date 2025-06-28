@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+              <div className="mb-12 max-w-[360px] lg:mb-16 ">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
                     src="/images/logo/logo.png"
@@ -46,14 +46,14 @@ const Footer = () => {
                       Our Projects
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
                       href="/pricing"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Pricing
+                      Packages
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       href="/about"
