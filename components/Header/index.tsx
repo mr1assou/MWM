@@ -155,7 +155,7 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0 ">
                     <Link
                                     href="/contact/0"
-                                    className=" rounded-full bg-primary px-2 py-2 sm:px-8 sm:py-4 text-[9px] sm:text-md font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2"
+                                    className=" rounded-full bg-primary px-2 py-2 sm:px-8 sm:py-4 text-[9px] sm:text-[13px] font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2"
                                   >
                                     Order Now
                                     <FaRocket />
