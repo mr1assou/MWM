@@ -1,72 +1,30 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import gsap from "gsap";
-import { usePathname, useSearchParams } from "next/navigation";
 
-const SingleBlog = ({ blog, id }: any) => {
-  const { title, image, paragraph,alt } = blog;
-  const imageWrapperRef = useRef<HTMLDivElement>(null);
-  const [animated, setAnimated] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+interface Blog {
+  title: string;
+  image: string;
+  paragraph: string;
+  alt: string;
+}
 
-  // Reset animation when route changes
-  useEffect(() => {
-    setAnimated(false);
-    setImageLoaded(false);
-    if (imageWrapperRef.current) {
-      gsap.set(imageWrapperRef.current, { paddingBottom: "0%" });
-    }
-  }, [pathname, searchParams]);
+interface Props {
+  blog: Blog;
+  id: string | number;
+}
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!imageWrapperRef.current || !imageLoaded) return;
-      
-      const rect = imageWrapperRef.current.getBoundingClientRect();
-      if (
-        rect.top < window.innerHeight - 5 &&
-        rect.bottom >= 0 &&
-        !animated
-      ) {
-        setAnimated(true);
-        gsap.to(imageWrapperRef.current, {
-          paddingBottom: `${(22 / 37) * 100}%`,
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      }
-    };
+const SingleBlog = ({ blog, id }: Props) => {
+  const { title, image, paragraph, alt } = blog;
 
-    window.addEventListener("scroll", handleScroll);
-    if (imageWrapperRef.current) {
-      gsap.set(imageWrapperRef.current, { paddingBottom: "0%" });
-    }
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [animated, imageLoaded]);
-  
   return (
     <div className="hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark h-[600px]">
       <Link href={`/service_details/${id}`} className="relative block w-full">
-        <div
-          ref={imageWrapperRef}
-          className="relative w-full"
-          style={{ paddingBottom: "0%", transition: "padding-bottom 0.3s" }}
-        >
+        <div className="relative w-full aspect-[37/22]">
           <Image 
             src={image} 
             alt={alt} 
             fill 
-            style={{ objectFit: "cover" }}
-            onLoad={() => setImageLoaded(true)}
+            className="object-cover"
             priority
           />
         </div>
