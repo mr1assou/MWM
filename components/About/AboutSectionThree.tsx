@@ -65,20 +65,7 @@ const AboutSectionThree = ({ value }) => {
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                <div className="mx-[-12px] flex flex-wrap">
-                  
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="high-quality" />
-                    <List text="Affordable Pricing" />
-                    <List text="Dedicated Support" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Fast & Reliable Delivery" />
-                    <List text="Latest Tech Stack" />
-                    <List text=" End-to-End Development" />
-                  </div>
-                </div>
+           
               </div>
             </div>
 
