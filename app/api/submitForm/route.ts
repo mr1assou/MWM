@@ -6,12 +6,12 @@ export async function POST(request: Request) {
   const { firstName, lastName, email, phone_number, message, id } = body;
   try {
     const transporter = nodemailer.createTransport({
-      host: "smtp-relay.brevo.com",
-      port: 587,
-      secure: false, // Use STARTTLS
+      host: "smtp.hostinger.com",
+      port: 465,
+      secure: true, // Use STARTTLS
       auth: {
-        user: "75a2ad002@smtp-brevo.com", 
-        pass: "kMhwZ2DHTE4qIn6J"         
+        user: "contact@mwmofficiel.com", 
+        pass: "@Marwane2003"         
       }
     });
 
