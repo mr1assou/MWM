@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Packages",
-  description: "Packages",
+  description: "Choose from our affordable website development and web design packages tailored for businesses in Perth, Sydney, Brisbane, and Adelaide. Get a professional website that drives results.",
   // other metadata
 };
 

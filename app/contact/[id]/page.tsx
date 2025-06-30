@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Page ",
-  description: "This is Contact Page for Startup Nextjs Template",
+  description: "Get in touch with our expert web design and development team. Whether you’re in Perth, Sydney, Brisbane, or Adelaide, we’re ready to help you build a powerful online presence. Contact us today for a free consultation or project quote.",
   // other metadata
 };
 

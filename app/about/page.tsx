@@ -8,7 +8,7 @@ import AboutSectionFour from "@/components/About/AboutSectionFour";
 
 export const metadata: Metadata = {
   title: "About Page ",
-  description: "About page for our agency",
+  description: "Learn more about our web design and development agency, proudly serving businesses in Perth, Brisbane, Sydney, and Adelaide. We specialize in creating custom websites that drive results. With a passionate team of designers and developers, we help companies grow online through professional website development and digital strategy.",
   // other metadata
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | MWM Tech",
-  description: "Our commitment to protecting your privacy and personal data",
+  description: "Learn how MWM Tech protects your privacy and handles your personal data with care and transparency.",
 };
 
 const BlogSidebarPage = () => {
