@@ -19,7 +19,7 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Website Development Company Sydney,Adelaide,Brisbane,Perth",
-  description: "Leading website development company in Sydney and Melbourne. Expert ecommerce website development, custom website design, and professional web development services across Australia.",
+  description: "Leading website development company in Sydney,Adelaide,Brisbane,Perth. Expert ecommerce website development, custom website design, and professional web development services across Australia.",
   keywords: "web development sydney, sydney web developers, website development company melbourne, custom website development melbourne, website development services, ecommerce website developer, website development agency",
 };
 
@@ -49,7 +49,7 @@ export default function Home() {
       <Suspense fallback={null}>
         <PageContent />
       </Suspense>
-      <CookieConsent />
+      {/* Ensure CookieConsent is rendered outside Suspense */}
     </>
   );
 }
