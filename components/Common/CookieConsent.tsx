@@ -4,23 +4,23 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const CookieConsent = () => {
-  const [showBanner, setShowBanner] = useState(false);
-  const [hasChecked, setHasChecked] = useState(false); // Ensure we wait for client check
+  const [showBanner, setShowBanner] = useState<boolean | null>(null);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      setShowBanner(true);
-    }
-    setHasChecked(true); // only render once localStorage is checked
+    // Check localStorage only after component mounts (client-side)
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    setShowBanner(cookieConsent === null);
   }, []);
 
   const handleConsent = (decision: 'accepted' | 'declined') => {
     localStorage.setItem('cookieConsent', decision);
-    setShowBanner(false); // immediately hide banner
+    setShowBanner(false);  // Immediately hide the banner
   };
 
-  if (!hasChecked || !showBanner) return null;
+  // Render nothing until we've checked localStorage or if banner shouldn't show
+  if (showBanner === null || !showBanner) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 shadow-lg">
