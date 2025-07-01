@@ -4,28 +4,23 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const CookieConsent = () => {
-  const [showBanner, setShowBanner] = useState<boolean | null>(null);
+  const [showBanner, setShowBanner] = useState(false);
+  const [hasChecked, setHasChecked] = useState(false); // Ensure we wait for client check
 
   useEffect(() => {
-    // Check localStorage only after component mounts (client-side)
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    setShowBanner(cookieConsent === null);
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      setShowBanner(true);
+    }
+    setHasChecked(true); // only render once localStorage is checked
   }, []);
 
   const handleConsent = (decision: 'accepted' | 'declined') => {
     localStorage.setItem('cookieConsent', decision);
-    setShowBanner(false);
+    setShowBanner(false); // immediately hide banner
   };
 
-  // Don't render until we've checked localStorage
-  if (showBanner === null) {
-    return null;
-  }
-
-  // Don't render if banner shouldn't be shown
-  if (!showBanner) {
-    return null;
-  }
+  if (!hasChecked || !showBanner) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 shadow-lg">
@@ -43,14 +38,14 @@ const CookieConsent = () => {
             <button
               onClick={() => handleConsent('declined')}
               className="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
-              type="button" // Prevent accidental form submission
+              type="button"
             >
               Decline
             </button>
             <button
               onClick={() => handleConsent('accepted')}
               className="px-6 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md transition-colors duration-200"
-              type="button" // Prevent accidental form submission
+              type="button"
             >
               Accept All
             </button>
