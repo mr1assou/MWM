@@ -99,7 +99,7 @@ const Hero = () => {
                 <h1 ref={titleRef} className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight -translate-x-[400%]">
                   #1 Professional Website Design and Development for  Businesses Across{' '}
                   <span className="inline-flex items-center ">
-                    US 
+                    United States 
                   <Image src="/images/logo/united_state.png" alt="united state" width={50} height={50} className="ml-5"/>
                   </span>
                 </h1>
