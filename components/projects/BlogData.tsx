@@ -33,7 +33,7 @@ const BlogData: Blog[] = [
         description: "Seamless mobile experience for members and staff"
       }
     ],
-    alt: "Gym Management System Development by Website Development Company in Sydney, Melbourne and Perth"
+    alt: "Gym Management System Development by Website Development Company in US"
   },
   // {
   //   id: 2,
@@ -101,7 +101,7 @@ const BlogData: Blog[] = [
         description: "Responsive design for seamless mobile shopping"
       }
     ],
-    alt: "Ecommerce Website Development Services in Sydney, Melbourne and Perth - Professional Online Store Development"
+    alt: "Ecommerce Website Development Services - Professional Online Store Development"
   },
   {
     id: 4,
@@ -135,7 +135,7 @@ const BlogData: Blog[] = [
         description: "Secure video consultations and remote care"
       }
     ],
-    alt: "Healthcare Website Development by Website Development Company in Sydney, Melbourne and Perth"
+    alt: "Healthcare Website Development by Website Development Agency"
   },
   {
     id: 5,
@@ -169,7 +169,7 @@ const BlogData: Blog[] = [
         description: "Seamless learning experience across devices"
       }
     ],
-    alt: "Learning Management System Development by Website Development Agency in Sydney, Melbourne and Perth"
+    alt: "Learning Management System Development by Website Development Agency in US"
   },
   {
     id: 6,
@@ -203,7 +203,7 @@ const BlogData: Blog[] = [
         description: "On-the-go property and client management"
       }
     ],
-    alt: "Real Estate Website Development Services in Sydney, Melbourne and Perth - Professional Property Management Platform"
+    alt: "Real Estate Website Development Services in US - Professional Property Management Platform"
   },
 ];
 

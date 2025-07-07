@@ -18,9 +18,8 @@ import CookieConsent from "@/components/Common/CookieConsent";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Website Development Company Sydney,Adelaide,Brisbane,Perth",
-  description: "Leading website development company in Sydney,Adelaide,Brisbane,Perth. Expert ecommerce website development, custom website design, and professional web development services across Australia.",
-  keywords: "web development sydney, sydney web developers, website development company melbourne, custom website development melbourne, website development services, ecommerce website developer, website development agency",
+  title: "Website design and development agency",
+  description: "Leading website development company in the United States. Expert ecommerce website development, custom website design, and professional web development services across the country.",
 };
 
 // Content component to wrap all page content

@@ -15,7 +15,7 @@ const ServiceData: Blog[] = [
       "SEO-optimized website structure",
       "Content management system integration"
     ],
-    alt: "Website Development Company in Sydney, Melbourne and Perth - Custom Website Development Services"
+    alt: "Website Development Agency  - Custom Website Design and Development Services"
   },
   // {
   //   id: 2,
@@ -77,13 +77,13 @@ const ServiceData: Blog[] = [
       "Performance optimization",
       "Website maintenance services"
     ],
-    alt: "Website Development Company in Sydney, Melbourne and Perth - Professional Web Development Services"
+    alt: "Website Development Agency - Professional Web Development Services"
   },
   {
     id: 6,
     title: "Maintenance and scalability",
     paragraph:
-      "In addition to our website design and development services, we provide expert 24/7 maintenance and scalability support in Sydney, Melbourne, Perth, and across Australia.We ensure your site stays fast, secure, and ready to grow with your business.",
+      "In addition to our website design and development services, we provide expert 24/7 maintenance and scalability support across US.We ensure your site stays fast, secure, and ready to grow with your business.",
     image: "/images/services/maintenance.jpg",
     todoList: [
       "monitoring",
@@ -92,7 +92,7 @@ const ServiceData: Blog[] = [
       "Performance optimization",
       "Scalability planning"
     ],
-    alt: "Website Development Services in Australia - Professional Website Maintenance and Support in Sydney, Melbourne and Perth"
+    alt: "Website Development Services in United State - Professional Website Maintenance and Support in US"
   },
 ];
 

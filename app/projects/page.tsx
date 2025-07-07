@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Explore the portfolio of MWM Tech showcasing our website development and web design projects for clients in Perth, Sydney, Brisbane, and Adelaide.",
+  description: "Explore the portfolio of MWM Tech showcasing our website development and web design projects for clients in United States.",
   // other metadata
 };
 

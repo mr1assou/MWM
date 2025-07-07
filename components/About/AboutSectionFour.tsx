@@ -63,7 +63,7 @@ const AboutSectionFour = () => {
           <div className="w-full px-4 lg:w-1/2">
             <SectionTitle
               title="Our Expertise"
-              paragraph="Our expertise in website design and development spans across major Australian cities including Sydney, Perth, Brisbane, and Adelaide. We provide tailored digital solutions for diverse businesses such as restaurants, startups, SaaS companies, retail shops, and professional services. Our team of skilled developers and designers focuses on creating visually appealing, high-performance websites that meet the unique needs of businesses in these vibrant markets. No matter where you are in Australia, we deliver professional, results-driven web solutions to help your business grow and succeed online."
+              paragraph="Our expertise in website design and development spans across US. We provide tailored digital solutions for diverse businesses such as restaurants, startups, SaaS companies, retail shops, and professional services. Our team of skilled developers and designers focuses on creating visually appealing, high-performance websites that meet the unique needs of businesses in these vibrant markets. No matter where you are in US, we deliver professional, results-driven web solutions to help your business grow and succeed online."
               mb="44px"
             />
             

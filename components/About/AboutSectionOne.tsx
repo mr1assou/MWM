@@ -55,7 +55,7 @@ const AboutSectionOne = ({ value }) => {
         {
           value && <SectionTitle
             title="About Us"
-            paragraph="We are a  website development company providing custom digital solutions to businesses in Melbourne, Sydney,Perth and across Australia. "
+            paragraph="We are a  website development company providing custom digital solutions to businesses across United States"
             center
           />
         }
@@ -64,7 +64,7 @@ const AboutSectionOne = ({ value }) => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Why Us?"
-                paragraph="Why Us? Because we are home to expert developers and creative professionals dedicated to delivering top-tier website design and development projects. As one of Australia’s leading web agencies, we combine technical excellence with innovative solutions to create websites that not only look great but perform flawlessly. Our commitment to quality, transparent communication, and timely delivery ensures your project is handled with the utmost professionalism. Choose us for reliable, high-impact digital solutions that help your business thrive in the competitive Australian market."
+                paragraph="Why Us? Because we are home to expert developers and creative professionals dedicated to delivering top-tier website design and development projects. As one of US leading web agencies, we combine technical excellence with innovative solutions to create websites that not only look great but perform flawlessly. Our commitment to quality, transparent communication, and timely delivery ensures your project is handled with the utmost professionalism. Choose us for reliable, high-impact digital solutions that help your business thrive in the competitive US market."
                 mb="44px"
               />
 

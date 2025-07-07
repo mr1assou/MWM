@@ -56,8 +56,8 @@ const AboutSectionThree = ({ value }) => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startups, SaaS, Businesses, and Individuals in Australia."
-                paragraph="Our website design and development services are expertly crafted for startups, SaaS companies, businesses, and individuals across Australia. We specialize in creating responsive, user-centric websites that help you stand out in a competitive market. Whether you need a sleek website for your SaaS product, an engaging online presence for your startup, or a professional site to showcase your business, our tailored solutions deliver exceptional performance and value. Partner with us to grow your brand with affordable, high-quality web design and development services designed specifically for the Australian market."
+                title="Crafted for Startups, SaaS, Businesses, and Individuals in US."
+                paragraph="Our website design and development services are expertly crafted for startups, SaaS companies, businesses, and individuals across United States. We specialize in creating responsive, user-centric websites that help you stand out in a competitive market. Whether you need a sleek website for your SaaS product, an engaging online presence for your startup, or a professional site to showcase your business, our tailored solutions deliver exceptional performance and value. Partner with us to grow your brand with affordable, high-quality web design and development services designed specifically for the US market."
                 mb="44px"
               />
 
