@@ -92,7 +92,7 @@ const ServiceData: Blog[] = [
       "Performance optimization",
       "Scalability planning"
     ],
-    alt: "Website Development Services in United State - Professional Website Maintenance and Support in US"
+    alt: "Website Development Services in United States - Professional Website Maintenance and Support in US"
   },
 ];
 
