@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +29,17 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-[99]">
+    <div className="fixed bottom-8 right-8 z-[99] flex flex-col items-end gap-3">
+      {/* WhatsApp icon, visible only on mobile and tablet */}
+      <a
+        href="https://wa.me/212635103092"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="lg:hidden bg-green-500 p-3 rounded-full shadow-lg text-white text-3xl"
+        aria-label="Contact us on WhatsApp"
+      >
+        <FaWhatsapp />
+      </a>
       {isVisible && (
         <div
           onClick={scrollToTop}

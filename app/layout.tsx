@@ -9,6 +9,7 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import Script from "next/script";
 import CookieConsent from "@/components/Common/CookieConsent";
+import { FaWhatsapp } from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,12 +68,21 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        {/* WhatsApp icon, visible only on mobile and tablet */}
+        <a
+          href="https://wa.me/212635103092"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 z-[99] lg:hidden bg-green-500 p-3 rounded-full shadow-lg text-white text-3xl"
+          aria-label="Contact us on WhatsApp"
+        >
+          <FaWhatsapp />
+        </a>
         <Providers>
           <GoogleAnalytics />
           <Header />
           {children}
           <Footer />
-          <ScrollToTop />
         </Providers>
         <CookieConsent />
       </body>

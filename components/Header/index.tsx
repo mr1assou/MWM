@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { FaRocket } from "react-icons/fa";
+import { FaRocket, FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   // Navbar toggle
@@ -160,6 +160,16 @@ const Header = () => {
                                     Order Now
                                     <FaRocket />
                                   </Link>
+                {/* WhatsApp icon, visible only on desktop */}
+                <a
+                  href="https://web.whatsapp.com/send?phone=212635103092"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:inline-block text-green-500 text-2xl ml-4"
+                  aria-label="Contact us on WhatsApp"
+                >
+                  <FaWhatsapp />
+                </a>
                 <div>
                   <ThemeToggler />
                 </div>
