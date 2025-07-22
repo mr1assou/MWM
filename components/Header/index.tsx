@@ -162,7 +162,7 @@ const Header = () => {
                                   </Link>
                 {/* WhatsApp icon, visible only on desktop */}
                 <a
-                  href="https://web.whatsapp.com/send?phone=212635103092"
+                  href="https://web.whatsapp.com/send?phone=33746318175"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden lg:inline-block text-green-500 text-2xl ml-4"
