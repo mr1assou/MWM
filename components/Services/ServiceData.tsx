@@ -83,7 +83,7 @@ const ServiceData: Blog[] = [
     id: 6,
     title: "Maintenance and scalability",
     paragraph:
-      "In addition to our website design and development services, we provide expert 24/7 maintenance and scalability support across US.We ensure your site stays fast, secure, and ready to grow with your business.",
+      "In addition to our website design and development services, we provide expert maintenance and scalability support across US.We ensure your site stays fast, secure, and ready to grow with your business.",
     image: "/images/services/maintenance.jpg",
     todoList: [
       "monitoring",
