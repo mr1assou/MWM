@@ -96,7 +96,7 @@ const Hero = () => {
                 sm:max-w-[800px] w-full text-start sm:text-center  2xl:mt-20"
                 data-wow-delay=".2s"
               >
-                <h1 ref={titleRef} className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight -translate-x-[400%]">
+                <h1 ref={titleRef} className="text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight -translate-x-[400%]">
                   #1 Professional Website Design and Development for  Businesses Across{' '}
                   <span className="inline-flex items-center ">
                     United States 
@@ -104,13 +104,13 @@ const Hero = () => {
                   </span>
                 </h1>
 
-                <h2 ref={subtitleRef} className="mb-12 text-base !leading-relaxed text-body-color-dark sm:text-lg md:text-xl translate-x-[400%]">
-                  Leading website development company in United States, specializing in custom website design and development, and professional web solutions for businesses across the country.
+                <h2 ref={subtitleRef} className="text-base !leading-relaxed text-body-color-dark sm:text-lg md:text-xl translate-x-[400%]">
+                  Leading website development company in United States, specializing in custom website agency and development, and professional web solutions for businesses across the country.
                 </h2>
                 <div ref={buttonRef} className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 translate-y-[1300%]">
                   <Link
                     href="/contact/0"
-                    className="group rounded-sm bg-primary px-8 py-4 text-xs sm:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2"
+                    className="group rounded-sm bg-primary px-8 py-4 text-xs sm:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 flex items-center gap-2 mt-5"
                   >
                     Order Your Website
                     <FaRocket />
