@@ -90,7 +90,7 @@ const Hero = () => {
             {/* Title */}
             <h1
               ref={titleRef}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
+              className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
             >
               #1 Professional Website Design and Development for Businesses Across{" "}
               <span className="inline-flex items-center gap-3">
