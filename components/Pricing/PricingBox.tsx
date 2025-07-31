@@ -54,7 +54,7 @@ const PricingBox = (props: {
 
   return (
     
-    <div className={`w-full relative rounded-xl ${center === "true" ? "border-2 border-primary md:-translate-y-20" : "border-2 border-gray-100"}`}>
+    <div className={`w-full relative rounded-xl ${center === "true" ? "border-2 border-primary lg:-translate-y-20" : "border-2 border-gray-100"}`}>
       {
         center == "true" &&
         <div className='w-full bg-primary h-[40px] absolute top-0 left-0 z-50 rounded-tl-lg rounded-tr-lg flex justify-center items-center text-xl text-white'>
