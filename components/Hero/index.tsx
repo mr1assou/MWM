@@ -92,7 +92,8 @@ const Hero = () => {
               ref={titleRef}
               className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
             >
-              #1 Professional Website Design and Development for Businesses Across{" "}
+              Stunning,high-Converting websites to grow your business Across{" "}
+
               <span className="inline-flex items-center gap-3">
                 United States
                 <Image
@@ -110,7 +111,7 @@ const Hero = () => {
               ref={subtitleRef}
               className="text-sm sm:text-base md:text-lg text-body-color-dark translate-x-[400%]"
             >
-              Leading website development company in United States, specializing in custom website
+              Leading website development agency in United States, specializing in custom website
               agency and development, and professional web solutions for businesses across the
               country.
             </h2>
