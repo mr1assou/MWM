@@ -70,7 +70,7 @@ export default function RootLayout({
         </noscript>
         {/* WhatsApp icon, visible only on mobile and tablet */}
         <a
-          href="https://wa.me/212635103092"
+          href="https://wa.me/33746318175"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-[99] lg:hidden bg-green-500 p-3 rounded-full shadow-lg text-white text-3xl"
