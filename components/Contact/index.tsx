@@ -16,7 +16,7 @@ const Contact = () => {
                 Contact Us
               </p>
               <h2 className="mt-5 text-lg font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Boost Your Business with Our Affordable Tech Solutions
+                Get in Touch and Start Growing Today
               </h2>
               <ContactForm />
             </div>
