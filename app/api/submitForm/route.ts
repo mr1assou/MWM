@@ -10,8 +10,8 @@ export async function POST(request: Request) {
       port: 465,
       secure: true, // Use STARTTLS
       auth: {
-        user: "contact@mwmofficiel.com", 
-        pass: "@Marwane2003"         
+        user: "contact@mwmofficiel.com",
+        pass: "@Marwane2003"
       }
     });
 
@@ -82,7 +82,13 @@ export async function POST(request: Request) {
               The MWM Team
             </p>
           </div>
-          <img src="https://www.mwmofficiel.com/images/blog/thanks.png" alt="Thanks" />
+          <img 
+  src="https://www.mwmofficiel.com/images/blog/thanks.png" 
+  alt="Thanks" 
+  style="max-width: 100%; height: auto; display: block; margin: 0 auto;" 
+  width="600"
+/>
+
         </div>
       `
     };
