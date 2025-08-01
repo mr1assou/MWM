@@ -82,6 +82,7 @@ export async function POST(request: Request) {
               The MWM Team
             </p>
           </div>
+          <img src="https://www.mwmofficiel.com/images/blog/thanks.png" alt="Thanks" />
         </div>
       `
     };
