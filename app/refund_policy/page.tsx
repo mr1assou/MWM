@@ -82,6 +82,9 @@ const RefundPolicyPage = () => {
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mt-4">
                       We will review your request within 5 business days and notify you of our decision.
                     </p>
+                    <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mt-4">
+                      For refund requests, please contact us at: contact@mwmofficiel.com
+                    </p>
                   </div>
 
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">

@@ -108,6 +108,10 @@ const Footer = () => {
                       Contact Us
                     </Link>
                   </li>
+                  <li className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color">
+                    contact@mwmofficiel.com
+                  </li>
+                    
                 </ul>
               </div>
             </div>
