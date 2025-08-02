@@ -61,7 +61,7 @@ export async function POST(request: Request) {
       subject: 'Thank You for Contacting Us',
       html: `
         <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
-  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 2px solid #0d6efd;">
+  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
     
     <!-- Logo Header -->
     <div style="text-align: center; padding: 10px;">
