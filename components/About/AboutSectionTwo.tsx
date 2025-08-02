@@ -49,14 +49,14 @@ const AboutSectionTwo = () => {
                 src="/images/about/4.jpg"
                 alt="website design and development"
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none object-cover"
+                className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain"
                 priority
               />
               <Image
                 src="/images/about/4.jpg"
                 alt="website design and development"
                 fill
-                className="drop-shadow-three hidden dark:block dark:drop-shadow-none object-cover"
+                className="drop-shadow-three hidden dark:block dark:drop-shadow-none object-contain"
               />
             </div>
           </div>
