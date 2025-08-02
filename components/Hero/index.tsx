@@ -113,7 +113,7 @@ const Hero = () => {
               className="text-sm sm:text-base md:text-lg text-body-color-dark translate-x-[400%]"
             >
                 We provide robust websites and software solutions, specializing in crafting custom, 
-                high‑performance websites and delivering professional digital strategies that help businesses nationwide grow and succeed online.
+                high‑performance websites and delivering professional digital strategies that help businesses nationwide.
             </h2>
 
             {/* CTA Button */}
