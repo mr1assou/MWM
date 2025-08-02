@@ -46,14 +46,14 @@ const AboutSectionFour = () => {
               style={{ transform: 'translateZ(0)' }}
             >
               <Image
-                src="/images/about/3.png"
+                src="/images/about/7.jpg"
                 alt="website design and development"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain"
                 priority
               />
               <Image
-                src="/images/about/3.png"
+                src="/images/about/7.jpg"
                 alt="website design and development"
                 fill
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none object-contain"

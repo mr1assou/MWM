@@ -97,17 +97,17 @@ const AboutSectionOne = ({ value }) => {
                 style={{ transform: 'translateZ(0)' }}
               >
                 <Image
-                  src="/images/blog/thanks.png"
+                  src="/images/about/6.jpg"
                   alt="about image"
                   fill
-                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                  className="drop-shadow-three dark:hidden dark:drop-shadow-none object-cover"
                   priority
                 />
                 <Image
-                  src="/images/blog/thanks.png"
+                  src="/images/about/6.jpg"
                   alt="website development company"
                   fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0 object-contain"
+                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0 object-cover"
                 />
               </div>
             </div>
