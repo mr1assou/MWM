@@ -61,7 +61,7 @@ export async function POST(request: Request) {
       subject: 'Thank You for Contacting Us',
       html: `
         <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
-  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 3px solid #0d6efd;">
+  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 2px solid #0d6efd;">
     
     <!-- Logo Header -->
     <div style="text-align: center; padding: 10px;">
@@ -79,7 +79,7 @@ export async function POST(request: Request) {
       </p>
       
       <!-- Thanks Image -->
-      <img src="https://mwmofficiel.com/images/hero/5.jpg" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
+      <img src="https://mwmofficiel.com/images/hero/email_image.png" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
       
       <p style="color: #333; font-size: 16px; margin-top: 10px;">
         <strong>We’re here to build something amazing together!</strong>
