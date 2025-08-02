@@ -69,7 +69,7 @@ export async function POST(request: Request) {
     </div>
     
     <!-- Main Content -->
-    <div style="padding: 30px; text-align: center;">
+    <div style="padding: 10px; text-align: center;">
       <h1 style="color: #333; font-size: 24px; margin-bottom: 10px;">Thank You, ${firstName}!</h1>
       <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
         We truly appreciate you reaching out to MWM. Your message has been received, and our team is already reviewing your request.  
@@ -79,11 +79,10 @@ export async function POST(request: Request) {
       </p>
       
       <!-- Thanks Image -->
-      <img src="https://mwmofficiel.com/images/hero/email_image.png" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
-      
-      <p style="color: #333; font-size: 16px; margin-top: 10px;">
-        <strong>We’re here to build something amazing together!</strong>
-      </p>
+      <img src="https://mwmofficiel.com/images/hero/email_image.png" 
+     alt="Thank You" 
+     style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
+
     </div>
     
     <!-- Footer -->
