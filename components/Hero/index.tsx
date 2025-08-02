@@ -80,7 +80,7 @@ const Hero = () => {
           src="/images/hero/5.jpg"
           alt="Professional Website Design & Development"
           fill
-          className="object-cover object-bottom brightness-50"
+          className="object-cover object-left sm:object-bottom brightness-50"
           priority
         />
       </div>
