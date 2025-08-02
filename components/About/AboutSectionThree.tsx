@@ -80,14 +80,14 @@ const AboutSectionThree = ({ value }) => {
                   src="/images/about/5.png"
                   alt="about image"
                   fill
-                  className="drop-shadow-three dark:hidden dark:drop-shadow-none object-cover"
+                  className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain sm:object-cover"
                   priority
                 />
                 <Image
                   src="/images/about/5.png"
                   alt="website development company"
                   fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0 object-cover"
+                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0 object-contain sm:object-cover"
                 />
               </div>
             </div>

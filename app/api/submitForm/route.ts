@@ -18,7 +18,8 @@ export async function POST(request: Request) {
     // Email to your team
     const teamMailOptions = {
       from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
-      to: ['marwane.assoupf@gmail.com', 'marouaneboussalem1@gmail.com'],
+      //, 'marouaneboussalem1@gmail.com'
+      to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
@@ -59,37 +60,43 @@ export async function POST(request: Request) {
       to: email,
       subject: 'Thank You for Contacting Us',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #333; margin-bottom: 20px;">Thank You for Reaching Out!</h1>
-          </div>
-          
-          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
-            <p style="color: #333; font-size: 16px; line-height: 1.6;">
-              Dear ${firstName} ${lastName},
-            </p>
-            <p style="color: #333; font-size: 16px; line-height: 1.6;">
-              Thank you for contacting us. We have received your message and a member of our team will review it shortly.
-            </p>
-            <p style="color: #333; font-size: 16px; line-height: 1.6;">
-              We typically respond within 24-48 hours during business days. Please keep your inquiry until one of our team members contacts you.
-            </p>
-          </div>
+        <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
+  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+    
+    <!-- Logo Header -->
+    <div style="background-color: #0d6efd; padding: 20px; text-align: center;">
+      <img src="https://mwmofficiel.com/images/logo/logo.png" alt="MWM Logo" style="max-width: 180px; height: auto;">
+    </div>
+    
+    <!-- Main Content -->
+    <div style="padding: 30px; text-align: center;">
+      <h1 style="color: #333; font-size: 24px; margin-bottom: 10px;">Thank You, ${firstName}!</h1>
+      <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+        We truly appreciate you reaching out to MWM. Your message has been received, and our team is already reviewing your request.  
+      </p>
+      <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
+        Expect a personalized response within 24–48 hours. We’re excited to connect and help bring your vision to life.
+      </p>
+      
+      <!-- Thanks Image -->
+      <img src="https://mwmofficiel.com/images/blog/thanks.png" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
+      
+      <p style="color: #333; font-size: 16px; margin-top: 10px;">
+        <strong>We’re here to build something amazing together!</strong>
+      </p>
+    </div>
+    
+    <!-- Footer -->
+    <div style="background-color: #f8f8f8; text-align: center; padding: 15px;">
+      <p style="color: #888; font-size: 14px; margin: 0;">
+        Best regards,<br>
+        <strong>The MWM Team</strong>
+      </p>
+    </div>
+  
+  </div>
+</div>
 
-          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
-            <p style="color: #666; font-size: 14px;">
-              Best regards,<br>
-              The MWM Team
-            </p>
-          </div>
-          <img 
-  src="https://www.mwmofficiel.com/images/blog/thanks.png" 
-  alt="Thanks" 
-  style="max-width: 100%; height: auto; display: block; margin: 0 auto;" 
-  width="600"
-/>
-
-        </div>
       `
     };
 

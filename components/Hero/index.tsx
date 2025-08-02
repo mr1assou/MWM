@@ -74,12 +74,13 @@ const Hero = () => {
       <div
         ref={imageRef}
         className="absolute inset-0 z-[-10] overflow-hidden h-0"
+       
       >
         <Image
           src="/images/hero/5.jpg"
           alt="Professional Website Design & Development"
           fill
-          className="object-cover brightness-50"
+          className="object-cover object-bottom brightness-50"
           priority
         />
       </div>
@@ -92,7 +93,7 @@ const Hero = () => {
               ref={titleRef}
               className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
             >
-              Stunning,High Converting Websites to Grow Your Business Across{" "}
+              Website Design and Development Agency for Businesses Across All Industries in the {" "}
 
               <span className="inline-flex items-center gap-3">
                 United States
@@ -111,9 +112,8 @@ const Hero = () => {
               ref={subtitleRef}
               className="text-sm sm:text-base md:text-lg text-body-color-dark translate-x-[400%]"
             >
-              Website development agency in United States, specializing in custom website
-              agency and development, and professional web solutions for businesses across the
-              country.
+                We provide robust websites and software solutions, specializing in crafting custom, 
+                high‑performance websites and delivering professional digital strategies that help businesses nationwide grow and succeed online.
             </h2>
 
             {/* CTA Button */}
