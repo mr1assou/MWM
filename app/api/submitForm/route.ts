@@ -79,7 +79,7 @@ export async function POST(request: Request) {
       </p>
       
       <!-- Thanks Image -->
-      <img src="https://mwmofficiel.com/images/blog/thanks.png" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
+      <img src="https://mwmofficiel.com/images/hero/5.jpg" alt="Thank You" style="max-width: 100%; border-radius: 6px; margin-bottom: 25px;">
       
       <p style="color: #333; font-size: 16px; margin-top: 10px;">
         <strong>We’re here to build something amazing together!</strong>
