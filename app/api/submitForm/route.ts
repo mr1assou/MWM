@@ -61,11 +61,11 @@ export async function POST(request: Request) {
       subject: 'Thank You for Contacting Us',
       html: `
         <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
-  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+  <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 3px solid #0d6efd;">
     
     <!-- Logo Header -->
-    <div style="background-color: #0d6efd; padding: 20px; text-align: center;">
-      <img src="https://mwmofficiel.com/images/logo/logo.png" alt="MWM Logo" style="max-width: 180px; height: auto;">
+    <div style="text-align: center; padding: 10px;">
+      <img src="https://mwmofficiel.com/images/logo/logo.png" alt="MWM Logo" style="max-width: 150px; height: auto;">
     </div>
     
     <!-- Main Content -->
