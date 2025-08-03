@@ -10,6 +10,7 @@ import "../styles/index.css";
 import Script from "next/script";
 import CookieConsent from "@/components/Common/CookieConsent";
 import { FaWhatsapp } from "react-icons/fa";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,19 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-        {/* Google tag (gtag.js) */}
+
+        {/* ✅ Google Tag Manager (head) */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5GV9KMH3');
+          `}
+        </Script>
+
+        {/* Optional: Google Ads gtag (if you use it separately) */}
         <Script
           id="gtag-base"
           src="https://www.googletagmanager.com/gtag/js?id=AW-16983946654"
@@ -42,6 +55,8 @@ export default function RootLayout({
             gtag('config', 'AW-16983946654');
           `}
         </Script>
+
+        {/* Hotjar (optional) */}
         <Script id="hotjar-init" strategy="afterInteractive">
           {`
             (function(h,o,t,j,a,r){
@@ -55,7 +70,9 @@ export default function RootLayout({
           `}
         </Script>
       </head>
+
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+        {/* ✅ Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5GV9KMH3"
@@ -64,7 +81,8 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        {/* WhatsApp icon, visible only on mobile and tablet */}
+
+        {/* WhatsApp icon (mobile) */}
         <a
           href="https://wa.me/33746318175"
           target="_blank"
@@ -74,16 +92,16 @@ export default function RootLayout({
         >
           <FaWhatsapp />
         </a>
+
         <Providers>
           <GoogleAnalytics />
           <Header />
           {children}
           <Footer />
         </Providers>
+
         <CookieConsent />
       </body>
     </html>
   );
 }
-
-import { Providers } from "./providers";
