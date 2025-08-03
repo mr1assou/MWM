@@ -37,31 +37,19 @@ const ContactForm = () => {
   const handleForm = async (e) => {
     e.preventDefault();
     setLoading(true);
-
     const response = await fetch('/api/submitForm', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
     });
-
     await response.json();
     setLoading(false);
-
     if (response.ok) {
-      // ✅ Push custom event to GTM
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'form_success',   // 🔥 Custom event name
-        formType: 'contact',     // optional - you can add extra info
-      });
-
-      // ✅ Redirect to thanks page
       router.push('/thanks');
     } else {
       console.log('Form submission failed');
     }
   };
-
 
   const changeForm = (e) => {
     const { name, value } = e.target;
