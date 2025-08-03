@@ -30,17 +30,35 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
 
         {/* ✅ Google Tag Manager (head) */}
-        <Script id="gtm-script" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5GV9KMH3');
-          `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5GV9KMH3');
+            `,
+          }}
+        />
 
-        {/* Optional: Google Ads gtag (if you use it separately) */}
+        {/* ✅ Hotjar Tracking Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                  h._hjSettings={hjid:6443684,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `,
+          }}
+        />
+
+        {/* ✅ Optional: Google Ads gtag (keep only if needed) */}
         <Script
           id="gtag-base"
           src="https://www.googletagmanager.com/gtag/js?id=AW-16983946654"
@@ -55,20 +73,6 @@ export default function RootLayout({
             gtag('config', 'AW-16983946654');
           `}
         </Script>
-
-        {/* Hotjar (optional) */}
-        <Script id="hotjar-init" strategy="afterInteractive">
-          {`
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:6443684,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-          `}
-        </Script>
       </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
@@ -78,11 +82,11 @@ export default function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-5GV9KMH3"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
 
-        {/* WhatsApp icon (mobile) */}
+        {/* ✅ WhatsApp Floating Icon */}
         <a
           href="https://wa.me/33746318175"
           target="_blank"
