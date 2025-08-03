@@ -6,7 +6,7 @@ import Script from "next/script";
 
 declare global {
   interface Window {
-    gtag: any;
+    gtag?: (...args: any[]) => void;
     dataLayer: any[];
   }
 }
@@ -14,26 +14,30 @@ declare global {
 const ThanksPage = () => {
   const conversionSent = useRef(false);
 
-  // Google Ads conversion tracking
   useEffect(() => {
     if (conversionSent.current) return;
 
-    window.gtag = window.gtag || function () {
-      (window.dataLayer = window.dataLayer || []).push(arguments);
-    };
+    // Ensure gtag is initialized
+    window.gtag =
+      window.gtag ||
+      function () {
+        (window.dataLayer = window.dataLayer || []).push(arguments);
+      };
 
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-16983946654/eUUuCO2C798aEJ7ryaI_',
+    // Send conversion event
+    window.gtag("event", "conversion", {
+      send_to: "AW-16983946654/WoUECL3c4v4aEJ7ryaI_",
       value: 1.0,
-      currency: 'MAD',
-      transaction_id: ''
+      currency: "MAD",
+      transaction_id: "",
     });
 
     conversionSent.current = true;
 
+    // Fallback image ping (no-JS tracking)
     const img = new window.Image();
-    img.src = `https://www.googleadservices.com/pagead/conversion/16983946654/?label=eUUuCO2C798aEJ7ryaI_&value=1.0&currency_code=MAD&guid=ON&script=0`;
-    img.style.display = 'none';
+    img.src = `https://www.googleadservices.com/pagead/conversion/16983946654/?label=WoUECL3c4v4aEJ7ryaI_&value=1.0&currency_code=MAD&guid=ON&script=0`;
+    img.style.display = "none";
     document.body.appendChild(img);
   }, []);
 
@@ -46,7 +50,7 @@ const ThanksPage = () => {
         src="https://www.googletagmanager.com/gtag/js?id=AW-16983946654"
       />
 
-      <Script id="google-ads-init">
+      <Script id="google-ads-init" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -65,7 +69,9 @@ const ThanksPage = () => {
                 </h2>
                 <div>
                   <p className="mb-6 md:mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    We've received your information and a member of our team will reach out to you as soon as possible. In the meantime, feel free to browse our website.
+                    We've received your information and a member of our team
+                    will reach out to you as soon as possible. In the meantime,
+                    feel free to browse our website.
                   </p>
                   <div className="mb-6 md:mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[50/34]">
