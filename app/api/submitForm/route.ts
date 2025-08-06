@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     // Email to your team
     const teamMailOptions = {
-      from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
+      from: 'MWMTECH SUPPORT contact@mwmofficiel.com',
       //, 'marouaneboussalem1@gmail.com'
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
 
     // Confirmation email to client
     const clientMailOptions = {
-      from: 'MWMOFFICIEL SUPPORT contact@mwmofficiel.com',
+      from: 'MWMTECH SUPPORT contact@mwmofficiel.com',
       to: email,
       subject: 'Thank You for Contacting Us',
       html: `
@@ -74,13 +74,23 @@ export async function POST(request: Request) {
       <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
         We truly appreciate you reaching out to MWM. Your message has been received, and our team is already reviewing your request.  
       </p>
-       <!-- Thanks Image -->
+      
+      <!-- Thanks Image -->
       <img src="https://mwmofficiel.com/images/hero/email_image.png" 
         alt="Thank You" 
         style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
       <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
         Expect a personalized response within 24–48 hours. We’re excited to connect and help bring your vision to life.
       </p>
+
+      <!-- Book Appointment Button -->
+      <div style="text-align: center; margin: 30px 0;">
+        <a href="https://calendar.app.google/DjDLJYJz2drca9a38" 
+           target="_blank" 
+           style="background-color: #ff6600; color: #ffffff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block;">
+          📅 Book Appointment Now
+        </a>
+      </div>
     </div>
     
     <!-- Footer -->
@@ -93,6 +103,7 @@ export async function POST(request: Request) {
   
   </div>
 </div>
+
 
       `
     };
