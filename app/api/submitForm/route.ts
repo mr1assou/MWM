@@ -86,8 +86,8 @@ export async function POST(request: Request) {
       <!-- Book Appointment Button -->
       <div style="text-align: center; margin: 30px 0;">
         <a href="https://calendar.app.google/DjDLJYJz2drca9a38" 
-           target="_blank" 
-           style="background-color: #ff6600; color: #ffffff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block;">
+          target="_blank" 
+          style="background-color: #007bff; color: #ffffff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block;">
           📅 Book Appointment Now
         </a>
       </div>
@@ -103,8 +103,6 @@ export async function POST(request: Request) {
   
   </div>
 </div>
-
-
       `
     };
 
