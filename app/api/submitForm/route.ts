@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     // Email to your team
     const teamMailOptions = {
-      from: 'MWMTECH SUPPORT contact@mwmofficiel.com',
+      from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       //, 'marouaneboussalem1@gmail.com'
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
 
     // Confirmation email to client
     const clientMailOptions = {
-      from: 'MWMTECH SUPPORT contact@mwmofficiel.com',
+      from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       to: email,
       subject: 'Thank You for Contacting Us',
       html: `
