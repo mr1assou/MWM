@@ -1,24 +1,31 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import fs from 'fs';
+import path from 'path';
 
 export async function POST(request: Request) {
   const body = await request.json();
   const { firstName, lastName, email, phone_number, message, id } = body;
+
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com",
       port: 465,
-      secure: true, // Use STARTTLS
+      secure: true,
       auth: {
         user: "contact@mwmofficiel.com",
-        pass: "@Marwane2003"
+        pass: "@Marwane2003" // ⚠️ Move this to ENV in production
       }
     });
 
-    // Email to your team
+    // ✅ Convert logo file to Base64
+    const logoPath = path.join(process.cwd(), 'public', 'email', 'logo.png');
+    const logoBase64 = fs.readFileSync(logoPath).toString('base64');
+    const logoDataUri = `data:image/png;base64,${logoBase64}`;
+
+    // 📩 Email to your team
     const teamMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
-      //, 'marouaneboussalem1@gmail.com'
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
@@ -27,26 +34,11 @@ export async function POST(request: Request) {
             <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
             <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
           </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Pack</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${id}</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Name</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${firstName} ${lastName}</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Email</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${email}</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${message}</td>
-          </tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Pack</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${id}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${firstName} ${lastName}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${email}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${message}</td></tr>
         </table>
         <p style="color: #666; margin-top: 20px;">
           This email was sent from the contact form on your website.
@@ -54,8 +46,7 @@ export async function POST(request: Request) {
       `
     };
 
-    // Confirmation email to client
-    // ✅ Confirmation email to client
+    // 📩 Confirmation email to client (logo inline Base64)
     const clientMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       to: email,
@@ -78,9 +69,9 @@ The MWM Team
         <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
           <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
 
-            <!-- Logo Header -->
+            <!-- Logo Header (Base64 inline) -->
             <div style="text-align: center; padding: 10px;">
-              <img src="https://mwmofficiel.com/images/logo/logo.png" alt="MWM Logo" style="max-width: 150px; height: auto;">
+              <img src="${logoDataUri}" alt="MWM Logo" style="max-width: 150px; height: auto;">
             </div>
 
             <!-- Main Content -->
@@ -90,7 +81,7 @@ The MWM Team
                 We truly appreciate you reaching out to MWM. Your message has been received, and our team is already reviewing your request.  
               </p>
 
-              <!-- Thanks Image -->
+              <!-- Thanks Image (remote hosted) -->
               <img src="https://mwmofficiel.com/images/hero/email_image.png" 
                 alt="Thank You" 
                 style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
@@ -121,7 +112,6 @@ The MWM Team
       `
     };
 
-
     // Send both emails
     await Promise.all([
       transporter.sendMail(teamMailOptions),
@@ -139,4 +129,4 @@ The MWM Team
       { status: 500 }
     );
   }
-} 
+}
