@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import fs from 'fs';
 import path from 'path';
 
 export async function POST(request: Request) {
@@ -14,14 +13,12 @@ export async function POST(request: Request) {
       secure: true,
       auth: {
         user: "contact@mwmofficiel.com",
-        pass: "@Marwane2003" // ⚠️ Move this to ENV in production
+        pass: "@Marwane2003" // ⚠️ Move to ENV in production
       }
     });
 
-    // ✅ Convert logo file to Base64
-    const logoPath = path.join(process.cwd(), 'public', 'images','logo','logo.png');
-    const logoBase64 = fs.readFileSync(logoPath).toString('base64');
-    const logoDataUri = `data:image/png;base64,${logoBase64}`;
+    // Path to your logo file
+    const logoPath = path.join(process.cwd(), 'public', 'images', 'logo', 'logo.png');
 
     // 📩 Email to your team
     const teamMailOptions = {
@@ -29,24 +26,35 @@ export async function POST(request: Request) {
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
-        <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
-          <tr style="background-color: #f8f9fa;">
-            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
-            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
-          </tr>
-          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Pack</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${id}</td></tr>
-          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${firstName} ${lastName}</td></tr>
-          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${email}</td></tr>
-          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td></tr>
-          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${message}</td></tr>
-        </table>
-        <p style="color: #666; margin-top: 20px;">
-          This email was sent from the contact form on your website.
-        </p>
-      `
+        <div style="font-family: Arial, sans-serif;">
+           <!-- Logo Header (embedded with cid) -->
+            <div style="text-align: center; padding: 10px;">
+              <img src="cid:mwm-logo" alt="MWM Logo" style="max-width: 150px; height: auto;">
+            </div>
+          <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background-color: #f8f9fa;">
+              <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
+              <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
+            </tr>
+            <tr><td>Pack</td><td>${id}</td></tr>
+            <tr><td>Name</td><td>${firstName} ${lastName}</td></tr>
+            <tr><td>Email</td><td>${email}</td></tr>
+            <tr><td>Phone</td><td>${phone_number}</td></tr>
+            <tr><td>Message</td><td>${message}</td></tr>
+          </table>
+          <p style="color: #666;">This email was sent from the contact form on your website.</p>
+        </div>
+      `,
+      attachments: [
+        {
+          filename: 'logo.png',
+          path: logoPath,
+          cid: 'mwm-logo' // Must match the <img src="cid:mwm-logo">
+        }
+      ]
     };
 
-    // 📩 Confirmation email to client (logo inline Base64)
+    // 📩 Confirmation email to client
     const clientMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       to: email,
@@ -69,9 +77,9 @@ The MWM Team
         <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
           <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
 
-            <!-- Logo Header (Base64 inline) -->
+            <!-- Logo Header (embedded with cid) -->
             <div style="text-align: center; padding: 10px;">
-              <img src="${logoDataUri}" alt="MWM Logo" style="max-width: 150px; height: auto;">
+              <img src="cid:mwm-logo" alt="MWM Logo" style="max-width: 150px; height: auto;">
             </div>
 
             <!-- Main Content -->
@@ -109,7 +117,14 @@ The MWM Team
 
           </div>
         </div>
-      `
+      `,
+      attachments: [
+        {
+          filename: 'logo.png',
+          path: logoPath,
+          cid: 'mwm-logo'
+        }
+      ]
     };
 
     // Send both emails
