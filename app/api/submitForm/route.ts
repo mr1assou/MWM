@@ -120,16 +120,18 @@ The MWM Team
           </div>
         </div>
       `,
-      attachments: [
+      attachments:[
         {
           filename: 'logo.png',
           path: logoPath,
-          cid: 'mwm-logo'
+          cid: 'mwm-logo',
+          contentDisposition: 'inline' as const
         },
         {
           filename: 'email_image.png',
           path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
-          cid: 'email-banner'
+          cid: 'email-banner',
+          contentDisposition: 'inline' as const,
         }
       ]
     };
