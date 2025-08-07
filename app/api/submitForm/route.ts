@@ -53,13 +53,6 @@ export async function POST(request: Request) {
           </tr>
         </table>
       `,
-      attachments: [
-        {
-          filename: 'logo.png',
-          path: logoPath,
-          cid: 'mwm-logo' // Must match the <img src="cid:mwm-logo">
-        }
-      ]
     };
 
     // 📩 Confirmation email to client
