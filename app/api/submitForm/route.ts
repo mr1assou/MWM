@@ -91,9 +91,10 @@ The MWM Team
               </p>
 
               <!-- Thanks Image (remote hosted) -->
-              <img src="https://mwmofficiel.com/images/hero/email_image.png" 
+              <img src="cid:email-banner" 
                 alt="Thank You" 
                 style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
+
               <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
                 Expect a personalized response within 24–48 hours. We’re excited to connect and help bring your vision to life.
               </p>
@@ -124,6 +125,11 @@ The MWM Team
           filename: 'logo.png',
           path: logoPath,
           cid: 'mwm-logo'
+        },
+        {
+          filename: 'email_image.png',
+          path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
+          cid: 'email-banner'
         }
       ]
     };
