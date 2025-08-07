@@ -26,6 +26,10 @@ export async function POST(request: Request) {
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
+             <!-- Logo Header (embedded with cid) -->
+            <div style="text-align: center; padding: 10px;">
+              <img src="cid:mwm-logo" alt="MWM Logo" style="max-width: 150px; height: auto;">
+            </div>
                 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
           <tr style="background-color: #f8f9fa;">
             <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
@@ -53,6 +57,14 @@ export async function POST(request: Request) {
           </tr>
         </table>
       `,
+      attachments: [
+        {
+          filename: 'logo.png',
+          path: logoPath,
+          cid: 'mwm-logo',
+          contentDisposition: 'inline' as const
+        },
+      ]
     };
 
     // 📩 Confirmation email to client
@@ -120,7 +132,7 @@ The MWM Team
           </div>
         </div>
       `,
-      attachments:[
+      attachments: [
         {
           filename: 'logo.png',
           path: logoPath,
