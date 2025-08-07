@@ -26,24 +26,17 @@ export async function POST(request: Request) {
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
-        <div style="font-family: Arial, sans-serif;">
-           <!-- Logo Header (embedded with cid) -->
-            <div style="text-align: center; padding: 10px;">
-              <img src="cid:mwm-logo" alt="MWM Logo" style="max-width: 150px; height: auto;">
-            </div>
-          <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-            <tr style="background-color: #f8f9fa;">
-              <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
-              <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
-            </tr>
-            <tr><td>Pack</td><td>${id}</td></tr>
-            <tr><td>Name</td><td>${firstName} ${lastName}</td></tr>
-            <tr><td>Email</td><td>${email}</td></tr>
-            <tr><td>Phone</td><td>${phone_number}</td></tr>
-            <tr><td>Message</td><td>${message}</td></tr>
-          </table>
-          <p style="color: #666;">This email was sent from the contact form on your website.</p>
-        </div>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
+          <tr style="background-color: #f8f9fa;">
+            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Field</th>
+            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Details</th>
+          </tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Pack</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${id}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${firstName} ${lastName}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${email}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td></tr>
+          <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td><td style="padding: 12px; border: 1px solid #ddd;">${message}</td></tr>
+        </table>
       `,
       attachments: [
         {
