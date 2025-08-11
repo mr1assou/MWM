@@ -128,7 +128,7 @@ const Hero = () => {
                 className="flex items-center gap-2 text-xs rounded-xs bg-black px-8 py-4 sm:text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
               >
                 <MdOutlineOndemandVideo className="text-md sm:text-2xl" />
-                Watch Now
+                Watch Video
               </button>
             </div>
           </div>
