@@ -23,7 +23,7 @@ const SingleBlog = ({ blog, id }: Props) => {
             src={image}
             alt="Project Image"
             fill
-            className="object-cover"
+            className="object-contain"
             priority
           />
         </div>

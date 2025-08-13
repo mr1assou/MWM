@@ -99,7 +99,7 @@ const BlogSidebarPage = () => {
                       src={image}
                       alt={title}
                       fill
-                      className="object-cover object-top rounded"
+                      className="object-contain rounded"
                     />
                   </div>
 
@@ -140,29 +140,29 @@ const BlogSidebarPage = () => {
                             </p>
                           </div>
                           <p className="text-sm text-body-color dark:text-body-color-dark pl-9 whitespace-pre-line space-y-4">
-                            {title === "Comprehensive Gym Management System" && (
-                              index === 0 ? "Automated member registration, renewal, and access control systems\n\n" :
-                                index === 1 ? "Intelligent class booking and instructor management platform\n\n" :
-                                  index === 2 ? "Secure payment gateway with automated billing and invoicing\n\n" :
-                                    index === 3 ? "Real-time monitoring of gym equipment usage and maintenance\n\n" :
-                                      index === 4 ? "Comprehensive reporting and member engagement metrics\n\n" :
-                                        "Seamless mobile experience for members and staff"
+                            {title === "Showcase Your Digital Skills" && (
+                              index === 0 ? "Sleek, modern layout tailored to showcase tech expertise.\n\n" :
+                                index === 1 ? "Fully optimized for desktop, tablet, and mobile devices.\n\n" :
+                                  index === 2 ? "Dynamic galleries and hover effects for better engagement.\n\n" :
+                                    index === 3 ? "Fast load times and smooth, intuitive navigation.\n\n" :
+                                      index === 4 ? "Easy updates to projects, blogs, and testimonials.\n\n" :
+                                        "Visual style consistent with TechnoVista’s identity."
                             )}
-                            {title === "Intelligent Hotel Booking Mobile Application" && (
-                              index === 0 ? "Instant room availability and reservation management\n\n" :
-                                index === 1 ? "Secure payment gateway with multiple currency support\n\n" :
-                                  index === 2 ? "Comprehensive guest profile and preference tracking\n\n" :
-                                    index === 3 ? "Automated room allocation and housekeeping coordination\n\n" :
-                                      index === 4 ? "Real-time occupancy and revenue analytics\n\n" :
-                                        "Streamlined digital check-in and key management"
+                            {title === "Website Design for CNI" && (
+                              index === 0 ? "Custom industrial-themed visuals matching CNI’s identity.\n\n" :
+                                index === 1 ? "Optimized for desktop, tablet, and mobile devices.\n\n" :
+                                  index === 2 ? "Comprehensive specifications for all offerings.\n\n" :
+                                    index === 3 ? "Image previews and descriptions of key projects.\n\n" :
+                                      index === 4 ? "Intuitive menu structure for a smooth browsing experience\n\n" :
+                                        "Contact form and call-to-action buttons for fast inquiries."
                             )}
-                            {title === "Enterprise-Grade E-Commerce Platform" && (
-                              index === 0 ? "Real-time stock tracking and automated reordering\n\n" :
-                                index === 1 ? "Streamlined order fulfillment and shipping integration\n\n" :
-                                  index === 2 ? "Comprehensive customer profiles and purchase history\n\n" :
-                                    index === 3 ? "Secure multi-currency payment processing\n\n" :
-                                      index === 4 ? "Detailed sales and customer behavior analytics\n\n" :
-                                        "Responsive design for seamless mobile shopping"
+                            {title === "ERP Platform" && (
+                              index === 0 ? " Centralized view of key business metrics and activities.\n\n" :
+                                index === 1 ? "Optimized for use on desktop, tablet, and mobile devices.\n\n" :
+                                  index === 2 ? "Separate modules for sales, HR, inventory, and finance.\n\n" :
+                                    index === 3 ? "Secure login and permissions for different departments.\n\n" :
+                                      index === 4 ? "Automated approvals, reminders, and task assignments.\n\n" :
+                                        "Internal messaging and notifications for teams."
                             )}
                             {title === "Integrated Healthcare Management System" && (
                               index === 0 ? "Comprehensive patient records and history tracking\n\n" :
@@ -199,34 +199,33 @@ const BlogSidebarPage = () => {
                     {/* Service Description */}
                     <div className="mt-8 rounded-lg bg-white p-8 shadow-one dark:bg-dark">
                       <p className="mb-4 text-md font-medium leading-relaxed text-body-color whitespace-pre-line space-y-4">
-                        {title === 'Comprehensive Gym Management System' &&
-                          "- Centralized member database for easy management and tracking\n\n" +
-                          "- Automated class scheduling, booking, and attendance tracking\n\n" +
-                          "- Integrated payment gateway for secure membership fees and service payments\n\n" +
-                          "- Real-time dashboard for key metrics like membership growth and revenue\n\n" +
-                          "- Customizable workout plans and progress tracking for members\n\n" +
-                          "- Staff management and payroll integration for streamlined operations\n\n" +
-                          "- Inventory management for gym equipment and merchandise\n\n" +
-                          "- Reporting and analytics for business insights and decision-making\n\n" +
-                          "- Mobile app integration for member self-service and engagement\n\n" +
-                          "- Secure data storage and GDPR compliance\n\n" +
-                          "- Scalable architecture to support growing member bases\n\n"
+                        {title === 'Showcase Your Digital Skills' &&
+                          "- Centralized portfolio database for easy project management and updates\n\n" +
+                          "- Dynamic project showcase with filters and interactive hover effects\n\n" +
+                          "- Integrated contact form with automated email notifications\n\n" +
+                          "- Real-time dashboard to track website traffic and user engagement\n\n" +
+                          "- Customizable service pages to highlight offerings and expertise\n\n" +
+                          "- Team member profiles with roles, bios, and achievements\n\n" +
+                          "- Media gallery for images, videos, and client testimonials\n\n" +
+                          "- Reporting tools for tracking project views and client inquiries\n\n" +
+                          "- Mobile-friendly design for seamless access across all devices\n\n" +
+                          "- Secure data handling with SSL encryption\n\n" +
+                          "- Scalable architecture to support future feature expansions\n\n"
                         }
-                        {title === "Intelligent Hotel Booking Mobile Application" &&
-                          "- Seamless search and booking experience for various hotel types\n\n" +
-                          "- Real-time availability and pricing updates\n\n" +
-                          "- Secure in-app payment processing with multiple options\n\n" +
-                          "- Personalized recommendations based on user preferences and past bookings\n\n" +
-                          "- Integrated maps and navigation for easy hotel location\n\n" +
-                          "- In-app chat support and concierge services\n\n" +
-                          "- Loyalty program integration for exclusive offers and rewards\n\n" +
-                          "- Push notifications for booking confirmations, check-in reminders, and special deals\n\n" +
-                          "- Multi-language support for global users\n\n" +
-                          "- User reviews and ratings for informed decisions\n\n" +
-                          "- Offline access to booking details and travel itineraries\n\n" +
-                          "- Robust security measures to protect personal and payment data"
+                        {title === "Website Design for CNI" &&
+                          "- Centralized product catalog for easy updates and management\n\n" +
+                          "- Dedicated project showcase with image galleries and descriptions\n\n" +
+                        "-Integrated contact form with automated email routing\n\n" +
+                        "- Mobile-optimized design for on-site access by field teams and clients\n\n" +
+                        "- High-resolution imagery to highlight product quality and applications\n\n" +
+                        "- Quick-access buttons for product line PDFs and technical specs\n\n" +
+                        "- Search-friendly structure for improved discoverability\n\n" +
+                        "- Consistent branding with industrial color palette and typography\n\n" +
+                        "- Cross-browser compatibility for seamless performance\n\n" +
+                        "- Secure hosting setup with SSL encryption\n\n" +
+                        "- Scalable architecture to accommodate future product and project additions\n\n"
                         }
-                        {title === "Enterprise-Grade E-Commerce Platform" &&
+                        {title === "ERP Platform" &&
                           "- Scalable product catalog management with rich media support\n\n" +
                           "- Advanced search and filtering capabilities for enhanced product discovery\n\n" +
                           "- Secure shopping cart and streamlined checkout process\n\n" +
@@ -240,19 +239,18 @@ const BlogSidebarPage = () => {
                           "- Mobile-responsive design for seamless shopping on any device\n\n" +
                           "- Robust security features for data protection and fraud prevention"
                         }
-                        {title === "Integrated Healthcare Management System" &&
-                          "- Centralized patient records, including medical history, prescriptions, and lab results\n\n" +
-                          "- Automated appointment scheduling, reminders, and patient portal access\n\n" +
-                          "- Electronic prescribing and medication management system\n\n" +
-                          "- Secure communication tools for doctors, nurses, and patients\n\n" +
-                          "- Integrated billing and insurance claim processing\n\n" +
-                          "- Lab integration for seamless ordering and result delivery\n\n" +
-                          "- Inventory management for medical supplies and equipment\n\n" +
-                          "- Reporting and analytics for patient outcomes, resource utilization, and operational efficiency\n\n" +
-                          "- Telemedicine capabilities for virtual consultations\n\n" +
-                          "- Compliance with HIPAA and other healthcare regulations\n\n" +
-                          "- Role-based access control for data security and privacy\n\n" +
-                          "- Scalable architecture to support large healthcare organizations"
+                        {title === "ll" &&
+                          "- Centralized data storage for all business units in one secure platform\n\n" +
+                          "- Real-time reporting and analytics for informed decision-making\n\n" +
+                          "- Sales management module with lead tracking and order processing\n\n" +
+                          "- HR management tools for employee records, attendance, and payroll\n\n" +
+                          "- Inventory control with stock alerts and supplier tracking\n\n" +
+                          "- Finance module for invoicing, expense management, and budget tracking\n\n" +
+                          "- Customizable workflows tailored to Nova’s operational needs\n\n" +
+                          "- Cloud-based hosting for accessibility from any location\n\n" +
+                          "- Mobile-friendly design to support on-the-go operations\n\n" +
+                          "- Data encryption and backup protocols for maximum security\n\n" +
+                          "- Scalable architecture to integrate future modules without disruption\n\n"
                         }
                         {title === "Advanced Learning Management System" &&
                           "- Intuitive course creation and content management tools\n\n" +

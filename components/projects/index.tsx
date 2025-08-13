@@ -10,7 +10,7 @@ const Projects = () => {
     >
       <div className="container">
         <SectionTitle
-          title="Our Projects"
+          title="Latest Projects"
           paragraph="Explore our latest projects, where innovation meets excellence to deliver impactful and cutting-edge solutions."
           center
         />

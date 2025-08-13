@@ -3,33 +3,33 @@ import { Blog } from "@/types/blog";
 const BlogData: Blog[] = [
   {
     id: 1,
-    title: "Comprehensive Gym Management System",
+    title: "Showcase Your Digital Skills",
     paragraph:
-      "Streamline your fitness business operations with our automated membership management, scheduling, and payment processing platform.",
-    image: "/images/blog/gym_website.jpg",
+      "For TechnoVista, we designed visually striking digital portfolios that highlight skills and projects. Our team ensured their work stood out, helping them impress potential employers and grow their brand.",
+    image: "/images/blog/st.png",
     todoList: [
       {
-        title: "Membership Management",
+        title: "Custom Portfolio Design ",
         description: "Automated member registration, renewal, and access control systems"
       },
       {
-        title: "Class Scheduling",
+        title: "Responsive UI/UX",
         description: "Intelligent class booking and instructor management platform"
       },
       {
-        title: "Payment Processing",
+        title: "Interactive Project Showcase",
         description: "Secure payment gateway with automated billing and invoicing"
       },
       {
-        title: "Equipment Tracking",
+        title: "Optimized Performance",
         description: "Real-time monitoring of gym equipment usage and maintenance"
       },
       {
-        title: "Member Analytics",
+        title: "Content Management Integration",
         description: "Comprehensive reporting and member engagement metrics"
       },
       {
-        title: "Mobile App Integration",
+        title: "Brand-Aligned Aesthetics ",
         description: "Seamless mobile experience for members and staff"
       }
     ],
@@ -40,7 +40,7 @@ const BlogData: Blog[] = [
   //   title: "Intelligent Hotel Booking Mobile Application",
   //   paragraph:
   //     "Enhance your hospitality business with our real-time booking system featuring secure payments and personalized guest recommendations.",
-  //   image: "/images/blog/mobile_hotel.jpg",
+  //   image: "/images/blog/product_verse.png",
   //   todoList: [
   //     {
   //       title: "Real-time Booking",
@@ -71,140 +71,141 @@ const BlogData: Blog[] = [
   // },
   {
     id: 3,
-    title: "Enterprise-Grade E-Commerce Platform",
+    title: "Website Design for CNI",
     paragraph:
-      "Optimize your online store with our integrated inventory management and customer engagement tools for increased sales.",
-    image: "/images/blog/ecommerce_website.webp",
+      "For CNI, we built a responsive website that highlights their expertise in roll forming and metal corrugating, making product details and projects easily accessible across all devices.",
+    image: "/images/blog/metal_agency.png",
     todoList: [
       {
-        title: "Inventory Management",
-        description: "Real-time stock tracking and automated reordering"
+        title: "Brand-Aligned Industrial Design",
+        description: " Custom industrial-themed visuals matching CNI’s identity."
       },
       {
-        title: "Order Processing",
-        description: "Streamlined order fulfillment and shipping integration"
+        title: "Fully Responsive Layout",
+        description: "Optimized for desktop, tablet, and mobile devices."
       },
       {
-        title: "Customer Management",
-        description: "Comprehensive customer profiles and purchase history"
+        title: "Detailed Product & Service Pages ",
+        description: "Comprehensive specifications for all offerings."
       },
       {
-        title: "Payment Gateway",
-        description: "Secure multi-currency payment processing"
+        title: "Featured Projects Showcase ",
+        description: "Image previews and descriptions of key projects."
+      },
+
+      {
+        title: "Quick Contact Access ",
+        description: "Contact form and call-to-action buttons for fast inquiries."
       },
       {
-        title: "Analytics Dashboard",
-        description: "Detailed sales and customer behavior analytics"
+        title: "User-Friendly Navigation",
+        description: "Intuitive menu structure for a smooth browsing experience."
       },
-      {
-        title: "Mobile Optimization",
-        description: "Responsive design for seamless mobile shopping"
-      }
     ],
     alt: "Ecommerce Website Development Services - Professional Online Store Development"
   },
   {
     id: 4,
-    title: "Integrated Healthcare Management System",
+    title: "ERP Platform",
     paragraph:
-      "Simplify patient care with our HIPAA-compliant platform for efficient appointment scheduling and secure medical records.",
-    image: "/images/blog/website_helthcare.png",
+      "We built a responsive ERP platform that streamlines daily operations and centralizes core processes, providing real-time insights and access across all devices.",
+    image: "/images/blog/agency.png",
     todoList: [
       {
-        title: "Patient Management",
+        title: "Custom ERP Dashboard ",
         description: "Comprehensive patient records and history tracking"
       },
       {
-        title: "Appointment Scheduling",
+        title: "Responsive Interface ",
         description: "Automated appointment booking and reminders"
       },
       {
-        title: "Medical Records",
+        title: "Modular Architecture",
         description: "Secure and compliant electronic health records"
       },
       {
-        title: "Billing System",
+        title: "Role-Based Access Control ",
         description: "Automated insurance processing and billing"
       },
       {
-        title: "Prescription Management",
+        title: "Workflow Automation",
         description: "Digital prescription and medication tracking"
       },
       {
-        title: "Telemedicine",
+        title: "Integrated Communication Tools",
         description: "Secure video consultations and remote care"
       }
     ],
     alt: "Healthcare Website Development by Website Development Agency"
   },
-  {
-    id: 5,
-    title: "Advanced Learning Management System",
-    paragraph:
-      "Transform your educational institution with our comprehensive course management and student progress tracking solution.",
-    image: "/images/blog/lms_website.png",
-    todoList: [
-      {
-        title: "Course Management",
-        description: "Comprehensive course creation and content delivery"
-      },
-      {
-        title: "Student Tracking",
-        description: "Detailed progress monitoring and assessment tools"
-      },
-      {
-        title: "Content Library",
-        description: "Organized learning resources and materials"
-      },
-      {
-        title: "Assessment Tools",
-        description: "Automated grading and performance analytics"
-      },
-      {
-        title: "Communication Hub",
-        description: "Integrated messaging and collaboration tools"
-      },
-      {
-        title: "Mobile Learning",
-        description: "Seamless learning experience across devices"
-      }
-    ],
-    alt: "Learning Management System Development by Website Development Agency in US"
-  },
-  {
-    id: 6,
-    title: "Comprehensive Real Estate Management Platform",
-    paragraph:
-      "Streamline your real estate operations with our automated property listing and client management system.",
-    image: "/images/blog/hoberge_website.png",
-    todoList: [
-      {
-        title: "Property Management",
-        description: "Comprehensive property listing and tracking"
-      },
-      {
-        title: "Client Management",
-        description: "Detailed client profiles and interaction history"
-      },
-      {
-        title: "Document Management",
-        description: "Secure storage and processing of legal documents"
-      },
-      {
-        title: "Transaction Tracking",
-        description: "End-to-end property transaction management"
-      },
-      {
-        title: "Market Analytics",
-        description: "Real-time market trends and property valuation"
-      },
-      {
-        title: "Mobile Access",
-        description: "On-the-go property and client management"
-      }
-    ],
-    alt: "Real Estate Website Development Services in US - Professional Property Management Platform"
-  },
+  // {
+  //   id: 5,
+  //   title: "Advanced Learning Management System",
+  //   paragraph:
+  //     "Transform your educational institution with our comprehensive course management and student progress tracking solution.",
+  //   image: "/images/blog/perfect.png",
+  //   todoList: [
+  //     {
+  //       title: "Course Management",
+  //       description: "Comprehensive course creation and content delivery"
+  //     },
+  //     {
+  //       title: "Student Tracking",
+  //       description: "Detailed progress monitoring and assessment tools"
+  //     },
+  //     {
+  //       title: "Content Library",
+  //       description: "Organized learning resources and materials"
+  //     },
+  //     {
+  //       title: "Assessment Tools",
+  //       description: "Automated grading and performance analytics"
+  //     },
+  //     {
+  //       title: "Communication Hub",
+  //       description: "Integrated messaging and collaboration tools"
+  //     },
+  //     {
+  //       title: "Mobile Learning",
+  //       description: "Seamless learning experience across devices"
+  //     }
+  //   ],
+  //   alt: "Learning Management System Development by Website Development Agency in US"
+  // },
+  // {
+  //   id: 6,
+  //   title: "Comprehensive Real Estate Management Platform",
+  //   paragraph:
+  //     "Streamline your real estate operations with our automated property listing and client management system.",
+  //   image: "/images/blog/fitness.jpg",
+  //   todoList: [
+  //     {
+  //       title: "Property Management",
+  //       description: "Comprehensive property listing and tracking"
+  //     },
+  //     {
+  //       title: "Client Management",
+  //       description: "Detailed client profiles and interaction history"
+  //     },
+  //     {
+  //       title: "Document Management",
+  //       description: "Secure storage and processing of legal documents"
+  //     },
+  //     {
+  //       title: "Transaction Tracking",
+  //       description: "End-to-end property transaction management"
+  //     },
+  //     {
+  //       title: "Market Analytics",
+  //       description: "Real-time market trends and property valuation"
+  //     },
+  //     {
+  //       title: "Mobile Access",
+  //       description: "On-the-go property and client management"
+  //     }
+  //   ],
+  //   alt: "Real Estate Website Development Services in US - Professional Property Management Platform"
+  // },
 ];
 
 export default BlogData;

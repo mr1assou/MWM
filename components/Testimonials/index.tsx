@@ -15,7 +15,7 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Ahmed Sabri",
+    name: "Ahmed Sabiri",
     alt:'it web development company',
     designation: "Restaurant Owner",
     content:

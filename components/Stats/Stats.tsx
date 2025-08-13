@@ -9,13 +9,13 @@ import SectionTitle from "../Common/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { num: 700, text: "Projects" },
+  { num: 100, text: "Projects" },
   { num: 15, text: "Technologies" },
   { num: 500000, text: "Code commits" },
-  { num: 300, text: "Clients" },
+  { num: 80, text: "Clients" },
   { num: 30, text: "Developer" },
-  { num: 15, text: "Years Of Business" },
-   { num: 30, text: "Awards Won" },
+  { num: 8, text: "Years Of Business" },
+   { num: 10, text: "Awards Won" },
   
 ];
 
