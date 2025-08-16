@@ -18,9 +18,10 @@ const Hero = () => {
 
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false); // NEW loader state
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  // NEW: detect mobile (<= 767px)
+  // detect mobile
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
@@ -43,12 +44,13 @@ const Hero = () => {
   }, []);
 
   const openModal = useCallback(() => {
+    setLoading(true); // show loader first
     setOpen(true);
-    setTimeout(() => videoRef.current?.play().catch(() => {}), 50);
   }, []);
 
   const closeModal = useCallback(() => {
     setOpen(false);
+    setLoading(false);
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
@@ -155,7 +157,14 @@ const Hero = () => {
               <X className="w-5 h-5 text-black" />
             </button>
 
-            {/* Desktop/Tablet: fullscreen, no controls. Mobile: controls + fullscreen allowed */}
+            {/* Loader overlay */}
+            {loading && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black/80 z-50">
+                <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            )}
+
+            {/* Video */}
             <video
               ref={videoRef}
               src="https://ydw3izl8ia5ysu5h.public.blob.vercel-storage.com/mwmtech05%20%281%29.mp4"
@@ -167,10 +176,14 @@ const Hero = () => {
               autoPlay
               playsInline
               preload="metadata"
+              onCanPlay={() => {
+                setLoading(false);
+                videoRef.current?.play().catch(() => {});
+              }}
               {...(isMobile
                 ? {
                     controls: false,
-                    controlsList: "nodownload noremoteplayback", // allow fullscreen
+                    controlsList: "nodownload noremoteplayback", 
                     disablePictureInPicture: false as any,
                   }
                 : {
@@ -189,4 +202,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
