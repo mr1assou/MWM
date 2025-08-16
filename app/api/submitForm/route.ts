@@ -98,7 +98,7 @@ The MWM Team
             <!-- Main Content -->
             <div style="padding: 10px; text-align: center;">
               <h1 style="color: #333; font-size: 24px; margin-bottom: 10px;">
-  Thank You, ${firstName}! Book Appointment
+  Thank You, ${firstName}! 
 </h1>
               <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
                 We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.  
@@ -110,7 +110,8 @@ The MWM Team
                 style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
 
               <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
-              Choose a time that fits your schedule, and one of our team members will meet with you to discuss your project.
+               If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule, and we’ll meet with you to discuss your project.
+</h2>
           </p>
               <!-- Book Appointment Button -->
               <div style="text-align: center; margin: 30px 0;">
