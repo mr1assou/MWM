@@ -76,7 +76,7 @@ const Hero = () => {
       <div ref={imageRef} className="absolute inset-0 z-[-10] overflow-hidden h-0">
         <Image
           src="/images/hero/5.jpg"
-          alt="Professional Website Design & Development"
+          alt="website design and development services"
           fill
           className="object-cover object-left sm:object-bottom brightness-50"
           priority
@@ -89,9 +89,9 @@ const Hero = () => {
             {/* Title */}
             <h1
               ref={titleRef}
-              className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
+              className="mt-5 sm:mt-0 text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
             >
-              Website Design and Development Agency for Businesses Across All Industries in the{" "}
+              Website Design and Development Company for Businesses Across All Industries in the{" "}
               <span className="inline-flex items-center gap-3">
                 United States
                 <Image
@@ -109,7 +109,7 @@ const Hero = () => {
               ref={subtitleRef}
               className="text-sm sm:text-base md:text-lg text-body-color-dark translate-x-[400%]"
             >
-              We provide robust websites and software solutions, specializing in crafting custom,
+              We provide custom websites and software solutions, specializing in crafting robust,
               high-performance websites and delivering professional digital strategies that help businesses nationwide.
             </h2>
 

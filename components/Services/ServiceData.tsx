@@ -5,7 +5,7 @@ const ServiceData: Blog[] = [
     id: 1,
     title: "Website Design & Development ",
     paragraph:
-      "Professional website development company offering complete website development services. Our specialists build high-performance sites with custom design, smooth functionality, and scalable solutions to enhance and improve digital presence .",
+      "Professional website development company offering complete website design and development services. Our developers build high-performance sites with custom design, smooth functionality, and scalable solutions to enhance and improve digital presence .",
     image: "/images/services/web_dev.jpg",
     todoList: [
       "Custom website development",
@@ -15,56 +15,10 @@ const ServiceData: Blog[] = [
       "SEO-optimized website structure",
       "Content management system integration"
     ],
-    alt: "Website Development Agency  - Custom Website Design and Development Services"
+    alt: "Website Development Company  - Custom Website Design and Development Services"
   },
-  // {
-  //   id: 2,
-  //   title: "Mobile Development ",
-  //   paragraph:
-  //     "We build robust mobile apps for iOS and Android using Flutter or React Native. Our apps focus on performance, offline support, and user-friendly interfaces tailored to your industry.",
-  //   image: "/images/services/mb.jpg",
-  //   todoList: [
-  //     "Mobile development services",
-  //     "Custom mobile development",
-  //     "Professional mobile development",
-  //     "mobile design and development",
-  //     "App store optimization",
-  //     "Performance monitoring"
-  //   ],
-  //   alt: "Website Development Agency in Australia - Professional Website and Mobile Development Services in Sydney, Melbourne and Perth"
-  // },
-  // {
-  //   id: 3,
-  //   title: "Ecommerce Website Development",
-  //   paragraph:
-  //     "Custom e-commerce solutions with support for subscriptions, bulk orders, and secure payment integrations. We help businesses scale online with GST-compliant, user-friendly platforms.",
-  //   image: "/images/services/ecom_service.jpg",
-  //   todoList: [
-  //     "Ecommerce website development",
-  //     "Custom online store development",
-  //     "Payment gateway integration",
-  //     "Inventory management system",
-  //     "Order processing automation",
-  //     "Ecommerce website services"
-  //   ],
-  //   alt: "Ecommerce Website Development Services in Sydney, Melbourne and Perth - Professional Online Store Development"
-  // },
-  // {
-  //   id: 4,
-  //   title: "UI/UX Design",
-  //   paragraph:
-  //     "We create user-centered interfaces that are both visually striking and functional. From wireframes to prototypes, we design experiences that improve engagement and usability.",
-  //   image: "/images/services/ui_ux.jpg",
-  //   todoList: [
-  //     "Website design",
-  //     "Professional web design",
-  //     "User experience optimization",
-  //     "Accessibility implementation"
-  //   ],
-  //   alt: "Website Design and Development Services in Sydney, Melbourne and Perth - Professional Web Design Agency"
-  // },
   {
-    id: 5,
+    id: 2,
     title: "Api Integration and Optimisation",
     paragraph:
       "In addition to website design and development, we power our websites with advanced API integration and optimisation. This ensures seamless functionality, faster performance, and scalable systems that support your business growth,efficiency, and reliability.",
@@ -77,13 +31,13 @@ const ServiceData: Blog[] = [
       "Performance optimization",
       "Website maintenance services"
     ],
-    alt: "Website Development Agency - Professional Web Development Services"
+    alt: "Website Development Company - Custom Website Development Services"
   },
   {
-    id: 6,
+    id: 3,
     title: "Maintenance and scalability",
     paragraph:
-      "In addition to our website design and development services, we provide expert maintenance and scalability support across US.We ensure your site stays fast, secure, and ready to grow with your business.",
+      "Our website developers ensure your website remains fast, secure, and scalable, providing expert maintenance support across the US while helping you adapt seamlessly as your business evolves.",
     image: "/images/services/maintenance.jpg",
     todoList: [
       "monitoring",

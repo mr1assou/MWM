@@ -11,19 +11,19 @@ const brandsData: Brand[] = [
     id: 2,
     name: "Digital Ocean",
     image: "/images/brands/digital_ocean.png",
-    alt: "Digital Ocean Hosting - Website Development Services in United States"
+    alt: "Digital Ocean Hosting - Website design & Development Services in United States"
   },
   {
     id: 3,
     name: "Docker",
     image: "/images/brands/docker.png",
-    alt: "Docker Containerization - Custom Website Development US"
+    alt: "Docker Containerization - Custom Website Development services"
   },
   {
     id: 4,
     name: "React js",
     image: "/images/brands/react.png",
-    alt: "React.js Framework - US Web Developers Technology Stack"
+    alt: "React.js Framework - Website Developers Technology Stack"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const brandsData: Brand[] = [
     id: 8,
     name: "Laravel",
     image: "/images/brands/laravel.png",
-    alt: "Laravel Framework - Ecommerce Website Development United States"
+    alt: "Laravel Framework - Website Development United States"
   },
   {
     id: 9,

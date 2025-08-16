@@ -47,14 +47,14 @@ const AboutSectionFour = () => {
             >
               <Image
                 src="/images/about/7.jpg"
-                alt="website design and development"
+                alt="website developers for businesses"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none object-contain sm:object-cover"
                 priority
               />
               <Image
                 src="/images/about/7.jpg"
-                alt="website design and development"
+                alt="website developers for businesses"
                 fill
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none object-contain sm:object-cover"
               />

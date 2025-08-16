@@ -64,7 +64,7 @@ const AboutSectionOne = ({ value }) => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Why Us?"
-                paragraph="Why Us? Because we are home to expert developers and creative professionals dedicated to delivering top-tier website design and development projects. As one of US leading web agencies, we combine technical excellence with innovative solutions to create websites that not only look great but perform flawlessly. Our commitment to quality, transparent communication, and timely delivery ensures your project is handled with the utmost professionalism. Choose us for reliable, high-impact digital solutions that help your business thrive in the competitive US market."
+                paragraph="Why Us? Because we are home to expert developers and creative professionals dedicated to delivering top-tier website design and development projects.We combine technical excellence with innovative solutions to create websites that not only look great but perform flawlessly. Our commitment to quality, transparent communication, and timely delivery ensures your project is handled with the utmost professionalism. Choose us for reliable, high-impact digital solutions that help your business thrive in the competitive US market."
                 mb="44px"
               />
 
@@ -98,7 +98,7 @@ const AboutSectionOne = ({ value }) => {
               >
                 <Image
                   src="/images/about/6.jpg"
-                  alt="about image"
+                  alt="website development company​"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none object-cover"
                   priority

@@ -12,7 +12,7 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="Our Affordable Packages"
-          paragraph="Our Website design & development agency affordable packages with transparent pricing,providing high-quality website development at great value."
+          paragraph="Our Website design & development company affordable packages with transparent pricing,providing high-quality website development at great value."
           center
           width="665px"
         />
@@ -32,7 +32,8 @@ const Pricing = () => {
             <OfferList text="Contact form integration" status="active" />
             <OfferList text="1 month free technical support" status="active" />
             <OfferList text="Delivery time 1-2 weeks" status="active" />
-            <OfferList text="Website hosting" status="active" />
+            <OfferList text="fast and secure website" status="active" />
+            <OfferList text="Website hosting with 0$" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Standard"

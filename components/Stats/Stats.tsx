@@ -14,8 +14,8 @@ const stats = [
   { num: 500000, text: "Code commits" },
   { num: 80, text: "Clients" },
   { num: 30, text: "Developer" },
-  { num: 8, text: "Years Of Business" },
-   { num: 10, text: "Awards Won" },
+  { num: 12, text: "Years Of Business" },
+   { num: 6, text: "Awards Won" },
   
 ];
 
