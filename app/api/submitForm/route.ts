@@ -115,7 +115,7 @@ The MWM Team
           </p>
               <!-- Book Appointment Button -->
               <div style="text-align: center; margin: 30px 0;">
-                <a href="https://calendar.app.google/DjDLJYJz2drca9a38" 
+                <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8" 
                   target="_blank" 
                   style="background-color: #007bff; color: #ffffff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block;">
                   📅 Book Appointment Now
