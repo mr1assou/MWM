@@ -167,7 +167,7 @@ const Hero = () => {
             {/* Video */}
             <video
               ref={videoRef}
-              src="https://ydw3izl8ia5ysu5h.public.blob.vercel-storage.com/mwmtech05%20%281%29.mp4"
+              src="/images/hero/mwmtech051.mp4"
               className={
                 isMobile
                   ? "w-full h-full max-w-full max-h-full object-contain"
