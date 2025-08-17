@@ -121,7 +121,7 @@ const Hero = () => {
                 href="/contact/0"
                 className="text-xs group flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base font-semibold text-white hover:bg-primary/80 transition"
               >
-                Order Website
+                Order Now
                 <FaRocket className="text-md sm:text-2xl" />
               </Link>
 
