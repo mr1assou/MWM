@@ -11,7 +11,7 @@ const ContactForm = () => {
   const { id } = params;
   const formRef = useRef(null);
 
-  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone_number: "", message: "", id: id });
+  const [form, setForm] = useState({ firstName: "", email: "", phone_number: "", id: id });
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -65,19 +65,19 @@ const ContactForm = () => {
               htmlFor="firstName"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              First Name:
+              Full Name:
             </label>
             <input
               onChange={changeForm}
               type="text"
               name="firstName"
-              placeholder="Enter your first name"
+              placeholder="Enter your full name"
               className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
               required
             />
           </div>
         </div>
-        <div className="w-full px-4 md:w-1/2">
+        {/* <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label
               htmlFor="lastName"
@@ -94,7 +94,7 @@ const ContactForm = () => {
               required
             />
           </div>
-        </div>
+        </div> */}
         <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label
@@ -127,11 +127,10 @@ const ContactForm = () => {
               type="text"
               placeholder="0412345678"
               className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-              required
             />
           </div>
         </div>
-        <div className="w-full px-4">
+        {/* <div className="w-full px-4">
           <div className="mb-8">
             <label
               htmlFor="message"
@@ -148,7 +147,7 @@ const ContactForm = () => {
               required
             ></textarea>
           </div>
-        </div>
+        </div> */}
         <div className="w-full px-4">
           <input
             value={loading ? "Ordering..." : "Order Now"}

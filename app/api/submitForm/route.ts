@@ -4,13 +4,13 @@ import path from 'path';
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { firstName, lastName, email, phone_number, message, id } = body;
+  const { firstName,email, phone_number,id } = body;
 
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com",
       port: 465,
-      secure: true,
+      secure: true,  
       auth: {
         user: "contact@mwmofficiel.com",
         pass: "@Marwane2003" // ⚠️ Move to ENV in production
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
           </tr>
           <tr>
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Name</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${firstName} ${lastName}</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${firstName}</td>
           </tr>
           <tr>
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Email</strong></td>
@@ -50,10 +50,6 @@ export async function POST(request: Request) {
           <tr>
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td>
             <td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Message</strong></td>
-            <td style="padding: 12px; border: 1px solid #ddd;">${message}</td>
           </tr>
         </table>
       `,
