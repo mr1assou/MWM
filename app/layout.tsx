@@ -104,7 +104,7 @@ export default function RootLayout({
           <Footer />
         </Providers>
 
-        <CookieConsent />
+        {/* <CookieConsent /> */}
       </body>
     </html>
   );
