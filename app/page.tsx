@@ -16,10 +16,11 @@ import { Metadata } from "next";
 import Loader from "@/components/Common/Loader";
 import CookieConsent from "@/components/Common/CookieConsent";
 import { Suspense } from "react";
+import Videop from "@/components/Videop";
 
 export const metadata: Metadata = {
-  title: "Website design and development agency",
-  description: "Leading website development company in the United States. Expert ecommerce website development, custom website design, and professional web development services across the country.",
+  title: "Website design and development company",
+  description: "website development company in the United States.custom website design, and professional web development services across the country.",
 };
 
 // Content component to wrap all page content
@@ -27,14 +28,15 @@ const PageContent = () => (
   <div className="content-area">
     <ScrollUp />
     <Hero />
+    <Videop />
     <Services />
     <Pricing />
     <Brands />
     <Projects />
-    <AboutSectionOne value="true"/>
+    <AboutSectionOne value="true" />
     <AboutSectionTwo />
-    <AboutSectionThree value="true"/>
-    <AboutSectionFour/>
+    <AboutSectionThree value="true" />
+    <AboutSectionFour />
     <Stats />
     <Testimonials />
     <Contact />
