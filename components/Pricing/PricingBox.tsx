@@ -89,7 +89,7 @@ const PricingBox = (props: {
 
         <div className=" border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10 mt-10">
           <Link href={`/contact/${id}`} className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp gap-2">
-            Order Now
+            Get Started
             <FaRocket />
           </Link>
 

@@ -96,9 +96,9 @@ const Hero = () => {
               <div ref={buttonRef} className="translate-y-[1300%] flex md:justify-start justify-center">
                 <Link
                   href="/contact/0"
-                  className="text-xs group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xs lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
+                  className="text-lg group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xs lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
                 >
-                  Order Now
+                  Get Started
                   <FaRocket className="text-md sm:text-base md:text-xs lg:text-sm xl:text-base" />
                 </Link>
               </div>

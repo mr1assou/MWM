@@ -150,7 +150,7 @@ const ContactForm = () => {
         </div> */}
         <div className="w-full px-4">
           <input
-            value={loading ? "Ordering..." : "Order Now"}
+            value={loading ? "Getting Started..." : "Get Started"}
             type="submit"
             className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90 disabled:opacity-50 cursor-pointer"
             disabled={loading}
