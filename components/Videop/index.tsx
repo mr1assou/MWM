@@ -4,7 +4,7 @@ import React from 'react'
 
 function Videop() {
   return (
-    <div className="w-full md:w-0 mt-10 px-5">
+    <div className="w-full md:w-0 mt-20 px-5">
       <div className="relative w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl ">
         <video
           src="https://ydw3izl8ia5ysu5h.public.blob.vercel-storage.com/mwmtech052.mp4"

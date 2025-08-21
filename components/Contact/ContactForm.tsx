@@ -65,7 +65,7 @@ const ContactForm = () => {
               htmlFor="firstName"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Full Name:
+              Full Name *:
             </label>
             <input
               onChange={changeForm}
@@ -101,7 +101,7 @@ const ContactForm = () => {
               htmlFor="email"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Your Email:
+              Your Email *:
             </label>
             <input
               onChange={changeForm}
