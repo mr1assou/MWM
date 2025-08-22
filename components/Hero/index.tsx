@@ -68,7 +68,7 @@ const Hero = () => {
               {/* Title */}
               <h1
                 ref={titleRef}
-                className="leading-sung text-start mt-7 md:mt-0  text-4xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
+                className="leading-sung text-start mt-7 md:mt-0  text-2xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
                 Website Design and Development Services  Across All Industries in the{" "}
                 <span className="inline-flex items-center gap-3">
@@ -86,7 +86,7 @@ const Hero = () => {
               {/* Subtitle */}
               <h2
                 ref={subtitleRef}
-                className="text-start text-xl xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
+                className="text-start text-md xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
               >
                 We provide custom websites and software solutions, specializing in crafting robust,
                 high-performance websites and delivering professional digital strategies that help businesses nationwide.
