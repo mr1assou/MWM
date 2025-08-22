@@ -68,7 +68,7 @@ const Hero = () => {
               {/* Title */}
               <h1
                 ref={titleRef}
-                className="leading-sung text-start mt-7 md:mt-0  text-2xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
+                className="leading-sung text-start mt-7 md:mt-0  text-3xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
                 Website Design and Development Services  Across All Industries in the{" "}
                 <span className="inline-flex items-center gap-3">
@@ -86,7 +86,7 @@ const Hero = () => {
               {/* Subtitle */}
               <h2
                 ref={subtitleRef}
-                className="text-start text-md xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
+                className="text-start text-sm xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
               >
                 We provide custom websites and software solutions, specializing in crafting robust,
                 high-performance websites and delivering professional digital strategies that help businesses nationwide.
@@ -96,7 +96,7 @@ const Hero = () => {
               <div ref={buttonRef} className="translate-y-[1300%] flex md:justify-start justify-center">
                 <Link
                   href="/contact/0"
-                  className="text-lg group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xl lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
+                  className="text-md group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xl lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
                 >
                   Get Started
                   <FaRocket className="text-md sm:text-base md:text-xs lg:text-sm xl:text-base" />
