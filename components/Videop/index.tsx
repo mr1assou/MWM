@@ -18,6 +18,7 @@ function Videop() {
           onContextMenu={(e) => e.preventDefault()}
           controlsList="nodownload noremoteplayback"
           disablePictureInPicture
+          loop
         />
       </div>
     </div>
