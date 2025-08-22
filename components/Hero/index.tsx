@@ -112,6 +112,8 @@ const Hero = () => {
                 src="/images/hero/mwmtech052.mp4"
                 className="w-full h-full object-cover"
                 controls
+                autoPlay
+                muted
                 playsInline
                 preload="metadata"
                 poster="/images/logo/lg.png"  // 👈 Add poster image here
