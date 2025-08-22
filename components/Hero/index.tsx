@@ -70,7 +70,7 @@ const Hero = () => {
                 ref={titleRef}
                 className="text-start mt-7 md:mt-0  text-2xl  xs:text-4xl md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
-                Website Design and Development Company for Businesses Across All Industries in the{" "}
+                Website Design and Development Services for Businesses Across All Industries in the{" "}
                 <span className="inline-flex items-center gap-3">
                   United States
                   <Image
