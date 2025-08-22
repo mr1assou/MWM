@@ -116,7 +116,7 @@ const Hero = () => {
                 muted
                 playsInline
                 preload="metadata"
-                poster="/images/logo/lg.png"  // 👈 Add poster image here
+                poster="/images/logo/lg.png" 
                 onContextMenu={(e) => e.preventDefault()}
                 controlsList="nodownload noremoteplayback"
                 disablePictureInPicture
