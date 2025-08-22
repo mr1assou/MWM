@@ -61,16 +61,16 @@ const Hero = () => {
           Mobile: stacked (flex-col)
           Desktop (md+): two columns (md:flex-row)
         */}
-        <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8">
+        <div className="flex flex-col lg:flex-row items-center md:items-stretch gap-8">
           {/* LEFT: Title + Subtitle + CTA */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center text-center md:text-left">
             <div className="w-full max-w-3xl mx-auto md:mx-0 space-y-6">
               {/* Title */}
               <h1
                 ref={titleRef}
-                className="text-start mt-7 md:mt-0  text-2xl  xs:text-4xl md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white leading-snug sm:leading-tight md:leading-tight -translate-x-[400%]"
+                className="leading-sung text-start mt-7 md:mt-0  text-4xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
-                Website Design and Development Services for Businesses Across All Industries in the{" "}
+                Website Design and Development Services  Across All Industries in the{" "}
                 <span className="inline-flex items-center gap-3">
                   United States
                   <Image
@@ -86,7 +86,7 @@ const Hero = () => {
               {/* Subtitle */}
               <h2
                 ref={subtitleRef}
-                className="text-start text-sm xs:text-lg  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
+                className="text-start text-xl xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
               >
                 We provide custom websites and software solutions, specializing in crafting robust,
                 high-performance websites and delivering professional digital strategies that help businesses nationwide.
@@ -96,7 +96,7 @@ const Hero = () => {
               <div ref={buttonRef} className="translate-y-[1300%] flex md:justify-start justify-center">
                 <Link
                   href="/contact/0"
-                  className="text-lg group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xs lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
+                  className="text-lg group inline-flex items-center gap-2 rounded-sm bg-primary px-6 sm:px-8 py-3 sm:py-4 sm:text-base md:text-xl lg:text-sm xl:text-base font-semibold text-white hover:bg-primary/80 transition"
                 >
                   Get Started
                   <FaRocket className="text-md sm:text-base md:text-xs lg:text-sm xl:text-base" />
@@ -106,7 +106,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT: Inline Video (shows on desktop to the right; on mobile it appears below) */}
-          <div className="w-0 md:w-1/2">
+          <div className="w-0 lg:w-1/2">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl ">
               <video
                 src="/images/hero/mwmtech052.mp4"
