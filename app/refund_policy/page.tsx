@@ -19,24 +19,24 @@ const RefundPolicyPage = () => {
                 <p className="text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
                   At MWM Tech, we strive to ensure complete satisfaction with our services. This Refund Policy outlines the terms and conditions under which refunds may be granted for our services.
                 </p>
-                
+
                 <div className="space-y-8">
                   <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
                     <h3 className="text-lg md:text-2xl font-bold text-black dark:text-white mb-4">
-                      1. Service Cancellation
+                      1. Requesting a Refund
                     </h3>
                     <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
-                      You may cancel your service subscription at any time. The following conditions apply:
+                      Customers may request a refund under specific circumstances. The following guidelines apply:
                     </p>
                     <ul className="space-y-3 list-disc list-inside text-gray-600 dark:text-gray-300">
                       <li className="text-sm md:text-base">
-                        Monthly subscriptions: Cancellation will take effect at the end of the current billing cycle.
+                        Requests must be submitted within 14 days of the original payment date.
                       </li>
                       <li className="text-sm md:text-base">
-                        Annual subscriptions: Pro-rated refunds are available for unused months.
+                        Refunds are only applicable if the service has not been fully used or consumed.
                       </li>
                       <li className="text-sm md:text-base">
-                        Custom projects: Cancellation terms are specified in individual project contracts.
+                        For subscription plans, refunds may only cover the unused portion of the service.
                       </li>
                     </ul>
                   </div>
