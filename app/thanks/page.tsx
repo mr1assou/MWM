@@ -69,7 +69,7 @@ const ThanksPage = () => {
                 </h2>
                 <div>
                   <div className="mb-6 md:mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[97/60] w-full  sm:aspect-[50/31] 2xl:aspect-[50/32]">
+                    <div className="relative aspect-[97/63] w-full  sm:aspect-[50/31] 2xl:aspect-[50/32]">
                       <Image
                         src="/images/hero/email_image.png"
                         alt="Thank you image"
