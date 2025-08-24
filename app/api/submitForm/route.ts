@@ -113,9 +113,7 @@ The MWMTECH Team
           <li style="margin-bottom:8px;color:#555;">Your main goals for the website</li>
           <li style="margin-bottom:8px;color:#555;">Budget range</li>
         </ul>
-
         
-
             <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 18px;">If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule and we’ll meet to discuss your project: 
             <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8">Book Appointment </a></p>
       </div>
@@ -138,14 +136,7 @@ The MWMTECH Team
           cid: 'mwm-logo',
           contentDisposition: 'inline' as const
         },
-        {
-          filename: 'email_image.png',
-          path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
-          cid: 'email-banner',
-          contentDisposition: 'inline' as const
-        }
       ]
-
     };
 
     // Send both emails
@@ -170,3 +161,10 @@ The MWMTECH Team
 
 // <img src="cid:email-banner" alt="Thank You"
              //style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
+
+        //         {
+        //   filename: 'email_image.png',
+        //   path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
+        //   cid: 'email-banner',
+        //   contentDisposition: 'inline' as const
+        // }
