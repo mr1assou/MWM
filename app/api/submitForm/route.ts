@@ -4,13 +4,13 @@ import path from 'path';
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { firstName,email, phone_number,id } = body;
+  const { firstName, email, phone_number, id } = body;
 
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com",
       port: 465,
-      secure: true,  
+      secure: true,
       auth: {
         user: "contact@mwmofficiel.com",
         pass: "@Marwane2003" // ⚠️ Move to ENV in production
@@ -99,11 +99,20 @@ The MWM Team
               <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
                 We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.  
               </p>
-
+              <p style="color:#555;font-size:16px;line-height:1.6;margin-bottom:18px;">
+  To help us prepare the best proposal, could you tell us a little about your business and what you need from us?
+  Please include:
+</p>
+<ul style="color:#555;font-size:16px;line-height:1.6;margin:0 0 24px 18px;padding:0;">
+  <li style="margin-bottom:8px;color:#555">What type of business you run (or plan to launch)</li>
+  <li style="margin-bottom:8px;color:#555">Your main goals for the website </li>
+  <li style="margin-bottom:8px;color:#555">Budget range</li>
+</ul>
               <!-- Thanks Image (remote hosted) -->
               <img src="cid:email-banner" 
                 alt="Thank You" 
                 style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
+              <!-- Discovery Request -->
 
               <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
                If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule, and we’ll meet with you to discuss your project.
