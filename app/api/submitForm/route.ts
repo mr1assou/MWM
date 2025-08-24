@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     const teamMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       // 
-      to: ['marwane.assoupf@gmail.com','marouaneboussalem1@gmail.com'],
+      to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
              <!-- Logo Header (embedded with cid) -->
