@@ -98,7 +98,7 @@ The MWMTECH Team
         <h1 style="color:#333;font-size:24px;margin:0 0 10px;">
           Thank You, ${firstName}!
         </h1>
-
+        
         <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 20px;">
           We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.
         </p>
@@ -114,8 +114,7 @@ The MWMTECH Team
           <li style="margin-bottom:8px;color:#555;">Budget range</li>
         </ul>
 
-        <img src="cid:email-banner" alt="Thank You"
-             style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
+        
 
             <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 18px;">If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule and we’ll meet to discuss your project: 
             <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8">Book Appointment </a></p>
@@ -167,3 +166,7 @@ The MWMTECH Team
     );
   }
 }
+
+
+// <img src="cid:email-banner" alt="Thank You"
+             //style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
