@@ -71,74 +71,75 @@ export async function POST(request: Request) {
       text: `
 Thank you, ${firstName}!
 
-We truly appreciate you reaching out to MWM. 
+We truly appreciate you reaching out to MWMTECH.
 Your message has been received, and our team is already reviewing your request.
 
 Expect a personalized response within 24–48 hours.
 
 📅 Book Appointment Now:
-https://calendar.app.google/DjDLJYJz2drca9a38
+https://calendar.app.google/jaYqRDByx9pUrK1X8
 
 Best regards,
-The MWM Team
-      `,
+The MWMTECH Team
+`,
       html: `
-        <div style="background-color:#f4f4f4; padding: 30px 0; font-family: Arial, sans-serif;">
-          <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+  <div style="background-color:#f4f4f4;padding:30px 0;font-family:Arial,sans-serif;">
+    <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
 
-            <!-- Logo Header (embedded with cid) -->
-            <div style="text-align: center; padding: 10px;">
-              <img src="cid:mwm-logo" alt="MWM Logo" style="max-width: 150px; height: auto;">
-            </div>
+      <!-- Logo -->
+      <div style="text-align:center;padding:10px;">
+        <img src="cid:mwm-logo" alt="MWMTECH Logo" style="max-width:150px;height:auto;">
+      </div>
 
-            <!-- Main Content -->
-            <div style="padding: 10px; text-align: center;">
-              <h1 style="color: #333; font-size: 24px; margin-bottom: 10px;">
-  Thank You, ${firstName}! 
-</h1>
-              <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-                We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.  
-              </p>
-              <p style="color:#555;font-size:16px;line-height:1.6;margin-bottom:18px;">
-  To help us prepare the best proposal, could you tell us a little about your business and what you need from us?
-  Please include:
-</p>
-<ul style="color:#555;font-size:16px;line-height:1.6;margin:0 0 24px 18px;padding:0;">
-  <li style="margin-bottom:8px;color:#555">What type of business you run (or plan to launch)</li>
-  <li style="margin-bottom:8px;color:#555">Your main goals for the website </li>
-  <li style="margin-bottom:8px;color:#555">Budget range</li>
-</ul>
-              <!-- Thanks Image (remote hosted) -->
-              <img src="cid:email-banner" 
-                alt="Thank You" 
-                style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 25px;">
-              <!-- Discovery Request -->
+      <!-- Main Content -->
+      <div style="padding:10px;text-align:center;">
+        <h1 style="color:#333;font-size:24px;margin:0 0 10px;">
+          Thank You, ${firstName}!
+        </h1>
 
-              <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
-               If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule, and we’ll meet with you to discuss your project.
-</h2>
-          </p>
-              <!-- Book Appointment Button -->
-              <div style="text-align: center; margin: 30px 0;">
-                <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8" 
-                  target="_blank" 
-                  style="background-color: #007bff; color: #ffffff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-block;">
-                  📅 Book Appointment Now
-                </a>
-              </div>
-            </div>
+        <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 20px;">
+          We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.
+        </p>
 
-            <!-- Footer -->
-            <div style="background-color: #f8f8f8; text-align: center; padding: 15px;">
-              <p style="color: #888; font-size: 14px; margin: 0;">
-                Best regards,<br>
-                <strong>The MWM Team</strong>
-              </p>
-            </div>
+        <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 18px;">
+          To help us prepare the best proposal, could you tell us a little about your business and what you need from us?
+          Please include:
+        </p>
 
-          </div>
+        <ul style="color:#555;font-size:16px;line-height:1.6;margin:0 0 24px 18px;padding:0;text-align:left;display:inline-block;">
+          <li style="margin-bottom:8px;color:#555;">What type of business you run (or plan to launch)</li>
+          <li style="margin-bottom:8px;color:#555;">Your main goals for the website</li>
+          <li style="margin-bottom:8px;color:#555;">Budget range</li>
+        </ul>
+
+        <img src="cid:email-banner" alt="Thank You"
+             style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
+
+        <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 25px;">
+          If you don’t book an appointment, one of our team members may reach out to follow up.
+          Otherwise, choose a time that fits your schedule and we’ll meet to discuss your project.
+        </p>
+
+        <div style="text-align:center;margin:30px 0;">
+          <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8"
+             target="_blank"
+             style="background-color:#007bff;color:#ffffff;padding:14px 28px;font-size:16px;font-weight:bold;text-decoration:none;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,0.1);display:inline-block;">
+            📅 Book Appointment Now
+          </a>
         </div>
-      `,
+      </div>
+
+      <!-- Footer -->
+      <div style="background-color:#f8f8f8;text-align:center;padding:15px;">
+        <p style="color:#888;font-size:14px;margin:0;">
+          Best regards,<br>
+          <strong>MWMTECH Team</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
+`,
       attachments: [
         {
           filename: 'logo.png',
@@ -150,9 +151,10 @@ The MWM Team
           filename: 'email_image.png',
           path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
           cid: 'email-banner',
-          contentDisposition: 'inline' as const,
+          contentDisposition: 'inline' as const
         }
       ]
+
     };
 
     // Send both emails
