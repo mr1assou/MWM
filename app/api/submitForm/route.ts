@@ -116,18 +116,8 @@ The MWMTECH Team
         <img src="cid:email-banner" alt="Thank You"
              style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
 
-        <p style="color:#555;font-size:16px;line-height:1.6;margin:0 0 25px;">
-          If you don’t book an appointment, one of our team members may reach out to follow up.
-          Otherwise, choose a time that fits your schedule and we’ll meet to discuss your project.
-        </p>
-
-        <div style="text-align:center;margin:30px 0;">
-          <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8"
-             target="_blank"
-             style="background-color:#007bff;color:#ffffff;padding:14px 28px;font-size:16px;font-weight:bold;text-decoration:none;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,0.1);display:inline-block;">
-            📅 Book Appointment Now
-          </a>
-        </div>
+            <p>If you don’t book an appointment, one of our team members may reach out to follow up. Otherwise, choose a time that fits your schedule and we’ll meet to discuss your project: 
+            <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8">Book Appointment Now</a></p>
       </div>
 
       <!-- Footer -->
