@@ -68,6 +68,7 @@ export async function POST(request: Request) {
     const clientMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       to: email,
+      replyTo: "contact@mwmofficiel.com",
       subject: 'Thank You for Contacting Us',
       text: `
 Thank you, ${firstName}!
