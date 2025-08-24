@@ -23,6 +23,7 @@ export async function POST(request: Request) {
     // 📩 Email to your team
     const teamMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
+      // 
       to: ['marwane.assoupf@gmail.com','marouaneboussalem1@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
