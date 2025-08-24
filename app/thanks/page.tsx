@@ -86,7 +86,7 @@ const ThanksPage = () => {
                       className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-base font-semibold text-white bg-primary dark:bg-white dark:text-black hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black dark:focus-visible:ring-white transition"
                       aria-label="Book an appointment"
                     >
-                      Book Appointment
+                      Book Appointment Now
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4"
