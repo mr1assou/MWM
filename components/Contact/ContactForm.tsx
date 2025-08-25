@@ -10,7 +10,7 @@ const ContactForm = () => {
   const { id } = params;
   const formRef = useRef(null);
 
-  const [form, setForm] = useState({ firstName: "", email: "", phone_number: "", id: id , budget:""});
+  const [form, setForm] = useState({ firstName: "", email: "", phone_number: "", id: id, budget: "" });
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -96,7 +96,25 @@ const ContactForm = () => {
             />
           </div>
         </div>
-             <div className="w-full px-4 md:w-1/2">
+        <div className="w-full px-4 md:w-1/2">
+          <div className="mb-8">
+            <label
+              htmlFor="phone_number"
+              className="mb-3 block text-sm font-medium text-dark dark:text-white"
+            >
+              Phone Number *:
+            </label>
+            <input
+              onChange={changeForm}
+              required
+              name="phone_number"
+              type="text"
+              placeholder="0412345678"
+              className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+            />
+          </div>
+        </div>
+        <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label
               htmlFor="budget"
@@ -118,24 +136,6 @@ const ContactForm = () => {
             </select>
           </div>
         </div>
-        <div className="w-full px-4 md:w-1/2">
-          <div className="mb-8">
-            <label
-              htmlFor="phone_number"
-              className="mb-3 block text-sm font-medium text-dark dark:text-white"
-            >
-              Phone Number:
-            </label>
-            <input
-              onChange={changeForm}
-              name="phone_number"
-              type="text"
-              placeholder="0412345678"
-              className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-            />
-          </div>
-        </div>
-   
 
         <div className="w-full px-4">
           <input
