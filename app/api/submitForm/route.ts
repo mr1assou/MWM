@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { firstName, email, phone_number, id } = body;
+  const { firstName, email, phone_number, id, budget } = body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     const teamMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
       // 
-      to: ['marwane.assoupf@gmail.com','marouaneboussalem1@gmail.com'],
+      to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
              <!-- Logo Header (embedded with cid) -->
@@ -52,6 +52,10 @@ export async function POST(request: Request) {
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Phone</strong></td>
             <td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td>
           </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Budget</strong></td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${budget}</td>
+          </tr>
         </table>
       `,
       attachments: [
@@ -76,7 +80,7 @@ export async function POST(request: Request) {
     
     <!-- Top accent -->
     <div style="height:6px;background:#4A6CF7;"></div>
-    
+
     <!-- Main Content -->
     <div style="padding:24px 20px 10px;text-align:center;">
       <h1 style="color:#111827;font-size:24px;line-height:1.3;margin:0 0 10px;font-weight:bold;">
@@ -94,7 +98,6 @@ export async function POST(request: Request) {
         <ul style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 0 18px;padding:0;">
           <li style="margin-bottom:8px;">What type of business you run (or plan to launch)</li>
           <li style="margin-bottom:8px;">Your main goals for the website</li>
-          <li style="margin-bottom:0;">Budget range</li>
         </ul>
       </div>
 
@@ -131,6 +134,14 @@ export async function POST(request: Request) {
 </div>
 
 `,
+      attachments: [
+        {
+          filename: 'logo.png',
+          path: logoPath,
+          cid: 'mwm-logo',
+          contentDisposition: 'inline' as const
+        },
+      ]
     };
 
     // Send both emails

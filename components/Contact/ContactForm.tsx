@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { FaRocket } from "react-icons/fa";
 import gsap from 'gsap';
 
 const ContactForm = () => {
@@ -11,7 +10,7 @@ const ContactForm = () => {
   const { id } = params;
   const formRef = useRef(null);
 
-  const [form, setForm] = useState({ firstName: "", email: "", phone_number: "", id: id });
+  const [form, setForm] = useState({ firstName: "", email: "", phone_number: "", id: id , budget:""});
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -77,24 +76,7 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        {/* <div className="w-full px-4 md:w-1/2">
-          <div className="mb-8">
-            <label
-              htmlFor="lastName"
-              className="mb-3 block text-sm font-medium text-dark dark:text-white"
-            >
-              Last Name:
-            </label>
-            <input
-              onChange={changeForm}
-              name="lastName"
-              type="text"
-              placeholder="Enter your last name"
-              className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-              required
-            />
-          </div>
-        </div> */}
+
         <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label
@@ -108,10 +90,32 @@ const ContactForm = () => {
               name="email"
               type="email"
               placeholder="Enter your email"
-              pattern="^(?!.*@(hotmail|yahoo)\.com$).*@.*\..*$" 
+              pattern="^(?!.*@(hotmail|yahoo)\.com$).*@.*\..*$"
               className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
               required
             />
+          </div>
+        </div>
+             <div className="w-full px-4 md:w-1/2">
+          <div className="mb-8">
+            <label
+              htmlFor="budget"
+              className="mb-3 block text-sm font-medium text-dark dark:text-white"
+            >
+              Budget Range *:
+            </label>
+            <select
+              onChange={changeForm}
+              name="budget"
+              required
+              className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+            >
+              <option value="">Select your budget</option>
+              <option value="$500 – $1,000">$500 – $1,000</option>
+              <option value="$1000 – $2,000">$1000 – $2,000</option>
+              <option value="2000-5000$">$2,000 – $5,000</option>
+              <option value="5000$+">More than $5,000</option>
+            </select>
           </div>
         </div>
         <div className="w-full px-4 md:w-1/2">
@@ -131,24 +135,8 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        {/* <div className="w-full px-4">
-          <div className="mb-8">
-            <label
-              htmlFor="message"
-              className="mb-3 block text-sm font-medium text-dark dark:text-white"
-            >
-              Your Message:
-            </label>
-            <textarea
-              onChange={changeForm}
-              name="message"
-              rows={5}
-              placeholder="Enter your Message"
-              className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-              required
-            ></textarea>
-          </div>
-        </div> */}
+   
+
         <div className="w-full px-4">
           <input
             value={loading ? "Getting Started..." : "Get Started"}
