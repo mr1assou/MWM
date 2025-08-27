@@ -127,10 +127,9 @@ const ContactForm = () => {
         <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label htmlFor="companyName" className="mb-3 block text-sm font-medium text-dark dark:text-white">
-              Company Name*:
+              Company Name:
             </label>
             <input
-              required
               id="companyName"
               onChange={changeForm}
               type="text"
@@ -191,7 +190,7 @@ const ContactForm = () => {
             >
               <option value="">Select your budget</option>
               <option value="$800 – $1,500">$800 – $1,500</option>
-              <option value="$1500 – $3,000">$2000 – $5,000</option>
+              <option value="$1500 – $3,000">$2500 – $5,000</option>
               <option value="5000$+">More than $5,000</option>
             </select>
           </div>

@@ -11,16 +11,16 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Our Affordable Packages"
+          title="Our Affordable Pricing"
           paragraph="Our Website design & development company affordable packages with transparent pricing,providing high-quality website development at great value."
           center
           width="665px"
         />
-        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Website Creation Packages</h2>
+        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[30px] mt-20">Web App Creation Packages</h2>
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:mt-40">
           <PricingBox
             packageName="Basic"
-            price="2500"
+            price="800$ - 1500"
             duration="3"
             subtitle="Ideal for: Startups, small businesses, or simple websites."
             center="false"
@@ -37,7 +37,7 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             packageName="Standard"
-            price="4000"
+            price="2500$ - 5000"
             duration="mo"
             subtitle="Ideal for: Growing businesses requiring custom features."
             center="true"
@@ -54,7 +54,7 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             packageName="Premium"
-            price="12000"
+            price="start at 5000"
             duration="mo"
             subtitle="Ideal for: Enterprises or complex projects."
             center="false"

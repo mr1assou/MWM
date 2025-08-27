@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     <!-- Main Content -->
     <div style="padding:24px 20px 10px;text-align:center;">
       <h1 style="color:#111827;font-size:24px;line-height:1.3;margin:0 0 10px;font-weight:bold;">
-        Thank you, ${firstName}!
+        Thank you, ${firstName.split(" ")[0]}!  
       </h1>
       <p style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 18px;">
         We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.
@@ -133,7 +133,6 @@ export async function POST(request: Request) {
 
   </div>
 </div>
-
 `,
       // attachments: [
       //   {

@@ -19,8 +19,8 @@ import { Suspense } from "react";
 import Videop from "@/components/Videop";
 
 export const metadata: Metadata = {
-  title: "Website design and development company",
-  description: "website development company in the United States.custom website design, and professional web development services across the country.",
+  title: "Web App Development",
+  description: "web app development company in the United States.custom website design, and professional web development services across the country.",
 };
 
 // Content component to wrap all page content

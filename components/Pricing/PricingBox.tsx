@@ -82,10 +82,10 @@ const PricingBox = (props: {
           <p className="price mt-7 text-xs font-bold text-black dark:text-white bg-primary px-2 py-1 rounded-lg">
             Save {discount} %
           </p>
-        </div>
+        </div> */}
         <p className="price mt-5 text-4xl font-bold text-black dark:text-white">
-          AU${(parseFloat(price) - parseFloat(price) * parseFloat(discount)/100)-1}
-        </p> */}
+          {price}$ 
+        </p>
 
         <div className=" border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10 mt-10">
           <Link href={`/contact/${id}`} className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp gap-2">
