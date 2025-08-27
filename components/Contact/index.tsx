@@ -16,7 +16,7 @@ const Contact = () => {
                 Contact Us
               </p>
               <h2 className="mt-5 text-lg font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                After you fill the form,please check your email or WhatsApp for our reply.
+                Let’s build something great together.
               </h2>
               <ContactForm />
             </div>

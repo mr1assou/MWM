@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { firstName, email, phone_number, id, budget } = body;
+  const { firstName, email, phone_number, id, budget, companyName, softwareType, problem1 } = body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -53,8 +53,20 @@ export async function POST(request: Request) {
             <td style="padding: 12px; border: 1px solid #ddd;">${phone_number}</td>
           </tr>
           <tr>
+            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Company Name</strong></td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${companyName}</td>
+          </tr>
+            <tr>
             <td style="padding: 12px; border: 1px solid #ddd;"><strong>Budget</strong></td>
             <td style="padding: 12px; border: 1px solid #ddd;">${budget}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Software Type</strong></td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${softwareType}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Problem</strong></td>
+            <td style="padding: 12px; border: 1px solid #ddd;">${problem1}</td>
           </tr>
         </table>
       `,
@@ -89,20 +101,9 @@ export async function POST(request: Request) {
       <p style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 18px;">
         We truly appreciate you reaching out to MWMTECH. Your message has been received, and our team is already reviewing your request.
       </p>
-
-      <!-- Subtle “card” section to group the ask -->
-      <div style="border:1px solid #e5e7eb;background:#fafafa;border-radius:10px;padding:16px 14px;margin:0 auto 16px;display:inline-block;text-align:left;max-width:520px;">
-        <p style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 8px;">
-          To help us prepare the best proposal, could you share a few details?
-        </p>
-        <ul style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 0 18px;padding:0;">
-          <li style="margin-bottom:8px;">What type of business you run (or plan to launch)</li>
-          <li style="margin-bottom:8px;">Your main goals for the website</li>
-        </ul>
-      </div>
-
       <p style="color:#4b5563;font-size:16px;line-height:1.65;margin:0 0 18px;">
-        Prefer to talk live? Choose a time that fits your schedule and we’ll meet to discuss your project.
+        Prefer to talk live? Choose a time that fits your schedule and we'll meet to discuss your project.  
+        If you’d rather not meet live, we’ll reach out to you via email or WhatsApp instead.
       </p>
 
       <!-- CTA Button -->
@@ -134,14 +135,14 @@ export async function POST(request: Request) {
 </div>
 
 `,
-      attachments: [
-        {
-          filename: 'logo.png',
-          path: logoPath,
-          cid: 'mwm-logo',
-          contentDisposition: 'inline' as const
-        },
-      ]
+      // attachments: [
+      //   {
+      //     filename: 'logo.png',
+      //     path: logoPath,
+      //     cid: 'mwm-logo',
+      //     contentDisposition: 'inline' as const
+      //   },
+      // ]
     };
 
     // Send both emails

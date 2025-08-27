@@ -68,10 +68,10 @@ const Hero = () => {
               {/* Title */}
               <h1
                 ref={titleRef}
-                className="leading-sung text-start mt-7 md:mt-0  text-3xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-3xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
+                className="leading-sung text-start mt-7 md:mt-0  text-3xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-4xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
-                Website Design and Development Services  For All Businesses in the{" "}
-                <span className="inline-flex items-center gap-3">
+               Custom Web Applications & Software Development to Empower Your Business {" "}
+                {/* <span className="inline-flex items-center gap-3">
                   United States
                   <Image
                     src="/images/logo/united_state.png"
@@ -80,7 +80,7 @@ const Hero = () => {
                     height={40}
                     className="inline-block"
                   />
-                </span>
+                </span> */}
               </h1>
 
               {/* Subtitle */}
@@ -88,8 +88,8 @@ const Hero = () => {
                 ref={subtitleRef}
                 className="text-start text-sm xs:text-lg md:text-2xl  lg:text-sm xl:text-xl 2xl:text-2xl text-body-color-dark translate-x-[400%]"
               >
-                We provide custom websites and software solutions, specializing in crafting robust,
-                high-performance websites and delivering professional digital strategies that help businesses nationwide.
+                We provide custom web app and software solutions, specializing in crafting robust,
+                high-performance apps and delivering professional digital strategies that help businesses nationwide.
               </h2>
 
               {/* CTA */}
