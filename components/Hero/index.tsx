@@ -68,7 +68,7 @@ const Hero = () => {
               {/* Title */}
               <h1
                 ref={titleRef}
-                className="leading-sung text-start mt-7 md:mt-0  text-3xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-4xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
+                className="leading-sung text-start mt-7 md:mt-0  text-4xl  xs:text-4xl md:text-5xl lg:text-xl xl:text-4xl 2xl:text-5xl font-bold text-white  sm:leading-tight md:leading-tight -translate-x-[400%]"
               >
                Custom Web Applications & Software Development to Empower Your Business {" "}
                 {/* <span className="inline-flex items-center gap-3">

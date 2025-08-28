@@ -14,7 +14,6 @@ import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats/Stats";
 import { Metadata } from "next";
 import Loader from "@/components/Common/Loader";
-import CookieConsent from "@/components/Common/CookieConsent";
 import { Suspense } from "react";
 import Videop from "@/components/Videop";
 
