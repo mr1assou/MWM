@@ -8,12 +8,12 @@ export async function POST(request: Request) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com",
-      port: 465,
+      host: process.env.SMTP_HOST || "smtp.hostinger.com",
+      port: parseInt(process.env.SMTP_PORT || "465"),
       secure: true,
       auth: {
-        user: "contact@mwmofficiel.com",
-        pass: "@Marwane2003" // ⚠️ Move to ENV in production
+        user: process.env.SMTP_USER || "contact@mwmofficiel.com",
+        pass: process.env.SMTP_PASS || "@Marwane2003"
       }
     });
 
@@ -22,9 +22,8 @@ export async function POST(request: Request) {
 
     // 📩 Email to your team
     const teamMailOptions = {
-      from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
-      // 
-      to: ['marwane.assoupf@gmail.com'],
+      from: `"${process.env.FROM_NAME || "MWMTECH"} SUPPORT" <${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}>`,
+      to: [process.env.TEAM_EMAIL || 'marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
              <!-- Logo Header (embedded with cid) -->
@@ -82,9 +81,9 @@ export async function POST(request: Request) {
 
     // 📩 Confirmation email to client
     const clientMailOptions = {
-      from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
+      from: `"${process.env.FROM_NAME || "MWMTECH"} SUPPORT" <${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}>`,
       to: email,
-      replyTo: "contact@mwmofficiel.com",
+      replyTo: process.env.FROM_EMAIL || "contact@mwmofficiel.com",
       subject: 'Thank You for Contacting Us',
       html: `
   <div style="background-color:#f4f4f4;padding:30px 0;font-family:Arial,Helvetica,sans-serif;">
@@ -108,7 +107,7 @@ export async function POST(request: Request) {
 
       <!-- CTA Button -->
       <div style="margin:8px 0 4px;">
-        <a href="https://calendar.app.google/jaYqRDByx9pUrK1X8"
+        <a href="${process.env.CALENDAR_URL || "https://calendar.app.google/jaYqRDByx9pUrK1X8"}"
            target="_blank"
            style="background:#4A6CF7;color:#FFFFFF;text-decoration:none;display:inline-block;padding:14px 22px;border-radius:8px;font-weight:bold;font-size:16px;">
           📅 Book Appointment Now
@@ -124,7 +123,7 @@ export async function POST(request: Request) {
       <p style="color:#6b7280;font-size:14px;line-height:1.6;margin:0;">
         Best regards,<br>
         <strong style="color:#111827;">MWMTECH Team</strong><br>
-        <a href="mailto:contact@mwmofficiel.com" style="color:#2563eb;text-decoration:none;">contact@mwmofficiel.com</a>
+        <a href="mailto:${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}" style="color:#2563eb;text-decoration:none;">${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}</a>
       </p>
       <p style="color:#9ca3af;font-size:12px;line-height:1.6;margin:10px 0 0;">
         You’re receiving this because you contacted MWMTECH via our website.
