@@ -14,7 +14,7 @@ function buildEmail(first: string) {
     const text = `Hi ${first},
 
 I hope you’re doing well. 
-We are a tech company — check our website: ${process.env.WEBSITE_URL || "https://mwmofficiel.com"}
+We are a tech company — check our website: https://mwmofficiel.com
 
 I'm from MWMTECH — we help businesses build custom software, automate repetitive work, and launch fast, conversion-focused websites.
 
@@ -24,11 +24,11 @@ Which of these is most useful for you right now?
 3) A website to showcase your services
 
 Reply with 1, 2, or 3 — or book a quick 15-min call:
-${process.env.CALENDAR_URL || "https://calendar.app.google/jaYqRDByx9pUrK1X8"}
+https://calendar.app.google/jaYqRDByx9pUrK1X8
 
 Best,
-${process.env.FROM_NAME || "MWMTECH"} Team
-${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}
+MWMTECH Team
+contact@mwmofficiel.com
 
 (If you’d prefer not to hear from us again, just reply STOP.)`;
 
@@ -56,7 +56,7 @@ ${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}
       </p>
 
       <p style="margin:12px 0 0;color:#6b7280;font-size:13px;line-height:1.6;">
-        — ${process.env.FROM_NAME || "MWMTECH"} Team • <a href="mailto:${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}" style="color:#2563eb;text-decoration:none;">${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}</a>
+        — MWMTECH Team • <a href="mailto:contact@mwmofficiel.com" style="color:#2563eb;text-decoration:none;">contact@mwmofficiel.com</a>
       </p>
 
     </div>
@@ -617,12 +617,12 @@ export async function POST(request: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST || "smtp.hostinger.com",
-        port: parseInt(process.env.SMTP_PORT || "465"),
+        host: "smtp.hostinger.com",
+        port: 465,
         secure: true,
         auth: {
             user: process.env.SMTP_USER || "contact@mwmofficiel.com",
-            pass: process.env.SMTP_PASS || "@Marwane2003",
+            pass: process.env.SMTP_PASS || "@Marwane2003", // replace with env
         },
     });
 
@@ -630,9 +630,9 @@ export async function POST(request: Request) {
         const first = firstNameOf(name);
         const { subject, text, html } = buildEmail(first);
         const mailOptions = {
-            from: `"${process.env.FROM_NAME || "MWMTECH"}" <${process.env.FROM_EMAIL || "contact@mwmofficiel.com"}>`,
+            from: '"MWMTECH" <contact@mwmofficiel.com>',
             to: email,
-            replyTo: process.env.FROM_EMAIL || "contact@mwmofficiel.com",
+            replyTo: "contact@mwmofficiel.com",
             subject,
             text,
             html,
