@@ -12,8 +12,8 @@ export async function POST(request: Request) {
       port: 465,
       secure: true,
       auth: {
-        user: "contact@mwmofficiel.com",
-        pass: "@Marwane2003" // ⚠️ Move to ENV in production
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       }
     });
 
@@ -23,7 +23,6 @@ export async function POST(request: Request) {
     // 📩 Email to your team
     const teamMailOptions = {
       from: '"MWMTECH SUPPORT" <contact@mwmofficiel.com>',
-      // 
       to: ['marwane.assoupf@gmail.com'],
       subject: 'New Contact Form Submission',
       html: `
@@ -134,17 +133,7 @@ export async function POST(request: Request) {
   </div>
 </div>
 `,
-      // attachments: [
-      //   {
-      //     filename: 'logo.png',
-      //     path: logoPath,
-      //     cid: 'mwm-logo',
-      //     contentDisposition: 'inline' as const
-      //   },
-      // ]
     };
-
-    // Send both emails
     await Promise.all([
       transporter.sendMail(clientMailOptions),
       transporter.sendMail(teamMailOptions)
@@ -163,15 +152,5 @@ export async function POST(request: Request) {
   }
 }
 
-
-// <img src="cid:email-banner" alt="Thank You"
-//style="max-width:100%;height:250px;object-fit:cover;border-radius:6px;margin:0 0 25px;">
-
-//         {
-//   filename: 'email_image.png',
-//   path: path.join(process.cwd(), 'public', 'images', 'hero', 'email_image.png'),
-//   cid: 'email-banner',
-//   contentDisposition: 'inline' as const
-// }
 
 
